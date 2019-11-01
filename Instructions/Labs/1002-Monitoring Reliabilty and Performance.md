@@ -4,14 +4,16 @@
 
 In this exercise you will learn how to use Performance Monitor to monitor the performance of a Windows device.
 
+_Dependency Notice: LON-CL3 needs to be joined to the domain if the_ Joining a Domain _lab was not performed._
+
 ### Scenario
-Repeatedly users complained about the poor performance of LON-CL1 so you decided to use Performance Monitor to identify potential bottlenecks. The script MonitorScenario.vbs located on should provoke the bad performance on the device. While the script runs you plan to monitor the values for: Memory Pages per second, Network Interface Packets per second, Physical Disk % Disk Time, Physical Disk Avg. Disk Queue Length, Processor % Processor Time and System Processor Queue Length
+Repeatedly users complained about the poor performance of LON-CL3 so you decided to use Performance Monitor to identify potential bottlenecks. The script MonitorScenario.vbs located on should provoke the bad performance on the device. While the script runs you plan to monitor the values for: Memory Pages per second, Network Interface Packets per second, Physical Disk % Disk Time, Physical Disk Avg. Disk Queue Length, Processor % Processor Time and System Processor Queue Length
 
 
 
 ### Task 1: Use Performance Monitor to gather a baseline 
-1.  Sign in to **LON-CL1** as **adatum\\Administrator** with the password: **Pa55w.rd**.
-2.  On **LON-CL1**, select **Start**, type **performance**, and then select **Performance
+1.  Sign in to **LON-CL3** as **adatum\\Administrator** with the password: **Pa55w.rd**.
+2.  On **LON-CL3**, select **Start**, type **performance**, and then select **Performance
     Monitor**.
 3.  In **Performance Monitor**, in the navigation pane, expand **Data Collector
     Sets**.
@@ -52,7 +54,7 @@ Repeatedly users complained about the poor performance of LON-CL1 so you decided
     **Stop**.
 23. In **Performance Monitor**, in the navigation pane, expand **Reports**,
     expand **User Defined**, expand **Adatum Baseline**, and then select the
-    report that has a name beginning with **LON-CL1**.
+    report that has a name beginning with **LON-CL3**.
 24. View the chart. On the menu bar, select the drop-down arrow, and then select
     **Report**.
 25. Record the following values:
@@ -64,19 +66,21 @@ Repeatedly users complained about the poor performance of LON-CL1 so you decided
 -   System Processor Queue Length
 
 ### Task 2: Load the suspect app ###
-1.  In Windows Explorer, browse to **\\\\LON-DC1\\labfiles\\Support\\**.
+1.  On LON-CL3, In Windows Explorer, browse to **\\\\LON-DC1\\labfiles\\Support\\**.
 2.  In the content pane, double-click **CopyMonitor* to copy lab files to the local client.
 3.  On the taskbar, in the **Type here to search** type **cmd**. Right-click on Command Prompt and
     select **Run as Administrator**.
+
+_**Note**: The following step initiates a script which generates a resource load. Be sure to continue on to Task 3 **immediately**, before the script completes._
+
 4.  In the Command Prompt Windows, type the following followed by **Enter**:
 ```
-cd\\Monitor
+cd\Monitor
 MonitorScenario.vbs
 ```
-_**Note**: The script starts to generate the load. Be sure to continue on to Task 3 immediately before the script completes._
 
 ### Task 3: Use Performance Monitor to identify possible bottlenecks ### 
-1.  Switch to **Performance Monitor**.
+1.  On LON-CL3, switch to **Performance Monitor**.
 2.  Under **Data Collector Sets**, select **User Defined**.
 3.  Right-click **Adatum Baseline**, and then select **Start**.
 4.  On the taskbar, in the **Type here to search** type **perfmon /res**, and
@@ -85,14 +89,14 @@ _**Note**: The script starts to generate the load. Be sure to continue on to Tas
     _**Note**: Answers will vary depending upon the usage scenario and host configuration,
     although central processing unit (CPU) and network are likely to be used
     heavily._
-6.  After a few minutes, in the **Windows Script Host** prompt, select **OK**.  
+6.  After a few minutes, in the **Windows Script Host** prompt, select **OK**.
     _**Note**: Check the taskbar to see if this dialog may be hidden._
 7.  Wait for the instance of the Command Prompt windows launched by the script to close. 
 8.  Switch to **Performance Monitor**.
 9.  In the navigation pane, right-click **Adatum Baseline**, and then select **Stop**.
 10. In **Performance Monitor**, in the navigation pane, expand **Reports**,
     expand **User Defined**, expand **Adatum Baseline**, and then select the
-    **second report** that has a name beginning with **LON-CL1**.
+    **second report** that has a name beginning with **LON-CL3**.
 10. View the chart.
 11. On the menu bar, select the drop-down arrow, and then select **Report**.
 12. Record the component details:

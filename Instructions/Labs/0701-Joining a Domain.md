@@ -3,9 +3,10 @@
 ## Summary
 In this lab you will join a device to a Windows Active Directory domain.
 
+_Dependency Note: This lab is required to complete in order to complete the_ Monitoring Reliability and Performance lab _later in this course._
+
 ### Scenario
 You have installed Windows 10 to a new device, LON-CL3. To finalize the setup you will join the device to the adatum.com domain. This will enable the central management of the device and enable other users to log on using their domain credentials.
-
 
 ### Task 1: Verify that no Windows update settings apply via GPO
 1.  Sign in to **LON-CL3** as **LON-CL3\\Admin** with the password **Pa55w.rd**.
