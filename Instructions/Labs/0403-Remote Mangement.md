@@ -49,3 +49,5 @@ _Note: The command is failing now.
 7.  Close the **Settings** app.
 
 **Results**: After completing this exercise, you will have enabled and tested the remote management functions of windows.
+
+** END OF LAB **

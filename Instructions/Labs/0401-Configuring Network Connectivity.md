@@ -212,3 +212,5 @@ obtained DHCP lease on the DHCP server LON-DC1.
 
 **Results**: After completing this exercise you have configured the IP4 settings
 of a windows device to use DHCP.
+
+** END OF LAB **

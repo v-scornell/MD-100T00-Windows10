@@ -95,3 +95,5 @@ the Microsoft App Store using the Microsoft To-Do app.
 
 **Results**: After completing this exercise, you will have installed a Microsoft
 Store app and managed Microsoft Store app updates.
+
+** END OF LAB **

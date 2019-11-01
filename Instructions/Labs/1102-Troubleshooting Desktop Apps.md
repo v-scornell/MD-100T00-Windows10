@@ -99,3 +99,5 @@ You need to investigate why they are not working. \\\\lon-dc1\\labfiles\\Apps\\X
 - Moved a computer, LON-CL1, to Marketing OU to test the policy.
 
 **Results**: After completing this exercise, you should have successfully resolved the AppLocker policy application problem.
+
+** END OF LAB **

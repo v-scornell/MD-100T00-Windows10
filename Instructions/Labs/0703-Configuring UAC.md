@@ -93,3 +93,5 @@ applications.
 
 **Results**: After completing this exercise you have configured the prompt
 behavior of UAC.
+
+** END OF LAB **

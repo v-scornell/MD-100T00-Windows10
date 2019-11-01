@@ -158,3 +158,5 @@ Skinner to test the policies.
 
 **Results**: After completing this exercise you created a Security Policy that
 will affect the password settings for all domain users.
+
+** END OF LAB **

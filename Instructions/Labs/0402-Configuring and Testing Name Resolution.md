@@ -197,3 +197,5 @@ functionality.
 
 **Results**: After completing this exercise you have added an entry in host
 file, created a DNS record, and tested the name resolution in windows.
+
+** END OF LAB **

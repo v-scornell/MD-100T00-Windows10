@@ -111,3 +111,5 @@ LON-CL3 and synchronizing changes between LON-CL1, using your test Microsoft ID.
 
 **Results**: During this lab you have synchronized files between different
 devices using OneDrive.
+
+** END OF LAB **

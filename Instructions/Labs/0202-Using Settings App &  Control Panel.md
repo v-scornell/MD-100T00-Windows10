@@ -80,3 +80,5 @@ staff playing the presentations while on battery.
 
 **Results:** After finishing the exercise you have excluded one folder from
 Virus scanning and you have created a new power plan.
+
+** END OF LAB **

@@ -81,3 +81,5 @@ To prevent other users from modifying the settings for Windows update on LON-CL1
 6.  Close all open windows.
 
 **Results**: After completing this exercise, you will have successfully configured and/or confirmed Group Policy Objects (GPOs) to configure Windows Update settings.
+
+** END OF LAB **

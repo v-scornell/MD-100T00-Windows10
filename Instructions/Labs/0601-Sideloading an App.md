@@ -98,3 +98,5 @@ LeXProductsGrid81_1.1.0.2_AnyCPU certificate have been placed at
 
 **Results**: During this lab you enabled Sideloading for apps, sideloaded one
 app, and uninstalled the sideloaded app.
+
+** END OF LAB **
