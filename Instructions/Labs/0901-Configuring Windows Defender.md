@@ -37,3 +37,5 @@ You've been asked to test if Windows Defender is properly working on LON-CL3. Yo
 
 **Results**: After completing this exercise, you should have configured and tested
 Windows Defender.
+
+**END OF LAB**

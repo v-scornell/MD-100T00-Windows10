@@ -194,3 +194,5 @@ the issue.
 
 **Results**: After completing this exercise, you should have successfully rolled
 back a driver and browsed safe mode.
+
+**END OF LAB**

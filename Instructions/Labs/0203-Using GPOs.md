@@ -125,3 +125,5 @@ disabled. You decide to use a domain wide GPO that is scoped to LON-CL2.
 
 **Results:** After completing this exercise you have created a GPO to configure
 settings in Windows.
+
+**END OF LAB**

@@ -45,3 +45,5 @@ _**Note**: If the change is not visible, press F5 to refresh the view in Disk Ma
 4.  **Close** all open Windows.
 
 **Results**: After completing this exercise, you will have created a simple volume and then extended the volume.
+
+**END OF LAB**

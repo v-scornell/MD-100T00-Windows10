@@ -104,3 +104,5 @@ on the local drive (E:).
 
 **Results**: After completing this exercise, you should have configured
 BitLocker to encrypt a local drive.
+
+**END OF LAB**

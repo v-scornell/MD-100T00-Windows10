@@ -122,3 +122,5 @@ return to a previous working state.
 
 **Results**: After completing this exercise, you should have successfully
 recovered a device using a Restore Point.
+
+**END OF LAB**

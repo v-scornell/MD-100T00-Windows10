@@ -46,3 +46,4 @@ _**Note**: This will take several minutes to complete._
     **Pa55w.rd**
 _**Notice** that the demofile.txt is now on the desktop and the OneNote icon is visible on the taskbar._
 
+**END OF LAB**

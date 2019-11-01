@@ -134,3 +134,5 @@ Copy C:\\Windows\\PolicyDefinitions\\en-US\\inetres.adml \\\\LON-DC1\\SYSVOL\\Ad
 9.  **Sign out** of LON-CL1.
 
 **Results**: After completing this exercise, you should have successfully configured the Internet Explorer Enterprise Mode.
+
+**END OF LAB**

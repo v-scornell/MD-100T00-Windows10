@@ -93,3 +93,5 @@ Benjamin has filed an incident report that states that the Stock Viewer applicat
 14.  **Sign out** of LON-CL1.
 
 **Results**: After completing this exercise, you should have successfully resolved the issues with the Stock Viewer application.
+
+**END OF LAB**
