@@ -63,4 +63,4 @@ _Note: This will take approximately 30 minutes._
 
 **Results**: After finishing this exercise, you will have successfully upgrading LON-CL6 from Windows 7 to Windows 10. 
 
-** END OF LAB **
+**END OF LAB**

@@ -93,4 +93,4 @@ LON-DC1 also needs to be configured to allow remote desktop connections, however
 
 **Results**: After completing this exercise, you should have created and tested outbound firewall rules.
 
-** END OF LAB **
+**END OF LAB**

@@ -193,4 +193,4 @@ Your manager has advised you to create file shares for the Marketing and IT depa
 structure for the Marketing and information technology (IT) departments,
 shared their folders, and tested local and share permissions.
 
-** END OF LAB **
+**END OF LAB**

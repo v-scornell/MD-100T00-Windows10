@@ -65,4 +65,4 @@ newly created storage space.
 **Results**: After completing this exercise, you will have created a two-way
 mirror storage space.
 
-** END OF LAB **
+**END OF LAB**

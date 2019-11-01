@@ -162,4 +162,4 @@ Task 2: Use a Windows PowerShell Script
 **Results:** After completing the exercise you have learned how to manage
 Windows 10 using PowerShell and PowerShell scripts.
 
-** END OF LAB **
+**END OF LAB**

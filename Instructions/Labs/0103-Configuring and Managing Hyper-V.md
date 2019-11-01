@@ -132,4 +132,4 @@ VM to an checkpoint as a backup solution in case the install fails.
 **Results:** After finishing the exercise you have created a Hyper V virtual
 machine and managed its settings.
 
-** END OF LAB **
+**END OF LAB**

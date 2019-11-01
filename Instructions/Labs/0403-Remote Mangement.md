@@ -50,4 +50,4 @@ _Note: The command is failing now.
 
 **Results**: After completing this exercise, you will have enabled and tested the remote management functions of windows.
 
-** END OF LAB **
+**END OF LAB**

@@ -196,4 +196,4 @@ backup.
 **Results**: After completing this exercise, you will have successfully
 configured File History to recover files.
 
-** END OF LAB **
+**END OF LAB**

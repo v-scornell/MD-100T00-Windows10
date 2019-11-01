@@ -286,4 +286,4 @@ running and synchronization conflicts are handled.
 **Results**: After finishing this lab you have installed and configured Work
 Folders.
 
-** END OF LAB **
+**END OF LAB**

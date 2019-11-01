@@ -199,4 +199,4 @@ printer configuration like adding and sharing a local printer, configuring
 printer security, managing and connecting a remote printer and managing a print
 job.
 
-** END OF LAB **
+**END OF LAB**

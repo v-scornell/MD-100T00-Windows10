@@ -123,4 +123,4 @@ You decide to use AppLocker.
 **Results**: After completing this exercise, you should have configured an
 AppLocker policy to prevent users from starting Windows Media Player.
 
-** END OF LAB **
+**END OF LAB**

@@ -113,4 +113,4 @@ MonitorScenario.vbs
 
 **Results**: After completing this exercise, you will have successfully determined the cause of a performance bottleneck.
 
-** END OF LAB **
+**END OF LAB**

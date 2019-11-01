@@ -161,4 +161,4 @@ two devices. You've decided to use a new Microsoft Account to do this.
 Microsoft account and successfully synchronized settings between different
 devices.
 
-** END OF LAB **
+**END OF LAB**

@@ -94,4 +94,4 @@ Benjamin has filed an incident report that states that the Stock Viewer applicat
 
 **Results**: After completing this exercise, you should have successfully resolved the issues with the Stock Viewer application.
 
-** END OF LAB **
+**END OF LAB**

@@ -91,4 +91,4 @@ their files. You decide to create disk quotas of 500 MB with a warning set at
 **Results**: After completing this exercise, you will have configured disk
 quotas.
 
-** END OF LAB **
+**END OF LAB**

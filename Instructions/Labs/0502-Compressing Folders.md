@@ -28,4 +28,4 @@ _**Note**: If the Access Denied window appears, Select Continue. If the Error Ap
 
 **Results**: After completing this exercise, you will have compressed a folder with files.
 
-** END OF LAB **
+**END OF LAB**

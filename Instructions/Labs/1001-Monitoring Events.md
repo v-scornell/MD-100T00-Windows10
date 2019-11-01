@@ -67,4 +67,4 @@ You decide to collect event log entries from LON-DC1 on your client LON-CL1. Aft
 
 **Results**: After completing this exercise, you will have successfully configured monitoring by using Event Viewer.
 
-** END OF LAB **
+**END OF LAB**

@@ -104,4 +104,4 @@ Your manager wants you to ensure that all network traffic between LON-CL1 and LO
 
 **Results**: After completing this exercise, you should have created and tested connection security rules.
 
-** END OF LAB **
+**END OF LAB**

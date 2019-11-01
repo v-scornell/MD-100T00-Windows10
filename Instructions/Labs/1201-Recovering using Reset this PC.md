@@ -82,4 +82,4 @@ like to still retain the user files on the PC.
 **Results**: After completing this exercise, you should have successfully
 recovered your devices using Reset This PC
 
-** END OF LAB **
+**END OF LAB**

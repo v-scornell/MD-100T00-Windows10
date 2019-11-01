@@ -135,4 +135,4 @@ IT, Marketing, and Research all use LON-CL1, but require different permissions f
 **Results**: After completing this exercise, you will have configured and tested
 conditions to control access. You will have also viewed effective permissions.
 
-** END OF LAB **
+**END OF LAB**

@@ -38,4 +38,4 @@ You have installed Windows 10 to a new device, LON-CL3. To finalize the setup yo
 
 **Results**: After completing this exercise you have successfully joined a device to a Windows Active Directory domain.
 
-** END OF LAB **
+**END OF LAB**
