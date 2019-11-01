@@ -1,0 +1,10 @@
+$Path = 'C:\Labfiles\'
+$DiskPath = Join-Path -Path $Path -ChildPath 'MD-100-LON-CL5\Virtual Hard Disks\LON-CL5.vhd'
+$VmName = 'MD100-LON-CL5'
+
+$ClientVm = New-VM -Name $VmName -MemoryStartupBytes 2GB -Path $Path -BootDevice CD -Generation 1
+$ClientDisk = New-VHD -Path $DiskPath -SizeBytes 127GB -Dynamic
+Add-VMHardDiskDrive -VM $ClientVm -Path $DiskPath
+Connect-VMNetworkAdapter -VMName $VmName -SwitchName 'External Network'
+Add-VMDvdDrive -VM $ClientVm -Path 'C:\Labfiles\Windows.iso'
+Start-VM -Name "MD100-LON-CL5"
