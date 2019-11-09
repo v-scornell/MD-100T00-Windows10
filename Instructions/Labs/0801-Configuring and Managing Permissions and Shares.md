@@ -24,7 +24,7 @@ Your manager has advised you to create file shares for the Marketing and IT depa
 
 ### Task 2: Review default permissions 
 1.  Right-click the **IT** folder, and then select **Properties**.
-2.  In the IT Properties window, select the **Security tab**, and then click
+2.  In the IT Properties window, select the **Security tab**, and then select
     **Edit**.
 3.  In the Permissions for IT dialog box, verify that Authenticated Users is
     selected in the Group or user names section, and then select Remove. Read the
@@ -39,7 +39,7 @@ Your manager has advised you to create file shares for the Marketing and IT depa
 
 ### Task 3: Configure permissions for the IT and Marketing folders
 1.  On LON-CL1, in File Explorer, right-click the **IT folder**,     select **Give access to**, and then select **Specific people**.
-2.  In the Type a name and then click Add, or click the arrow to find
+2.  In the Type a name and then select Add, or select the arrow to find
     someone text box, **type IT**, and then select **Add**.
 3.  Verify that IT is added and selected. In the Permission Level
     column, select **Read/Write**, select **Share**, and then select **Done**.
@@ -73,7 +73,7 @@ Your manager has advised you to create file shares for the Marketing and IT depa
 
 ### Task 4: Review configured permissions 
 1.  On LON-CL1, in File Explorer, right-click **IT**, and then select **Properties**.
-2.  In the IT Properties window, click the **Security tab**, and then select
+2.  In the IT Properties window, select the **Security tab**, and then select
     **Advanced**.
 3.  In the Advanced Security Settings for IT dialog box, verify that all the
     permissions entries are set explicitly at this level, because their

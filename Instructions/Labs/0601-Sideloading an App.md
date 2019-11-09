@@ -43,7 +43,7 @@ LeXProductsGrid81_1.1.0.2_AnyCPU certificate have been placed at
 2.  Right-click **LeXProductsGrid81_1.1.0.2_AnyCPU.cer**, and then select
     **Install Certificate**.
 
-3.  On the **Certificate Import Wizard** page, click **Local Machine**, and then
+3.  On the **Certificate Import Wizard** page, select **Local Machine**, and then
     select **Next**.
 
 4.  On the **User Account Control**, select **Yes**.

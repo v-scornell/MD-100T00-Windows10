@@ -35,7 +35,7 @@ Note: The Semi-Annual Channel (Targeted) is removed in v1903.
 2.  Review the updates listed, and then select **Uninstall updates**.
 3.  Review the updates listed in **Installed Updates**. Close **Installed
     Updates**.
-4.  On the **View Update history** page, click **Back**.
+4.  On the **View Update history** page, select **Back**.
 
 **Results**: After completing this exercise, you will have successfully configured and/or confirmed Windows Update settings.
 

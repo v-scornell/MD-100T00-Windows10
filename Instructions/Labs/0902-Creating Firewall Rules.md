@@ -87,7 +87,7 @@ LON-DC1 also needs to be configured to allow remote desktop connections, however
 ### Task 3: Test the rule ###
 1.  Select **Start**, type **mstsc.exe**, and then press **Enter**.
 2.  In the Computer box, **type LON-DC1**, and then press **Enter**.
-3.  In the Remote Desktop Connection dialog box, click **OK**.
+3.  In the Remote Desktop Connection dialog box, select **OK**.
 4.  Verify that the connection attempt fails
 5.  **Close** all open windows.
 

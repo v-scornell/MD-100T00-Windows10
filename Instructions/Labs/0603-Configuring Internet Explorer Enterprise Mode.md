@@ -129,7 +129,7 @@ Copy C:\\Windows\\PolicyDefinitions\\en-US\\inetres.adml \\\\LON-DC1\\SYSVOL\\Ad
 7.  In the Internet Explorer Address bar, type **http://intranet.adatum.com**,
     and then press **Enter**.
 8.  Verify that the website displays correctly, and if you press the **ALT**
-    key, click the **Tools** menu, and then verify that Enterprise Mode is
+    key, select the **Tools** menu, and then verify that Enterprise Mode is
     greyed out because the site runs in Enterprise Mode.
 9.  **Sign out** of LON-CL1.
 

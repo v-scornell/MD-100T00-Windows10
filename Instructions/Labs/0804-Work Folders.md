@@ -47,8 +47,8 @@ running and synchronization conflicts are handled.
 5.  On the **Select the server and path** page, in the **Enter a local path**
     text box, type **C:\\syncshare1**, select **Next**
 
->   **Note:** If **LON-DC1** is not listed in the **Servers** section, click
->   **Cancel**. In Server Manager, click **Refresh**, and then repeat this task,
+>   **Note:** If **LON-DC1** is not listed in the **Servers** section, select
+>   **Cancel**. In Server Manager, select **Refresh**, and then repeat this task,
 >   beginning with step 5 and completing the remaining steps. This may take a
 >   few minutes for LON-DC1 to show.
 
@@ -271,7 +271,7 @@ running and synchronization conflicts are handled.
 
 14. In the **User Account Control** dialog box, in the **User name** text box,
     type **Administrator**, and in the **Password** text box, type **Pa55w.rd**,
-    and then click **Yes**.
+    and then select **Yes**.
 
 15. Switch to **Work Folders**, and then verify that files display in the
     details pane, including **On LON-CL1** and **On LON-CL1-LON-CL1**.

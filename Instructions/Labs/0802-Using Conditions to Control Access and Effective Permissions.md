@@ -41,7 +41,7 @@ IT, Marketing, and Research all use LON-CL1, but require different permissions f
 13. In the Permission Entry for Research dialog box, select **Add a condition**,
     and compose the following expression: **User department Equals Value
     research**. You will need to type research manually in the last box. Select
-    **OK** twice, then click **Close**. 
+    **OK** twice, then select **Close**. 
 	_**Note**: A claim type for the department attribute was preconfigured for the purpose of this lab._
 14. In File Explorer, in the navigation pane, select **Data**, right-click
     **IT**, select **Properties**, select the **Security tab**, and then select
@@ -52,7 +52,7 @@ IT, Marketing, and Research all use LON-CL1, but require different permissions f
     compose the following expression: **User c Equals Value US**. You will
     need to type US manually in the last field. select **OK** three times.
     _**Note**: A claim type for the c (country) attribute was preconfigured for the purpose of     this lab._
-	17. Select **OK** twice, then click **Close** to close the IT Properties window.
+	17. Select **OK** twice, then select **Close** to close the IT Properties window.
 
 ### Task 2: Test conditions to control access 
 1.  **Switch to LON-CL2**

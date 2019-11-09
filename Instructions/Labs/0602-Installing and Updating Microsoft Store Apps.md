@@ -21,7 +21,7 @@ the Microsoft App Store using the Microsoft To-Do app.
 
 2.  Right-click **Start**, and then select **Windows PowerShell (Admin)**.
 
-3.  In the **User Account Control** dialog box, click **Yes**.
+3.  In the **User Account Control** dialog box, select **Yes**.
 
 4.  In the **Administrator: Windows PowerShell** window, type **the following
     command** and then press **Enter**.

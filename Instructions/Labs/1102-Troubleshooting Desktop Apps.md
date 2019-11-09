@@ -46,7 +46,7 @@ You need to investigate why they are not working. \\\\lon-dc1\\labfiles\\Apps\\X
 4.  In the Group Policy Management window, expand **Forest: Adatum.com**,expand
     **Domains**, expand **Adatum.com**, and then select **Marketing**.
 5.  Right-click **Marketing**, and then select **Create a GPO in this domain
-    and link it here**. Name the new GPO **Marketing** and click **OK**. Right-click the **Marketing** GPO and select **Edit**.
+    and link it here**. Name the new GPO **Marketing** and select **OK**. Right-click the **Marketing** GPO and select **Edit**.
 6.  In the Group Policy Management Editor window, expand **Computer
     Configuration**, expand **Policies**, expand **Windows Settings**, expand
     **Security Settings**, expand **Application Control Policies**, expand
@@ -80,7 +80,7 @@ You need to investigate why they are not working. \\\\lon-dc1\\labfiles\\Apps\\X
 2.  In Active Directory Users and Computers, expand **Adatum.com**, and then
     select **Computers**.
 3.  Right-click **LON-CL1**, and then select **Move**.
-4.  In the Move dialog box, click **Marketing**, and then select **OK**.
+4.  In the Move dialog box, select **Marketing**, and then select **OK**.
 5.  Switch to **LON-CL1** and restart LON-CL1.
 6.  Sign in to **LON-CL1** using the following credentials:
 -   User name: **Adatum\\Benjamin**
