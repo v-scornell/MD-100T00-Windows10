@@ -83,7 +83,7 @@ You decide to use AppLocker.
 4.  Wait two minutes to allow the AppLocker policy to apply.
 
 5.  Expand **Event Viewer**, expand **Applications and Services Logs**, expand
-    **Microsoft**, expand **Windows**, expand **AppLocker**, and then click
+    **Microsoft**, expand **Windows**, expand **AppLocker**, and then select
     **EXE and DLL**.
 
 6.  Review the entries in the results pane. Locate **Event ID 8001.**  

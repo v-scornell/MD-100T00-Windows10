@@ -25,7 +25,7 @@ the issue.
     then select **OK**.
 
 4.  In the Welcome to picture password window, select **Choose picture**, browse
-    to **C:\\Windows\\Web\\Screen**, select **img100.jpg**, click **Open**, and
+    to **C:\\Windows\\Web\\Screen**, select **img100.jpg**, select **Open**, and
     then select **Use this picture**.
 
 5.  Follow the on-screen instructions, and then draw three gestures on the
