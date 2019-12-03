@@ -14,13 +14,13 @@ You have to replace the computer of one of your colleagues. He requires you to c
 5.  At the command prompt, type the following command, and then press **Enter**:
 
 ``` 
-Net Use F: \\\\LON-DC1\\Labfiles\\USMT
+Net Use F: \\LON-DC1\Labfiles\USMT
 ```
 
 6.  At the command prompt, type **F:**, and then press **Enter**.
 7.  At the command prompt, type the following, and then press **Enter**:
 ```
-Scanstate \\\\LON-DC1\\Labfiles\\Install\\MigrationStore\\LON-CL2 /i:migapp.xml /i:miguser.xml /o
+Scanstate \\LON-DC1\Labfiles\Install\MigrationStore\LON-CL2 /i:migapp.xml /i:miguser.xml /o
 ```
 _**Note**: This will take several minutes to complete._
 8.  Close all open windows
@@ -32,12 +32,12 @@ _**Note**: This will take several minutes to complete._
 3.  Select **Start** and type **cmd**. Select **Run as administrator**. In the   **User Account Control** window select **Yes**
 4.  At the command prompt, type the following command, and then press **Enter**:
 ```
-Net Use F: \\\\LON-DC1\\Labfiles\\USMT
+Net Use F: \\LON-DC1\Labfiles\USMT
 ```
 5.  At the command prompt, type **F:**, and then press **Enter**.
 6.  At the command prompt, type the following, and then press **Enter**:
 ```
-Loadstate \\\\LON-DC1\\Labfiles\\Install\\MigrationStore\\LON-CL2 /i:migapp.xml /i:miguser.xml /lac:Pa55w.rd /lae
+Loadstate \\LON-DC1\Labfiles\Install\MigrationStore\LON-CL2 /i:migapp.xml /i:miguser.xml /lac:Pa55w.rd /lae
 ```
 _**Note**: This will take several minutes to complete._
 7.  Type **exit** to close the command prompt.

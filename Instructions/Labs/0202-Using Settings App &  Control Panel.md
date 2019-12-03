@@ -63,7 +63,7 @@ staff playing the presentations while on battery.
 6.  Under Preferred Plans, select **Change plan settings** next to the plan you
     created.
 
-7.  Select C**hange advanced power settings**.
+7.  Select **Change advanced power settings**.
 
 8.  Scroll down and expand the **Multimedia settings** option.
 
