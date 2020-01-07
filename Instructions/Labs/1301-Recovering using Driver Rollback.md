@@ -35,6 +35,22 @@ the issue.
 6.  Repeat the pattern to confirm, select **Finish**, and then close the
     Settings window.
 
+7.  Select **Start** and enter **Control** in the Search field.  Select **Control Panel**.
+
+8.  Select **Ease of Access**, then select **Ease of Access Center**.  On the left side, select
+    **Change sign-in settings**.
+
+9.  Check the **At sign-in** box next to the **Type without the keyboard (On-Screen Keyboard)** setting. Select **OK** and close the **Ease of Access Center** window.
+
+10.  Select **Start** and type **Local Security** in the search field. Select **Local Security Policy**. 
+
+11.  In the Local Security Policy window, on the left side, expand Local Policies, and select **Security Options**.
+
+12.  In the details view, double-click on the **Interactive Logon: Do not require CTRL+ALT+DEL** option. In the dialog box, select **Enabled** and then select **OK**.
+
+13. Close all windows.
+
+
 >   *Note: Due to the restrictions of the lab environment VMs, this process is
 >   in-place to ensure you are able to continue the lab.*
 

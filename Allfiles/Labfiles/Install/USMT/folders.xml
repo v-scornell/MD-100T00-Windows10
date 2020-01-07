@@ -5,7 +5,7 @@
     <rules>
       <include>
         <objectSet>
-          <pattern type="File">C:\<Foldername>\* [*]</pattern>
+          <pattern type="File">C:\Projects\* [*]</pattern>
         </objectSet>
       </include>
     </rules>
