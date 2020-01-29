@@ -4,7 +4,7 @@
 In this lab you will learn how to save disk space using compressed folders.
 
 ### Scenario
-You notice that on LON-CL3, the C:\Users on folder is taking quite an amount of storage. To reduce the required space you decide to compress the folder.
+You notice that on LON-CL3, the C:\\Users on folder is taking quite an amount of storage. To reduce the required space you decide to compress the folder.
  
 ### Task 1: Verify current folder size
 1.  Sign in to LON-CL3 as **LON-CL3\\Admin** with the password **Pa55w.rd**

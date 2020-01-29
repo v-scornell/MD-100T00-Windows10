@@ -18,7 +18,7 @@ Adatum is using a web based application for travel requests located at intranet.
 4.  In the Internet Explorer Address bar, type **http://intranet.adatum.com**,
     and then press **Enter**.
 5.  Verify that the website displays correctly.
-6.  Press the **ALT** key, select the **Tools menu**, and then verify that the     Enterprise Mode menu item is not visible.
+6.  Press the **ALT** key, select the **Tools menu**, and then verify that the Enterprise Mode menu item is not visible.
 7.  **Sign out**
 
 ### Task 2: Create a policy for Internet Explorer Enterprise Mode

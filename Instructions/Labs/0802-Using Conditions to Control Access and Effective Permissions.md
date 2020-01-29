@@ -5,7 +5,7 @@ In this lab you will learn how to use conditions to dynamically control access t
 
 
 ### Scenario
-IT, Marketing, and Research all use LON-CL1, but require different permissions for the data they use. You've been instructed to create two folders in E:\Data; A Research folder that can only be accessible by users in the Research Department, an IT folder that can only by accessible by US based employees in the IT group.
+IT, Marketing, and Research all use LON-CL1, but require different permissions for the data they use. You've been instructed to create two folders in E:\\Data; A Research folder that can only be accessible by users in the Research Department, an IT folder that can only by accessible by US based employees in the IT group.
 
 
 ### Task 1: Configure conditions to control access 
@@ -36,7 +36,7 @@ IT, Marketing, and Research all use LON-CL1, but require different permissions f
     permission inheritance is set to None.
 11. In the Advanced Security Settings for Research dialog box, select **Users
     (LON-CL1\\Users)**, and then select **Remove**. 
-    _**Note**: The entry for Users is now removed from the Permission entries because    it was explicitly set at this level._
+    _**Note**: The entry for Users is now removed from the Permission entries because it was explicitly set at this level._
 12. Verify that **Authenticated Users** is selected, and then select **Edit**.
 13. In the Permission Entry for Research dialog box, select **Add a condition**,
     and compose the following expression: **User department Equals Value
@@ -51,7 +51,7 @@ IT, Marketing, and Research all use LON-CL1, but require different permissions f
 16. In the Permission Entry for IT dialog box, select **Add a condition**, and
     compose the following expression: **User c Equals Value US**. You will
     need to type US manually in the last field. select **OK** three times.
-    _**Note**: A claim type for the c (country) attribute was preconfigured for the purpose of     this lab._
+    _**Note**: A claim type for the c (country) attribute was preconfigured for the purpose of this lab._
 	17. Select **OK** twice, then select **Close** to close the IT Properties window.
 
 ### Task 2: Test conditions to control access 
@@ -63,8 +63,8 @@ IT, Marketing, and Research all use LON-CL1, but require different permissions f
     and then select **Close**.
 6.  Select **Start**, type **cmd** and then select **Command Prompt**.
 7.  At the command prompt, type the following command, and then press **Enter**
-    `whoami /claims`8.  Review the output, and then **close** the command prompt.
-    _**Note**: This will show the current claims for the user. Beth has a department claim value     of IT and so she cannot connect to the Research share._
+    `whoami /claims`.  Review the output, and then **close** the command prompt.
+    _**Note**: This will show the current claims for the user. Beth has a department claim value of IT and so she cannot connect to the Research share._
 9.  In the details pane, double-click **IT**.
 10. In the details pane, right-click the **empty space**, select **New**, select
     **Text Document**, and then **type File50** as the name of the file.
@@ -80,7 +80,7 @@ IT, Marketing, and Research all use LON-CL1, but require different permissions f
 16. Select **Close**.
 17. Select **Start**, type **cmd** and then select **Command Prompt**
 18. At the command prompt, type the following command, and then press **Enter**
-    `whoami /claims`19. Review the output, and then **close** the command prompt.
+    `whoami /claims`19. Review the output, and then **close** the command prompt.
     _**Note**: Nestor has a Country claim with the value of GB, so he cannot connect
 	to the IT share, even though he is a member of the IT group._
 20. **Sign out**.
@@ -103,14 +103,14 @@ IT, Marketing, and Research all use LON-CL1, but require different permissions f
 
 ### Task 3: View effective permissions 
 1.  Switch to **LON-CL1**
-2.  In File Explorer, right-click **Marketing**, select **Properties**,     select the **Security tab**, select **Advanced**, and then select     the **Effective Access tab**.
+2.  In File Explorer, right-click **Marketing**, select **Properties**, select the **Security tab**, select **Advanced**, and then select   the **Effective Access tab**.
 3.  In the Advanced Security Settings for Marketing dialog box, select **Select a
     user**, in the Enter the object name to select (examples) box, **type
     Ernie**, select **OK**, and then select **View effective access**. View the
     effective permissions, and then select **OK** twice.
     _**Note**: As Authenticated Users have the Modify permission to the Marketing
 	folder, you can see that Ernie has the most permissions allowed._
-4.  In File Explorer, right-click **Research**, select **Properties**,     select the **Security tab**, select **Advanced**, and then
+4.  In File Explorer, right-click **Research**, select **Properties**, select the **Security tab**, select **Advanced**, and then
     select the **Effective Access tab**.
 5.  In the Advanced Security Settings for Research dialog box, select **Select a
     user**, in the Enter the object name to select (examples) text box, type

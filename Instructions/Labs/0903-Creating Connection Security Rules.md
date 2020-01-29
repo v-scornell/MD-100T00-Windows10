@@ -45,8 +45,7 @@ Your manager wants you to ensure that all network traffic between LON-CL1 and LO
 ### Task 2: Create the Connection Security Rule
 1.  On **LON-CL1** select **Start**, type **control** and select **Control Panel** in the list.  
 2.  Select **System and Security**, and then Select **Windows Defender Firewall**.  
-3.  In the left pane, select **Advanced settings**, and then select **Connection
-    Security Rules**.  
+3.  In the left pane, select **Advanced settings**, and then select **Connection Security Rules**.  
 4.  In the Actions pane, select **New Rule**.
 5.  On the Rule Type page, verify that **Isolation** is selected, and then select
     **Next**.
@@ -60,10 +59,9 @@ Your manager wants you to ensure that all network traffic between LON-CL1 and LO
     connections**, and then select **Finish**.
 10. **Close** the Windows Firewall with Advanced Security window.
 11. Switch to **LON-CL2**.
-12. In the Windows Firewall with Advanced Security window, in the left pane select    **Connection Security Rules**.
+12. In the Windows Firewall with Advanced Security window, in the left pane select **Connection Security Rules**.
 13. In the Actions pane, select **New Rule**.
-14. On the Rule Type page, verify that **Isolation is selected**, and then select
-    **Next**.
+14. On the Rule Type page, verify that **Isolation is selected**, and then select **Next**.
 15. On the Requirements page, select **Require authentication for inbound
     connections and request authentication for outbound connections**, and then
     select **Next**.
