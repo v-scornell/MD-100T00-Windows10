@@ -47,10 +47,10 @@ running and synchronization conflicts are handled.
 5.  On the **Select the server and path** page, in the **Enter a local path**
     text box, type **C:\\syncshare1**, select **Next**
 
->   **Note:** If **LON-DC1** is not listed in the **Servers** section, select
->   **Cancel**. In Server Manager, select **Refresh**, and then repeat this task,
->   beginning with step 5 and completing the remaining steps. This may take a
->   few minutes for LON-DC1 to show.
+    **Important:** If **LON-DC1** is not listed in the **Servers** section, select
+    **Cancel**. In Server Manager, select **Refresh**, and then repeat this task,
+    beginning with step 5 and completing the remaining steps. This may take a
+    few minutes for LON-DC1 to show.
 
 1.  In the New Sync Share Wizard dialog select **OK**.
 
@@ -276,8 +276,8 @@ running and synchronization conflicts are handled.
 15. Switch to **Work Folders**, and then verify that files display in the
     details pane, including **On LON-CL1** and **On LON-CL1-LON-CL1**.
 
->   **Note:** Because you modified the file at two locations, a conflict
->   occurred, and one of the copies was renamed.
+    _Note: Because you modified the file at two locations, a conflict
+    occurred, and one of the copies was renamed._
 
 1.  Sign out from LON-CL1 and LON-CL3.
 

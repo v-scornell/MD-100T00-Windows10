@@ -100,7 +100,7 @@ You decide to use AppLocker.
 2.  In the **Type here to search** box on the taskbar, type **Media Player**,
     and then select **Windows Media Player**.
 
->   **Note:** You will be unable to start Windows Media Player.
+    _Note: You will be unable to start Windows Media Player._
 
 1.  In the **This app has been blocked by your system administrator** dialog
     box, select **Close**.
@@ -118,7 +118,6 @@ You decide to use AppLocker.
 
 6.  Sign out.
 
->    
 
 **Results**: After completing this exercise, you should have configured an
 AppLocker policy to prevent users from starting Windows Media Player.

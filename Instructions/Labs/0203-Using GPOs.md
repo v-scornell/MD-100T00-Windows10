@@ -48,7 +48,8 @@ disabled. You decide to use a domain wide GPO that is scoped to LON-CL2.
 
 10. In the details pane, double-click **Interactive Logon: Message text for
     users attempting to log on**.  
-    *Note: It is just above the item from step 9.*
+    
+    _Note: It is just above the item from step 9._
 
 11. In the **Interactive Logon: Message text for users attempting to log on**
     dialog box, select the **Define this policy setting in the template** check
@@ -110,8 +111,9 @@ disabled. You decide to use a domain wide GPO that is scoped to LON-CL2.
     Corporation development and testing only! Do not use on the production
     network!" appears. Select **OK**, and then sign in as
     **Adatum\\Administrator** with the password **Pa55w.rd**.  
-    **Note:** In the rest of this lab in this module, you must select OK to
-    accept the message.
+    
+    _Note: In the rest of this lab in this module, you must select OK to
+    accept the message._
 
 7.  On the taskbar, in the **Type here to search** box, type **Services**, and
     then press **Enter**.

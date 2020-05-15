@@ -112,17 +112,20 @@ Task 2: Use a Windows PowerShell Script
     -   _Text in quotation marks is dark red._
 
 1.  Select line 3 in the script, and then select **Run selection (F8)**.  
-    *Note: Only the command in line 3 will be executed.*
+    
+    _Note: Only the command in line 3 will be executed._
 
 2.  Select **Run script (F5)**, and then read the output.  
-    *Note: The output does not have multiple colors.*
+    
+    _Note: The output does not have multiple colors._
 
 3.  At the end of line 14, type **–ForegroundColor \$color**.
 
 4.  On the toolbar, select **Run script (F5)** in the Windows PowerShell ISE
     window. Select **OK** to save the file, and then read the output.  
-    *Note: Running services are green, and services that are not running are
-    red.*
+   
+    _Note: Running services are green, and services that are not running are
+    red._
 
 5.  On line 16, type **Write-Host "A total of" \$services.count "services were
     evaluated"**.
