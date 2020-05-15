@@ -94,15 +94,16 @@ VM to an checkpoint as a backup solution in case the install fails.
 
 4.  In the Network Adapter settings, in the Virtual switch drop-down select
     "**not connected**", and then select **OK.**  
-    **Note:** *This is done to prevent Windows from updating, which would
-    lengthen the time of the lab.*
+    
+    _Note: *This is done to prevent Windows from updating, which would
+    lengthen the time of the lab._
 
 5.  In the Virtual machine area select **LON-CL5** and then select
     **Checkpoint.**  
-    **Note:** *Creation of the checkpoint may take a couple of minutes.*
+    
+    _Note: Creation of the checkpoint may take a couple of minutes._
 
-6.  Once the snapshot is created select **OK.**  
-    **Note:** *In the checkpoint area you can now see the snapshot.*
+6.  Once the snapshot is created select **OK**. In the checkpoint area you can now see the snapshot.
 
 7.  Select **Connect.**
 

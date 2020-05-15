@@ -103,9 +103,10 @@ LON-CL3 and synchronizing changes between LON-CL1, using your test Microsoft ID.
     device.*
 
 3.  Right-click the **I was here** document, and select **Free up space.**  
-    **Note:** *This will convert the file back to an online document indicated
+    
+    _Note: This will convert the file back to an online document indicated
     by the cloud symbol that needs to be downloaded on the first use. This is
-    intended to free up space on your local hard disk.*
+    intended to free up space on your local hard disk._
 
 4.  Sign out of LON-CL1 and LON-CL3.
 

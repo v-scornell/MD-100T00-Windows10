@@ -22,27 +22,25 @@ staff playing the presentations while on battery.
 
 2.  On **LON-CL3** select **Start,** and then select the **Settings** icon.
 
-3.  On **LON-CL3** select **Start**, and then select the **Settings** icon.
-
-4.  In the Settings app, select **Update & Security**, and then open the
+3.  In the Settings app, select **Update & Security**, and then open the
     **Windows Security** tab.
 
-5.  Select **Virus & threat protection**.
+4.  Select **Virus & threat protection**.
 
-6.  In Virus & threat protection select **manage settings.**
+5.  In Virus & threat protection select **manage settings.**
 
-7.  In Virus & threat protection settings, scroll down and then select **Add or
+6.  In Virus & threat protection settings, scroll down and then select **Add or
     remove exclusions.**
 
-8.  In Exclusions select **Add an exclusion** and then select **Folder**.
+7.  In Exclusions select **Add an exclusion** and then select **Folder**.
 
-9.  Browse to **C:\\UTIL** and select **Select Folder**. In the User Account
+8.  Browse to **C:\\UTIL** and select **Select Folder**. In the User Account
     Control window select **Yes**.  
     _**Note**: C:\\Util is now listed as exclusion._
 
-10. Close the Windows Security app.
+9. Close the Windows Security app.
 
-11. Close the Settings app.
+10. Close the Settings app.
 
  
 

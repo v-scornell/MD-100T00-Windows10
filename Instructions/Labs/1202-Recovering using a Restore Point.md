@@ -93,8 +93,8 @@ return to a previous working state.
 6.  On the Advanced options page, highlight **System Restore** and press
     **Enter**.
 
->   **Note:** As mouse functions may be restored, you may be able to select on
->   options instead of the keyboard.
+    _Note: As mouse functions may be restored, you may be able to select on
+    options instead of the keyboard._
 
 1.  On the System Restore page, with **Admin** highlighted, press E**nter**.
     Type **Pa55w.rd** for the password, and press **Enter**.

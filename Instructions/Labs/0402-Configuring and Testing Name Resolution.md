@@ -31,8 +31,9 @@ settings, clearing the DNS cache, and testing connections to LON-DC1.
 
 3.  At the Windows PowerShell command prompt, type **ipconfig /all** following
     and then press **Enter**.  
-    *Note: DHCP should be enabled, and the IP address of the DHCP server
-    displays. Notice the DNS server address.*
+    
+    _Note: DHCP should be enabled, and the IP address of the DHCP server
+    displays. Notice the DNS server address._
 
 4.  At the Windows PowerShell command prompt, type **ping www** following and
     then press **Enter**.
@@ -40,9 +41,7 @@ settings, clearing the DNS cache, and testing connections to LON-DC1.
 5.  At the Windows PowerShell command prompt, type **ping intranet** following
     and then press **Enter**.
 
->   *Note: While the DNS server is correct, neither address is reachable.*
-
->    
+    _Note: While the DNS server is correct, neither address is reachable._
 
 ### Task 2: View and clear the DNS resolver cache
 
@@ -58,8 +57,7 @@ settings, clearing the DNS cache, and testing connections to LON-DC1.
 4.  At the Windows PowerShell command prompt, type Clear-DnsClientCache, and
     then press **Enter**. This flushes the current DNS resolver cache.
 
->   *Note: It is not necessary to run this in addition to the preceding
->   command.*
+    _Note: It is not necessary to run this in addition to the preceding command._
 
 1.  At the Windows PowerShell command prompt, type ipconfig /displaydns, and
     then press **Enter**. This verifies that you have no entries in the cache.
@@ -77,7 +75,7 @@ settings, clearing the DNS cache, and testing connections to LON-DC1.
 3.  At the Windows PowerShell command prompt, type ipconfig /displaydns, and
     then press **Enter**.
 
->   *Note: This should display similar information to the preceding command.*
+    _Note: This should display similar information to the preceding command._
 
  
 

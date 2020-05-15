@@ -3,7 +3,7 @@
 ## Summary
 In this exercise you will learn how to create and configure firewall rules to block and allow specific service connections to a device.
 
-_Dependancy Notice: Remote Desktop must be enabled on LON-CL1 if the Remote Managment lab was not peformed._
+_Dependency Notice: Remote Desktop must be enabled on LON-CL1 if the Remote Management lab was not performed._
 
 ## Exercise 1: Creating and Testing Inbound Rules  
 

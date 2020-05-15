@@ -133,10 +133,9 @@ can be seen in the queue on LON-CL1.
     Driver](file:///\\LON-DC1\Microsoft%20PS%20Class%20Driver), select **Next**
     twice, and then select **Finish**.
 
->   **Note:** Because Beth is not a member of the Managers group, and she does
->   not have permissions to [\\\\LON-CL1\\Managers
->   Printer](file:///\\LON-CL1\Managers%20Printer), you were asked to type
->   credentials that have the appropriate permissions.
+    _Note: Because Beth is not a member of the Managers group, and she does not have permissions to [\\\\LON-CL1\\Managers
+    Printer](file:///\\LON-CL1\Managers%20Printer), you were asked to type
+    credentials that have the appropriate permissions._
 
 1.  In Devices and Printers, verify that **Microsoft PS Class Driver on
     LON-DC1** was added.
