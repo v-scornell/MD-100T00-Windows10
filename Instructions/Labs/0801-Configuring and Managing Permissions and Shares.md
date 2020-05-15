@@ -38,7 +38,7 @@ Your manager has advised you to create file shares for the Marketing and IT depa
     Modify Access. select OK twice.
 
 ### Task 3: Configure permissions for the IT and Marketing folders
-1.  On LON-CL1, in File Explorer, right-click the **IT folder**,     select **Give access to**, and then select **Specific people**.
+1.  On LON-CL1, in File Explorer, right-click the **IT folder**, select **Give access to**, and then select **Specific people**.
 2.  In the Type a name and then select Add, or select the arrow to find
     someone text box, **type IT**, and then select **Add**.
 3.  Verify that IT is added and selected. In the Permission Level
@@ -62,7 +62,7 @@ Your manager has advised you to create file shares for the Marketing and IT depa
     Sharing section, verify that Marketing is now shared as
     \\\\LON-CL1\\Marketing, and then select **Close**.
 13. Select **Start**, type **cmd** and then select **Command Prompt**.
-14. At the command prompt, type the following command, and then press enter    `net view \\\\lon-cl1`
+14. At the command prompt, type the following command, and then press enter `net view \\\\lon-cl1`
     _**Note**: This will show you all shares created on LON-CL1_
 15. **Close** the command prompt.
 15. Right-click **Start**, and then select **Computer Management.**
@@ -112,7 +112,7 @@ Your manager has advised you to create file shares for the Marketing and IT depa
     _**Note**: Bill is a member of the Marketing group, but is not a member of the IT
 	group._
 2.  Select the **File Explorer** icon on the taskbar. 
-3.  In File Explorer, in the navigation pane, expand **This PC**, expand **AllFiles (E:)**,    expand **Data**, and then select **Marketing**.
+3.  In File Explorer, in the navigation pane, expand **This PC**, expand **AllFiles (E:)**, expand **Data**, and then select **Marketing**.
 4.  In the details pane, right-click the **empty space**, select **New**, select
     **Text Document**, and then type **File10** as the name of the file.
     _**Note**: Bill has local file permissions to create a new file in the Marketing
@@ -130,10 +130,10 @@ Your manager has advised you to create file shares for the Marketing and IT depa
     _**Note**: Beth is member of the IT group, and she is not member of the Marketing
 	group._
 7.  Select the **File Explorer** icon on the taskbar.
-8.  In File Explorer, in the navigation pane, expand **This PC**,     expand **AllFiles (E:)**, expand **Data**, and then select **Marketing**.
+8.  In File Explorer, in the navigation pane, expand **This PC**, expand **AllFiles (E:)**, expand **Data**, and then select **Marketing**.
 9.  In the details pane, verify that you can see File10 that was created by
     Bill. 
-10. Right-click the **empty space**, select **New**, select **Text Document**,     and then type **File20** as the name of the file.
+10. Right-click the **empty space**, select **New**, select **Text Document**, and then type **File20** as the name of the file.
     _**Note**: April has local file permissions to create a new file in the Marketing
 	folder because you configured permissions by using the Advanced Sharing
 	feature. This modified only the share permissions, while the default local
@@ -178,12 +178,12 @@ Your manager has advised you to create file shares for the Marketing and IT depa
 13. Verify that you can see the IT and Marketing shares in the details pane.
 14. Double-click **Marketing**.
 15. Read the text in the Network Error dialog box. 
-    _**Note**: Beth is not a member of the Marketing group, so she does not have permissions    to the Marketing share._
+    _**Note**: Beth is not a member of the Marketing group, so she does not have permissions to the Marketing share._
 16. Select **Close**.
 17. In the details pane, double-click **IT**. Right-click the **empty space** in
     the details pane, select **New**, select **Text Document**, and then type
     **File40** as the name of the file. 
-    _**Note**: Beth has permissions to create a new file in the IT share because she is     a member of the IT group._
+    _**Note**: Beth has permissions to create a new file in the IT share because she is a member of the IT group._
     _**Note**: Users can connect only to shares that were shared for groups in which
 	they are members, regardless of whether they were shared by File Sharing or
 	Advanced Sharing._

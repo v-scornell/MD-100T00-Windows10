@@ -4,7 +4,7 @@
 In this lab you will learn how to migrate user settings from one computer to another using the User State Migration Tool (USMT).
 
 ### Scenario
-You have to replace the computer of one of your colleagues. He requires you to copy his user settings from the old computer, LON-CL2, to the new computer, LON-CL1. The best way to do so is using the User State Migration Tool (USMT). The USMT install files are located at \\\\LON-DC1\\Labfiles\\USMT. A location to store migration data has been provided at \\\\LON-DC1\\Labfiles\\\\Install\\MigrationStore.
+You have to replace the computer of one of your colleagues. He requires you to copy his user settings from the old computer, LON-CL2, to the new computer, LON-CL1. The best way to do so is using the User State Migration Tool (USMT). The USMT install files are located at \\\\LON-DC1\\Labfiles\\USMT. A location to store migration data has been provided at \\\\LON-DC1\\Labfiles\\Install\\MigrationStore.
 
 ### Task 1: Prepare the source computer 
 1.  Sign in to **LON-CL2** as **ADATUM\\administrator**, Password: **Pa55w.rd**
@@ -29,7 +29,7 @@ _**Note**: This will take several minutes to complete._
 1.  Switch to **LON-CL1**
 2.  Sign in to **LON-CL1** as **Adatum\\Administrator** with the password **Pa55w.rd**
 - *Notice that there is no Demofile.txt on the desktop and no OneNote icon in the taskbar.*
-3.  Select **Start** and type **cmd**. Select **Run as administrator**. In the   **User Account Control** window select **Yes**
+3.  Select **Start** and type **cmd**. Select **Run as administrator**. In the **User Account Control** window select **Yes**
 4.  At the command prompt, type the following command, and then press **Enter**:
 ```
 Net Use F: \\LON-DC1\Labfiles\USMT
