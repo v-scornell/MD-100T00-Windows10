@@ -22,7 +22,7 @@ You have installed Windows 10 to a new device, LON-CL3. To finalize the setup yo
 4.  Select **Join this device to a local Active Directory domain**.
 5.  On the Join a domain prompt, type **ADATUM** and select **Next**.
 6.  Type as Username **adatum\\administrator**, type as Password **Pa55w.rd**, and then select **OK**
-7.  In the Add account dialog enter **vera** into User account, then change the Account type to **Administrator** and select **Next**.
+7.  In the Add account dialog enter **vera** into User account.
 8.  Select **Restart now**.
 
 ### Task 3: Verifiy that device is joined properly
