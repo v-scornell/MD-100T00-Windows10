@@ -35,8 +35,9 @@ staff playing the presentations while on battery.
 7.  In Exclusions select **Add an exclusion** and then select **Folder**.
 
 8.  Browse to **C:\\UTIL** and select **Select Folder**. In the User Account
-    Control window select **Yes**.  
-    _**Note**: C:\\Util is now listed as exclusion._
+    Control window select **Yes**.
+
+    _Note: C:\\Util is now listed as exclusion._
 
 9. Close the Windows Security app.
 

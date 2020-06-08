@@ -55,7 +55,7 @@ can be seen in the queue on LON-CL1.
 ### Task 2: Configure printer security
 
 1.  On LON-CL1, in Devices and Printers, right-click **Managers Printer**,
-    select **Printer properties**, and then select the **Security** tab**.**
+    select **Printer properties**, and then select the **Security** tab.
 
 2.  In the **Managers Printer Properties** dialog box, verify that **Everyone**
     is selected, and then select **Remove**.
@@ -107,43 +107,43 @@ can be seen in the queue on LON-CL1.
 
 2.  Sign in to LON-CL2 as **Adatum\\Beth** with the password **Pa55w.rd**.
 
->   **Note**: Beth is member of the IT group, but she is not a member of the
->   Managers group.
+    _Note: Beth is member of the IT group, but she is not a member of the
+    Managers group._
 
-1.  In the taskbar, in the **Type here to search** text box, type **control**,
+3.  In the taskbar, in the **Type here to search** text box, type **control**,
     and then select **Control Panel**.
 
-2.  In Control Panel, select **View devices and printers**.
+4.  In Control Panel, select **View devices and printers**.
 
-3.  In Devices and Printers, verify that you can see **PostScript Printer**,
+5.  In Devices and Printers, verify that you can see **PostScript Printer**,
     which you added remotely in the previous task.
 
-4.  Select **Add a printer**.
+6.  Select **Add a printer**.
 
-5.  In the **Add a device** dialog box, select **The printer that I want isn’t
+7.  In the **Add a device** dialog box, select **The printer that I want isn’t
     listed**.
 
-6.  On the **Find a printer by other options** page, select **Select a shared
-    printer by name**, type [\\\\LON-CL1\\Managers
-    Printer](file:///\\LON-CL1\Managers%20Printer) in the box, and then select
+8.  On the **Find a printer by other options** page, select **Select a shared
+    printer by name**, type [**\\\\LON-CL1\\Managers
+    Printer**](file:///\\LON-CL1\Managers%20Printer) in the box, and then select
     **Next**.
 
-7.  In the **Connect to lon-cl1** dialog box, select **Cancel**. In the box,
-    type [\\\\LON-DC1\\Microsoft PS Class
-    Driver](file:///\\LON-DC1\Microsoft%20PS%20Class%20Driver), select **Next**
+9.  In the **Connect to lon-cl1** dialog box, select **Cancel**. In the box,
+    type [**\\\\LON-DC1\\Microsoft PS Class
+    Driver**](file:///\\LON-DC1\Microsoft%20PS%20Class%20Driver), select **Next**
     twice, and then select **Finish**.
 
     _Note: Because Beth is not a member of the Managers group, and she does not have permissions to [\\\\LON-CL1\\Managers
     Printer](file:///\\LON-CL1\Managers%20Printer), you were asked to type
     credentials that have the appropriate permissions._
 
-1.  In Devices and Printers, verify that **Microsoft PS Class Driver on
+10. In Devices and Printers, verify that **Microsoft PS Class Driver on
     LON-DC1** was added.
 
-2.  Right-click **Microsoft PS Class Driver on LON-DC1**, and then select **Set
+11. Right-click **Microsoft PS Class Driver on LON-DC1**, and then select **Set
     as default printer**. In the **Printers** dialog box, select **OK**.
 
-3.  Verify that the printer has a green check mark next to it, which indicates
+12. Verify that the printer has a green check mark next to it, which indicates
     that it is the default printer.
 
  
@@ -178,20 +178,17 @@ can be seen in the queue on LON-CL1.
 9.  Right-click **Untitled-Notepad**, select **Cancel**, and then select
     **Yes**.
 
->   **Note**: You now have canceled Beth’s print job.
+    _Note: You now have canceled Beth’s print job._
 
-1.  Sign out from LON-CL2.
+10. Sign out from LON-CL2.
 
-2.  Switch to LON-CL1.
+11. Switch to LON-CL1.
 
-3.  On LON-CL1, in Print Management, verify that there are no longer any
+12. On LON-CL1, in Print Management, verify that there are no longer any
     printers listed under the **Printers With Jobs** node.
 
-4.  Close all open windows
+13. Close all open windows
 
->    
-
->    
 
 **Results**: After completing this exercises you will have performed basic
 printer configuration like adding and sharing a local printer, configuring
