@@ -36,8 +36,8 @@ two devices. You've decided to use a new Microsoft Account to do this.
 7.  Create a Microsoft account with the following values, and then select
     **Next**:
 
-    -   New email: Your first name *+ L*ast name’s first letter (for example,
-        KariT) + **MD100**
+    -   *New email: Your first name + Last name’s first letter (for example,
+        KariT) + **MD100***
 
     -   *First name: Your first name*
 
@@ -53,31 +53,28 @@ two devices. You've decided to use a new Microsoft Account to do this.
 
     -   *Year: 1990*
 
->   *Note: If you select a country or region other than the United States, the
->   birth date boxes do not appear. This is expected behavior, and you do not
->   need to enter a birth date in this scenario.*
+    _Note: If you select a country or region other than the United States, the
+birth date boxes do not appear. This is expected behavior, and you do not
+need to enter a birth date in this scenario._
 
->    
-
-1.  If the **Add Security Info** page appears, type your mobile phone number,
+8.  If the **Add Security Info** page appears, type your mobile phone number,
     and then select **Send code**. When you receive the code, type it in the
     **Enter the access code** box and select **Next**.
 
->   *Note: On the Add Security Info page, you must use your real mobile phone
->   number to receive the verification code.*
+    _Note: On the Add Security Info page, you must use your real mobile phone
+number to receive the verification code._
 
->   *Note: It will take a few minutes to create your profile.*
+    _Note: It will take a few minutes to create your profile._
 
-1.  **Sign out.**
+9.  Sign out.
 
->    
 
 ### Task 2: Sign in and personalize the device
 
 1.  Sign in to **LON-CL1** as *Your first name + Last name’s first
     letter***MD100\@outlook.com** with the password **Pa55w.rd123**.
 
-2.  On the **Create a PIN** page select **Next .**
+2.  On the **Create a PIN** page select **Next**.
 
 3.  Enter a **4-digit PIN** that you will remember into both fields and select
     **OK.**
@@ -140,20 +137,20 @@ two devices. You've decided to use a new Microsoft Account to do this.
 
 10. In the **Password** box, type **Pa55w.rd123**, and then press Enter.
 
->   *Note: It will take a few minutes to build the profile.*
+    _Note: It will take a few minutes to build the profile._
 
-1.  On the **Create a PIN** page select **Next**
+11.  On the **Create a PIN** page select **Next**
 
-2.  Enter a **4-digit PIN** that you will remember into both fields and select
+12.  Enter a **4-digit PIN** that you will remember into both fields and select
     **OK**
 
-3.  On the **Backup your files with OneDrive** page, select **Next**.
+13.  On the **Backup your files with OneDrive** page, select **Next**.
 
-4.  On the **Choose privacy settings for your device** page , select **Accept**.
+14.  On the **Choose privacy settings for your device** page , select **Accept**.
 
-5.  Verify the colors match the settings on LON-CL1.
+15.  Verify the colors match the settings on LON-CL1.
 
-6.  Open **Microsoft Edge** and select the **Favorites** icon. Verify the
+16.  Open **Microsoft Edge** and select the **Favorites** icon. Verify the
     Microsoft Learn website is in the list.  
      
 

@@ -7,7 +7,7 @@ ensure that you have correctly configured the Windows 10 devices for name
 resolution. Then you must test the name resolution process.
 
 _Dependency Notice: Task 5 of this lab must be performed to be able to complete
-an upcoming lab,*_ Configuring Internet Explorer Enterprise Mode.
+an upcoming lab, Configuring Internet Explorer Enterprise Mode._
 
  
 
@@ -16,10 +16,10 @@ an upcoming lab,*_ Configuring Internet Explorer Enterprise Mode.
 ### Scenario
 
 Your colleagues report repeatedly issues when trying to open web sites or
-connect to services such as [www.adatum.com](http://www.adatum.com) or
-intranet.adatum.com, which are both hosted on LON-CL1. You presume an issue with
-the name resolution and conduct some testing, including checking the DNS
-settings, clearing the DNS cache, and testing connections to LON-DC1.
+connect to services such as www.adatum.com or intranet.adatum.com, which
+are both hosted on LON-CL1. You presume an issue with the name resolution
+and conduct some testing, including checking the DNS settings, clearing
+the DNS cache, and testing connections to LON-DC1.
 
 
 ### Task 1: Verify current DNS settings on the client
@@ -29,51 +29,94 @@ settings, clearing the DNS cache, and testing connections to LON-DC1.
 
 2.  Right-click **Start**, and then select **Windows PowerShell (Admin)**.
 
-3.  At the Windows PowerShell command prompt, type **ipconfig /all** following
+3.  At the Windows PowerShell command prompt, type the following command,
     and then press **Enter**.  
     
+    ```
+    ipconfig /all
+    ````
+
     _Note: DHCP should be enabled, and the IP address of the DHCP server
     displays. Notice the DNS server address._
 
-4.  At the Windows PowerShell command prompt, type **ping www** following and
-    then press **Enter**.
-
-5.  At the Windows PowerShell command prompt, type **ping intranet** following
+4.  At the Windows PowerShell command prompt, type the following command,
     and then press **Enter**.
+
+    ```
+    ping www
+    ```
+
+5.  At the Windows PowerShell command prompt, type the following command,
+    and then press **Enter**.
+
+    ```
+    ping intranet
+    ```
 
     _Note: While the DNS server is correct, neither address is reachable._
 
 ### Task 2: View and clear the DNS resolver cache
 
-1.  At the Windows PowerShell command prompt, type ipconfig /displaydns, and
-    then press **Enter**. This displays the current DNS resolver cache. 
+1.  At the Windows PowerShell command prompt, type the following command,
+    and then press **Enter**. This displays the current DNS resolver cache.
 
-2.  At the Windows PowerShell command prompt, type Get-DnsClientCache, and then
-    press **Enter**. This displays the current DNS resolver cache.
+    ```
+    ipconfig /displaydns
+    ```
 
-3.  At the Windows PowerShell command prompt, type ipconfig /flushdns, and then
-    press **Enter**. This flushes the current DNS resolver cache.
+2.  At the Windows PowerShell command prompt, type the following command,
+    and then press **Enter**. This displays the current DNS resolver cache.
 
-4.  At the Windows PowerShell command prompt, type Clear-DnsClientCache, and
-    then press **Enter**. This flushes the current DNS resolver cache.
+    ```
+    Get-DnsClientCache
+    ```
+
+3.  At the Windows PowerShell command prompt, type the following command,
+    and then press **Enter**. This flushes the current DNS resolver cache.
+
+    ```
+    ipconfig /flushdns
+    ```
+
+4.  At the Windows PowerShell command prompt, type the following command,
+    and then press **Enter**. This flushes the current DNS resolver cache.
+
+    ```
+    Clear-DnsClientCache
+    ```
 
     _Note: It is not necessary to run this in addition to the preceding command._
 
-1.  At the Windows PowerShell command prompt, type ipconfig /displaydns, and
-    then press **Enter**. This verifies that you have no entries in the cache.
+5.  At the Windows PowerShell command prompt, type the following command,
+    and then press **Enter**. This verifies that you have no entries in the cache.
 
+    ```
+    ipconfig /displaydns
+    ```
  
 
 ### Task 3: Test name resolution
 
-1.  At the Windows PowerShell command prompt, type test-connection lon-dc1, and
-    then press **Enter**.
+1.  At the Windows PowerShell command prompt, type the following command,
+    and then press **Enter**.
 
-2.  At the Windows PowerShell command prompt, type Get-DnsClientCache \| fl, and
-    then press **Enter**.
+    ```
+    Test-Connection lon-dc1
+    ```
 
-3.  At the Windows PowerShell command prompt, type ipconfig /displaydns, and
-    then press **Enter**.
+2.  At the Windows PowerShell command prompt, type the following command,
+    and then press **Enter**.
+
+    ```
+    Get-DnsClientCache | Format-List
+    ```
+
+3.  At the Windows PowerShell command prompt, type the following command,
+    and then press **Enter**.
+
+    ```
+    ipconfig /displaydns
+    ```
 
     _Note: This should display similar information to the preceding command._
 
@@ -97,29 +140,45 @@ functionality.
 
 ### Task 1: Create and test a hosts file entry
 
-1.  At the Windows PowerShell command prompt, type notepad
-    C:\\windows\\system32\\drivers\\etc\\hosts, and then press Enter.
+1.  At the Windows PowerShell command prompt, type the following command,
+    and then press Enter.
 
-2.  Scroll to the end of the file, type **172.16.0.10 www**, and then press
+    ```
+    notepad C:\windows\system32\drivers\etc\hosts
+    ```
+
+2.  Scroll to the end of the file, type the following, and then press
     **Enter**.
+
+    ```
+    172.16.0.10 www
+    ```
 
 3.  Select **File**, and then select **Save**.
 
 4.  Close Notepad.
 
-5.  At the Windows PowerShell command prompt, type test-connection www, and then
-    press **Enter**.
+5.  At the Windows PowerShell command prompt, type the following command,
+    and then press **Enter**.
 
-6.  At the Windows PowerShell command prompt, type Get-DnsClientCache \| fl, and
-    then press **Enter**.
+    ```
+    Test-Connection www
+    ```
+
+6.  At the Windows PowerShell command prompt, type the following command,
+    and then press **Enter**.
+
+    ```
+    Get-DnsClientCache | Format-List
+    ```
 
 7.  View the www record in the cache.
 
 8.  Leave PowerShell open.
 
->    
 
-### Task 2: Add a DNS record 
+
+### Task 2: Add a DNS record
 
 1.  Sign in to **LON-DC1** as **Adatum\\Administrator** with the password
     **Pa55w.rd**.
@@ -139,41 +198,65 @@ functionality.
 
 8.  Switch to **LON-CL1**.
 
-9.  In the PowerShell window, type nslookup intranet and press **Enter**.
+9.  In the PowerShell window, type the following command, and press **Enter**.
+
+    ```
+    nslookup intranet
+    ```
 
 10. Verify intranet.Adatum.com is resolving to lon-dc1.Adatum.com.
 
->    
+
 
 ### Task 3: Troubleshoot name resolution
 
-1.  At the Windows PowerShell command prompt, type nslookup www, and then press
-    **Enter**.
+1.  At the Windows PowerShell command prompt, type the following command,
+    and then press **Enter**.
 
->   *Note: nslookup does not find the entry as it's only a host entry whereas
->   ping is working. To fix DNS issues, using hosts entries might only be a
->   local workaround.*
+    ```
+    nslookup www
+    ```
 
-1.  At the Windows PowerShell command prompt, type nslookup LON-DC1, and then
-    press **Enter**.
+    _Note: nslookup does not find the entry as it's only a host entry whereas
+    ping is working. To fix DNS issues, using hosts entries might only be a
+    local workaround._
 
-2.  At the Windows PowerShell command prompt, type Resolve-Dnsname LON-DC1 \|
-    fl, and then press **Enter**.
+2.  At the Windows PowerShell command prompt, type the following command,
+    and then press **Enter**.
 
-3.  At the Windows PowerShell command prompt, type nslookup –debug LON-DC1 \>
-    file.txt, and then press **Enter**.
+    ```
+    nslookup LON-DC1
+    ```
 
-4.  At the Windows PowerShell command prompt, type notepad file.txt, and then
-    press **Enter**.
+3.  At the Windows PowerShell command prompt, type the following command,
+    and then press **Enter**.
 
-5.  Review the information. Note that you might have to scroll to the section
+    ```
+    Resolve-Dnsname LON-DC1 | Format-List
+    ````
+
+4.  At the Windows PowerShell command prompt, type the following command,
+    and then press **Enter**.
+
+    ```
+    nslookup -debug LON-DC1 > file.txt
+    ```
+
+5.  At the Windows PowerShell command prompt, type the following command,
+    and then press **Enter**.
+
+    ```
+    notepad file.txt
+    ```
+
+6.  Review the information. Note that you might have to scroll to the section
     starting with **Got answer**.
 
-6.  What was the question that was asked of the DNS server?
+7.  What was the question that was asked of the DNS server?
 
     -   QUESTIONS: lon-dc1.Adatum.com, type = A, class = IN
 
-7.  What was the response?
+8.  What was the response?
 
     -   ANSWERS: lon-dc1.Adatum.com
 
@@ -181,17 +264,16 @@ functionality.
 
     -   ttl = 3600 (1 hour)
 
-8.  How long will the record be cached?
+9.  How long will the record be cached?
 
     -   1 hour
 
-9.  What is the fully qualified domain name (FQDN) for the primary name server?
+10. What is the fully qualified domain name (FQDN) for the primary name server?
 
     -   lon-dc1.Adatum.com
 
-10. Close all open windows.
+11. Close all open windows.
 
->    
 
 **Results**: After completing this exercise you have added an entry in host
 file, created a DNS record, and tested the name resolution in windows.

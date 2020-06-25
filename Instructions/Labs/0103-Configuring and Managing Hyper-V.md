@@ -20,9 +20,9 @@ VM to an checkpoint as a backup solution in case the install fails.
 1.  Sign in to **LON-HOST1** as **ADATUM\\Administrator** with the password
     **Pa55w.rd.**
 
-2.  In the taskbar select the **Hyper V Manager** icon.
+2.  In the taskbar select the **Hyper-V Manager** icon.
 
-3.  In the Hyper V Manager window select **New**, and then select **Virtual
+3.  In the Hyper-V Manager window select **New**, and then select **Virtual
     Machine**.
 
 4.  In the New Virtual Machine Wizard window select **Next**, then enter
@@ -41,7 +41,7 @@ VM to an checkpoint as a backup solution in case the install fails.
 
 ### Task 2: Add an ISO file to a VM
 
-1.  In Hyper-V Manager, select LON-TEST.
+1.  In Hyper-V Manager, select **LON-TEST**.
 
 2.  In the Actions pane, select **Settings**.
 
@@ -51,15 +51,14 @@ VM to an checkpoint as a backup solution in case the install fails.
 
 5.  In the Location drop-down, select a location number not already in use.
 
-6.  In the Media area, select the Image file option, and select **Browse**.
+6.  In the Media area, select the **Image file** option, and select **Browse**.
 
-7.  Browse to **C:\\Labfiles**, select **Windows.is**o and select **Open**.
+7.  Browse to **C:\\Labfiles**, select **Windows.iso** and select **Open**.
 
 8.  Select **OK** to close the Settings window.
 
-9.  Right-click on LON-TEST and select **Start**.
+9.  Right-click on **LON-TEST** and select **Start**.
 
->    
 
 ### Task 3: Managing virtual machine settings with PowerShell
 
@@ -68,39 +67,43 @@ VM to an checkpoint as a backup solution in case the install fails.
 2.  At the PowerShell window, type the following command and then press
     **Enter**:
 
->   Get-VM LON-Test \| Set-VMMemory -StartUpBytes 2GB
+```
+Get-VM LON-Test | Set-VMMemory -StartUpBytes 2GB
+```
 
-1.  Confirm that for LON-Test the StartUpBytes is now set to 2GB.
+3.  Confirm that for LON-Test the StartUpBytes is now set to 2GB.
 
-2.  At the PowerShell window, type the following command and then press
+4.  At the PowerShell window, type the following command and then press
     **Enter**:
 
->   Get-VM LON-Test \| Add-VMNetworkAdapter -SwitchName "External Network"
+```
+Get-VM LON-Test | Add-VMNetworkAdapter -SwitchName "External Network"
+```
 
-1.  Confirm that LON-Test has now an additional network adapter that is
+5.  Confirm that LON-Test has now an additional network adapter that is
     connected to the virtual switch "External Network".
 
-2.  Close the PowerShell window.
+6.  Close the PowerShell window.
 
  
 
 ### Task 4: Creating a snapshot
 
-1.  Switch to the Hyper V Manager window.
+1.  Switch to the Hyper-V Manager window.
 
 2.  In the Virtual machine area select **LON-CL5** and then select **Settings.**
 
 3.  In the navigation area select **Network Adapter.**
 
 4.  In the Network Adapter settings, in the Virtual switch drop-down select
-    "**not connected**", and then select **OK.**  
-    
-    _Note: *This is done to prevent Windows from updating, which would
+    "**Not connected**", and then select **OK**.
+
+    _Note: This is done to prevent Windows from updating, which would
     lengthen the time of the lab._
 
 5.  In the Virtual machine area select **LON-CL5** and then select
-    **Checkpoint.**  
-    
+    **Checkpoint.**
+
     _Note: Creation of the checkpoint may take a couple of minutes._
 
 6.  Once the snapshot is created select **OK**. In the checkpoint area you can now see the snapshot.
@@ -128,9 +131,8 @@ VM to an checkpoint as a backup solution in case the install fails.
 
 16. Close all open windows.
 
- 
 
-**Results:** After finishing the exercise you have created a Hyper V virtual
+**Results:** After finishing the exercise you have created a Hyper-V virtual
 machine and managed its settings.
 
 **END OF LAB**

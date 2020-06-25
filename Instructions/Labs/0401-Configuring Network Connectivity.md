@@ -9,6 +9,7 @@ Windows 10 device.
 ## Exercise 1: Verifying and Testing IPv4 Settings
  
 ### Scenario
+
 Before delivering the first batch of Windows 10 devices to your users, you
 decide to test them on a secure test network. You have installed on LON-DC1 a
 domain controller and deployed the DHCP and DNS Server roles within the test
@@ -26,8 +27,8 @@ devices.
 
 3.  Scroll down, and select **Network and Sharing Center**.
 
-4.  In **Network and Sharing Center**, to the right of the **Adatum.com Domain**
-    network, select **Ethernet**.
+4.  In **Network and Sharing Center**, to the right of the **Adatum.com Domain
+    network**, select **Ethernet**.
 
 5.  In the **Ethernet Status** dialog box, select **Details**. This window
     displays the same configuration information for this adapter as would the
@@ -49,10 +50,10 @@ devices.
 9.  Select **Internet Protocol Version 4 (TCP/IPv4)**, and then Select
     **Properties**.
 
->   **Note**: You can configure the IP address, subnet mask, default gateway,
->   and Domain Name System (DNS) servers in this window.
+    _Note: You can configure the IP address, subnet mask, default gateway,
+    and Domain Name System (DNS) servers in this window._
 
-1.  Close all open windows without modifying any settings.
+10. Close all open windows without modifying any settings.
 
  
 
@@ -61,57 +62,76 @@ devices.
 1.  Right-click **Start**, and then select **Windows PowerShell (Admin)**.
 
 2.  At the Windows PowerShell command prompt, type following command, and then
-    press **Enter**.  
-    Get-NetIPAddress  
-    **Note**: The IPv4 address from the Ethernet interface should match what you
-    recorded earlier.
+    press **Enter**.
+
+    ```
+    Get-NetIPAddress
+    ```
+
+    _Note: The IPv4 address from the Ethernet interface should match what you
+    recorded earlier._
 
 3.  At the Windows PowerShell command prompt, type the following command, and
-    then press **Enter**.  
+    then press **Enter**.
+
+    ```
     netsh interface ipv4 show config
+    ```
 
->   **Note**: The current IPv4 configuration is displayed and should match what
->   you recorded earlier.
+    _Note: The current IPv4 configuration is displayed and should match what
+    you recorded earlier._
 
-1.  At the Windows PowerShell command prompt, type the following command, and
+4.  At the Windows PowerShell command prompt, type the following command, and
     then press Enter.
 
->   ipconfig /all
+    ```
+    ipconfig /all
+    ```
 
->   **Note**: Again, the information should match what you recorded earlier.
+    _Note: Again, the information should match what you recorded earlier._
 
-1.  Leave the **Administrator: Windows PowerShell** window open.
+5.  Leave the **Administrator: Windows PowerShell** window open.
 
  
 
 ### Task 3: Test connectivity
 
-1.  At the Windows PowerShell command prompt, type test-connection LON-DC1, and
+1.  At the Windows PowerShell command prompt, type the following command, and
     then press **Enter**.
 
-2.  At the Windows PowerShell command prompt, type netstat -n, and then press
+    ```
+    Test-Connection LON-DC1
+    ```
+
+2.  At the Windows PowerShell command prompt, type type the following command, and then press
     **Enter**.
+
+    ```
+    netstat -n
+    ```
 
 3.  Observe and describe the active connections to 172.16.0.10.
 
->   **Note**: Most connections to services are transient.
+    _Note: Most connections to services are transient._
 
-1.  If no connections appear, create a connection. To create a connection, in
-    the Type here to search box, type [\\\\LON-DC1](file:///\\LON-DC1), and then
+4.  If no connections appear, create a connection. To create a connection, in
+    the Type here to search box, type [**\\\\LON-DC1**](file:///\\LON-DC1), and then
     press Enter.
 
-2.  In File Explorer, double-click netlogon.
+5.  In File Explorer, double-click **NETLOGON**.
 
-3.  At the Windows PowerShell command prompt, type netstat -n, and then press
+6.  At the Windows PowerShell command prompt, type the following command, and then press
     **Enter**.
 
-4.  Identify the services that LON-CL1 had connections to on LON-DC1.
+    ```
+    netstat -n
+    ```
 
->    
+7.  Identify the services that LON-CL1 had connections to on LON-DC1.
+
 
 **Results**: After completing this exercise you have verified the IP4 settings
 of a windows device.
-
  
 
 ### Scenario 2
@@ -158,32 +178,46 @@ obtained DHCP lease on the DHCP server LON-DC1.
 12. At the Windows PowerShell command prompt type the following command, and
     then press **Enter**.
 
->   ipconfig /all
+    ```
+    ipconfig /all
+    ```
 
-1.  Verify that the IPv4 address is obtained from DHCP.
+13. Verify that the IPv4 address is obtained from DHCP.
 
  
 
 ### Task 2: Test connectivity
 
-1.  At the Windows PowerShell command prompt, type test-connection LON-DC1, and
+1.  At the Windows PowerShell command prompt, type type the following command, and
     then press **Enter**.
 
-2.  At the Windows PowerShell command prompt, type netstat -n, and then press
+    ```
+    Test-Connection LON-DC1
+    ```
+
+2.  At the Windows PowerShell command prompt, type the following command, and then press
     **Enter**.
+
+    ```
+    netstat -n
+    ```
 
 3.  Observe and describe the active connections to 172.16.0.10.
 
->   **Note**: Most connections to services are transient.
+    _Note: Most connections to services are transient._
 
 1.  Note that no connections display. To create a connection, in the **Type here
-    to search** box, type [\\\\LON-DC1](file:///\\LON-DC1), and then press
+    to search** box, type [**\\\\LON-DC1**](file:///\\LON-DC1), and then press
     Enter.
 
-2.  In **File Explorer**, double-click **netlogon**.
+2.  In **File Explorer**, double-click **NETLOGON**.
 
-3.  At the Windows PowerShell command prompt, type netstat -n, and then press
+3.  At the Windows PowerShell command prompt, type type the following command, and then press
     **Enter**.
+
+    ```
+    netstat -n
+    ```
 
 4.  Identify the services that **LON-CL1** had connections to on **LON-DC1**.
 
@@ -208,7 +242,6 @@ obtained DHCP lease on the DHCP server LON-DC1.
 
 6.  Close the DHCP window.
 
->    
 
 **Results**: After completing this exercise you have configured the IP4 settings
 of a windows device to use DHCP.
