@@ -2,7 +2,7 @@
 
 ## Summary
 
-To prevent specific users from using to much disk space disk quota can be
+To prevent specific users from using too much disk space disk quota can be
 established.
 
 ### Scenario
