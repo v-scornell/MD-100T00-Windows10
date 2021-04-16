@@ -121,11 +121,11 @@ _Note: This will install the Telnet Client windows feature._
 
 2. In the content pane, double-click the **Configure** folder.
 
-3. Copy the **Services.ps1** file into the **C:\\Labfiles** folder on SEA-CL1.
+3. Copy the **Services.ps1** file into the **E:\\Labfiles** folder on SEA-CL1.
 
 4. Select **Start** and type **Powershell ISE**. Press **Enter**.
 
-5. In the Windows PowerShell ISE, open the script file **C:\\Labfiles\\Services.ps1**.
+5. In the Windows PowerShell ISE, open the script file **E:\\Labfiles\\Services.ps1**.
 
 6. Read the script, and then note what the script is doing, according to the following note.
 
@@ -172,7 +172,7 @@ _Note: This will install the Telnet Client windows feature._
 18. At the PowerShell window, type the following command and then press **Enter**:
 
 ```
-Set-Location C:\Labfiles
+Set-Location E:\Labfiles
 ```
 
 13. At the PowerShell window, type the following and then press **Enter**:
@@ -212,15 +212,15 @@ You need to ensure that all Windows 10 devices contain the Contoso utilities app
 2. At the PowerShell window, type the following command and then press **Enter**:
 
 ```
-Export-StartLayout -UseDesktopApplicationID -Path C:\Labfiles\ContosoLayout.xml
+Export-StartLayout -UseDesktopApplicationID -Path E:\Labfiles\ContosoLayout.xml
 ```
 
-3. Open **File Explorer** and then browse to **C:\\Labfiles**.
+3. Open **File Explorer** and then browse to **E:\\Labfiles**.
 4. Right-click **ContosoLayout.xml**, point to **Open with** and then select **Notepad**.
 5. At the first instance of **\<DefaultLayoutOverride>**, type the following:
 
 ```
-<DefaultLayoutOverride LayoutCustomizationRestrictionType="OnlySpecifiedGroups"
+<DefaultLayoutOverride LayoutCustomizationRestrictionType="OnlySpecifiedGroups">
 ```
 
 6. Save the **ContosoLayout.xml** file and then close Notepad.
@@ -229,7 +229,7 @@ Export-StartLayout -UseDesktopApplicationID -Path C:\Labfiles\ContosoLayout.xml
 ### Task 3: Deploy the Start layout using Group Policy
 
 1. Sign in to SEA-CL1 as **Contoso\\Administrator** with the password of **Pa55w.rd**.
-2. Open **File Explorer** and then browse to **C:\\Labfiles**.
+2. Open **File Explorer** and then browse to **E:\\Labfiles**.
 3. Right-click **ContosoLayout.xml**, and then Copy the file.
 4. In the Address bar, browse to **\\\\SEA-DC1\\Netlogon**.
 5. Paste **ContosoLayout.xml** into the **Netlogon** folder and then close File Explorer.

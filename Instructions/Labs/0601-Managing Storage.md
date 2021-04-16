@@ -59,15 +59,15 @@ You need to add storage to SEA-WS2. Additional disks have been installed and you
 
 ### Task 4: Extend a simple volume
 
-1.  In Disk Management, right-click **Data (E:)**, and then select **Extend Volume**.
+1.  In Disk Management, right-click **Data (F:)**, and then select **Extend Volume**.
 2.  In the Extend Volume Wizard window, select **Next**.
 3.  On the Select Disks page, next to Select the amount of space in MB, type **8192**, and then select **Next**.
-4.  On the Completing the Extend Volume Wizard page, select **Finish**. Notice that Drive E is now 13 GB in size.
+4.  On the Completing the Extend Volume Wizard page, select **Finish**. Notice that Drive F is now 13 GB in size.
 
 ### Task 5: Shrink a simple volume
 
 1.  In Disk Management, right-click **(F:)**, and then select **Shrink Volume**.
-2.  On the Shrink F: page, next to Select the amount of space to shrink in MB, type **2048**, and then select **Shrink**. Notice that Drive F is now 3 GB in size.
+2.  On the Shrink F: page, next to Select the amount of space to shrink in MB, type **2048**, and then select **Shrink**. Notice that Drive F is now 11 GB in size.
 3.  Close all open windows and sign out of SEA-WS2.
 
 **Results:** After completing this exercise, you will have managed local disk storage using Disk Management and Windows PowerShell.
