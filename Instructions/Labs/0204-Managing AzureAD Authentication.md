@@ -77,6 +77,11 @@ You have a new Windows 10 device that you would like to join to your Azure AD te
 6.  Select **Yes** to confirm and then in the **Disconnect from the organization** box, select **Disconnect**.
 7.  On the **Windows Security** page, enter **Admin** with the password of **Pa55w.rd**. Select **OK**.
 8.  Select **Restart now** to restart SEA-WS3.
+=======
+4.  Select the the **Connected to Contoso's Azure AD** object and then select **Disconnect**.
+5.  Select **Yes** to confirm and then in the **Disconnect from the organization** box, select **Disconnect**.
+6.  On the **Windows Security** page, enter **Admin** with the password of **Pa55w.rd**. Select **OK**.
+7.  Select **Restart now** to restart SEA-WS3.
 
 **Results**: After completing this exercise you have successfully created a new user and joined a Windows 10 device to an Azure AD tenant.
 
