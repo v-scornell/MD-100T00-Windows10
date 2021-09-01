@@ -153,7 +153,7 @@ You need to configure UAC so that when the UAC dialog box prompts a standard use
 
 3.  In Control Panel, select **System and Security**.
 
-4.  In **System and Maintenance**, select **Change User Account Control settings**.
+4.  In **Security and Maintenance**, select **Change User Account Control settings**.
 
 5.  Verify that the slider is configured for **Always notify**.
 
