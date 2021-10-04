@@ -20,15 +20,14 @@ You need to use Windows Settings to validate protection settings, device specifi
 5.  Select **Multitasking**. In the Multitasking page, under **Timeline** disable the **Show suggestions in your timeline** option.
 6.  Select **Home**.
 7.  In **Windows Settings**, select **Apps**, and then select **Apps & features**. Take note of the Apps & features installed on the device.
-8.  Select **Startup**. Take note of the apps that are configured to start when you sign in to the device. Notice that Microsoft OneDrive has a high impact to the startup of the device.
-9.  In the **Startup** page, disable the **Microsoft OneDrive** option. This will prevent OneDrive from starting automatically.
-10.  Select **Home**.
-11.  Close **Windows Settings**. 
+8.  Select **Startup**. Take note of the apps that are configured to start when you sign in to the device. 
+9.  Select **Home**.
+10.  Close **Windows Settings**. 
 
 ### Task 2: Using Control Panel
 
 1.  Select **Start** and type **Control Panel**. Press **Enter**.
-2.  In the Control Panel window, select **Hardware and Sound** and then select **Power Options**.
+2.  In the Control Panel window, select **Hardware** and then select **Power Options**.
 3.  Select **Create a power plan.**
 4.  In the **Plan name** box, enter **Power Save - Presentation** and select **Next**.
 5.  Select **Create**.
@@ -60,7 +59,7 @@ You need to use Windows PowerShell to test the scripting environment. To become 
 Get-ExecutionPolicy
 ```
 
-4.  Confirm the current setting of the PowerShell execution policy is set to **Restricted.**
+4.  Confirm the current setting of the PowerShell execution policy is set to **Unrestricted**.
 
 5.  If the execution policy is set to **Restricted**, change it to **Unrestricted** by running the following command at the PowerShell window:
 
@@ -143,7 +142,7 @@ _Note: This will install the Telnet Client windows feature._
 
    _Note: The output does not have multiple colors._
 
-9. At the end of line 14, type **–ForegroundColor \$color**
+9. At the end of line 14, type **–ForegroundColor $color**
 
 10. On the toolbar, select **Run script (F5)** in the Windows PowerShell ISE window. Select **OK** to save the file, and then read the output.
 
@@ -175,13 +174,13 @@ _Note: This will install the Telnet Client windows feature._
 Set-Location E:\Labfiles
 ```
 
-13. At the PowerShell window, type the following and then press **Enter**:
+19. At the PowerShell window, type the following and then press **Enter**:
 
 ```
 .\Services.ps1
 ```
 
-14. Close all open windows and sign out of SEA-CL1.
+20. Close all open windows and sign out of SEA-CL1.
 
 **Results:** After completing the exercise you have learned how to manage Windows 10 using PowerShell and PowerShell scripts.
 
@@ -217,7 +216,7 @@ Export-StartLayout -UseDesktopApplicationID -Path E:\Labfiles\ContosoLayout.xml
 
 3. Open **File Explorer** and then browse to **E:\\Labfiles**.
 4. Right-click **ContosoLayout.xml**, point to **Open with** and then select **Notepad**.
-5. At the first instance of **\<DefaultLayoutOverride>**, type the following:
+5. At the first instance of **DefaultLayoutOverride**, type the following:
 
 ```
 <DefaultLayoutOverride LayoutCustomizationRestrictionType="OnlySpecifiedGroups">
@@ -231,7 +230,7 @@ Export-StartLayout -UseDesktopApplicationID -Path E:\Labfiles\ContosoLayout.xml
 1. Sign in to SEA-CL1 as **Contoso\\Administrator** with the password of **Pa55w.rd**.
 2. Open **File Explorer** and then browse to **E:\\Labfiles**.
 3. Right-click **ContosoLayout.xml**, and then Copy the file.
-4. In the Address bar, browse to **\\\\SEA-DC1\\Netlogon**.
+4. In the Address bar, browse to **\\\\SEA-DC1\\Netlogon**. In the **Windows Security** window, sign in as **Contoso\\Administrator** with the password of **Pa55w.rd**.
 5. Paste **ContosoLayout.xml** into the **Netlogon** folder and then close File Explorer.
 6. Sign out of SEA-CL1.
 7. Switch to SEA-SVR1.

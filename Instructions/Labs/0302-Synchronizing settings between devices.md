@@ -12,7 +12,7 @@ You frequently use two devices, SEA-WS1 and SEA-WS2, and would like to ensure th
 
 ### Task 1: Connect your Microsoft account to SEA-WS1 and SEA-WS2
 
-1.  Sign in to **SEA-WS1** as **Student** with the password **Pa55w.rd**.
+1.  Sign in to **SEA-WS1** as **.\Student** with the password **Pa55w.rd**.
 2.  Select **Start** and then select **Settings**.
 3.  In the **Windows Settings** page, select **Accounts**.
 4.  On the **Accounts** page, select **Your info**. 
@@ -45,7 +45,7 @@ You frequently use two devices, SEA-WS1 and SEA-WS2, and would like to ensure th
 13.  In the address bar, select the **Add this page to favorites** button to save as a favorite.
 14.  Ensure that the **Folder options** shows **Favorites bar**, and then select **Done**.
 15.  Select the  **Favorites** button, select **More options**, and then select **Show favorites bar**. 
-16.  Select **Always** and then select **Done**.
+16.  Select **Always**.
 17.  Close **Microsoft Edge**.
 18.  Sign out of SEA-WS1. 
 

@@ -37,7 +37,7 @@ You have been delegated the task to configure the domain password policy for Con
 
 ### Task 2: Refresh GPOs
 
-1.  On LON-DC1, right-click **Start**, and then select **Windows PowerShell (Admin)**.
+1.  On SEA-SVR1, right-click **Start**, and then select **Windows PowerShell (Admin)**.
     
 2.  In the Administrator: Windows PowerShell window, type the following command, and then press **Enter**:
     
@@ -153,7 +153,7 @@ You need to configure UAC so that when the UAC dialog box prompts a standard use
 
 3.  In Control Panel, select **System and Security**.
 
-4.  In **System and Maintenance**, select **Change User Account Control settings**.
+4.  In **Security and Maintenance**, select **Change User Account Control settings**.
 
 5.  Verify that the slider is configured for **Always notify**.
 
