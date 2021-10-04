@@ -1,4 +1,4 @@
-# Practice Lab: Deploying Windows using Windows ADK tools 
+# Practice Lab: Deploying Windows using Windows ADK tools
 
 ## Summary
 
@@ -10,31 +10,37 @@ As part of the Desktop Administration team at Contoso, you have been tasked with
 
 ### Task 1: Identify the Windows ADK tools
 
-1.  Sign in to SEA-SVR2 as **Contoso\\Administrator** with the password **Pa55w.rd**.
-2.  On the taskbar, select **Start** and then select **Control Panel**.
-3.  Select **Programs**, and then select **Programs and Features**. Notice that the **Windows Assessment and Deployment Kit - Windows 10** and the **Windows Assessment and Deployment Kit Windows Preinstallation Environment Add-ons - Windows 10** programs are installed.
-4.  Select **Windows Assessment and Deployment Kit - Windows 10** and then select **Change**.
-5.  On the **Maintain your Windows Assessment and Deployment Kit - Windows 10 features** page, ensure that **Change** is selected and then select **Next**.
-6.  Notice the features that have been installed on SEA-SVR2. Features include:
+1. Sign in to SEA-SVR2 as **Contoso\\Administrator** with the password **Pa55w.rd**.
+
+2. On the taskbar, select **Start** and then select **Windows System**, then select **Control Panel**.
+
+3. Select **Programs**, and then select **Programs and Features**. Notice that the **Windows Assessment and Deployment Kit - Windows 10** and the **Windows Assessment and Deployment Kit Windows Preinstallation Environment Add-ons - Windows 10** programs are installed.
+
+4. Select **Windows Assessment and Deployment Kit - Windows 10** and then select **Change**.
+
+5. On the **Maintain your Windows Assessment and Deployment Kit - Windows 10 features** page, ensure that **Change** is selected and then select **Next**.
+
+6. Notice the features that have been installed on SEA-SVR2. Features include:
     - Deployment Tools
     - Imaging and Configuration Designer (ICD)
     - Configuration Designer
     - User State Migration Tool (USMT)
     - Microsoft User Experience Virtualization (UE-V) Template
-7.  Select **Cancel** to close the wizard. Select **Yes** and then select **Close**.
-8.  Close the **Programs and Features** window.
 
+7. Select **Cancel** to close the wizard. Select **Yes** and then select **Close**.
+
+8. Close the **Programs and Features** window.
 
 ### Task 2: Create bootable Windows PE media
 
-1.  On SEA-SVR2, select **Start**, expand **Windows Kits**, and then select **Deployment and Imaging Tools Environment**.
+1. On SEA-SVR2, select **Start**, expand **Windows Kits**, and then select **Deployment and Imaging Tools Environment**.
 
-2.  At the command prompt type `copype amd64 E:\WinPE`. The Windows PE working files are installed to the target location.
+2. At the command prompt type `copype amd64 E:\WinPE`. The Windows PE working files are installed to the target location.
 
-3.  Open **File Explorer** and then browse to **E:\\WinPE**. 
+3. Open **File Explorer** and then browse to **E:\\WinPE**.
 
-4.  In the **WinPE** folder, select the **media** folder and then select the **sources** folder. Notice the **boot.wim** file located in this folder. This is the boot image that is used for a default configuration of Windows PE. 
-5.  Close **File Explorer**.
+4. In the **WinPE** folder, select the **media** folder and then select the **sources** folder. Notice the **boot.wim** file located in this folder. This is the boot image that is used for a default configuration of Windows PE.
+5. Close **File Explorer**.
 
 6. At the command prompt type the following command to create the Windows PE media in ISO format:
 
@@ -45,17 +51,18 @@ MakeWinPEMedia /ISO E:\WinPE E:\WinPE\WindowsPE_amd64.iso
 7. Open **File Explorer** and then browse to **E:\\WinPE**. Notice the **WindowsPE_amd64.iso** file located in this folder. This ISO file will be used to boot an Windows 10 installation to be captured as a gold image.
 
 8. Close **File Explorer**.
+
 ### Task 3: Prepare a Windows 10 computer to be imaged
 
-1.  On SEA-SVR2, on the taskbar, select **Hyper-V Manager**.
+1. On SEA-SVR2, on the taskbar, select **Hyper-V Manager**.
 
-2.  In Hyper-V Manager, select **SEA-SVR2** and then under **Virtual Machines** select **GoldImage1**.
+2. In Hyper-V Manager, select **SEA-SVR2** and then under **Virtual Machines** select **GoldImage1**.
 
 3. From the **Actions** menu, select **Checkpoint**. A checkpoint is created as shown in the **Checkpoints** pane.
 
 4. From the **Actions** menu, select **Connect**, and in the **GoldImage1 on SEA-SVR2 - Virtual Machine Connection** window, from the **Action** menu, select **Start**. Maximize the **GoldImage1 on SEA-SVR2 - Virtual Machine Connection** window.
 
-5. Sign in to **GoldImage1** as **Admin** with the password of **Pa55w.rd**. 
+5. Sign in to **GoldImage1** as **Admin** with the password of **Pa55w.rd**.
 
 6. Select the **Start** button, type **command**, and then select **Run as administrator**. At the User Account Control, select **Yes** to open the command prompt with administrative credentials.
 
@@ -71,7 +78,7 @@ cd sysprep
 sysprep
 ```
 
-9. At the **System Preparation Tool 3.1.4** dialog box, ensure that **System Cleanup Action** shows **Enter System Out-of-Box Experience (OOBE)** and then select the check box next to **Generalize**. 
+9. At the **System Preparation Tool 3.1.4** dialog box, ensure that **System Cleanup Action** shows **Enter System Out-of-Box Experience (OOBE)** and then select the check box next to **Generalize**.
 
 10. Under **Shutdown Options**, select **Shutdown**.
 
@@ -104,13 +111,13 @@ sysprep
 
    It will take approximately 15 minutes for the image capture to complete. Continue with the next task while the image capture progresses.
 
-### Task 5: Deploy a captured Windows 10 image 
+### Task 5: Deploy a captured Windows 10 image
 
-1.  In Hyper-V Manager, select **SEA-SVR2** and then in the Actions pane, select **New** and then select **Virtual Machine**.
+1. In Hyper-V Manager, select **SEA-SVR2** and then in the Actions pane, select **New** and then select **Virtual Machine**.
 
 2. On the **Before you Begin** page, select **Next**.
 
-3. On the **Specify Name and Location** page, in the **Name** box type **Computer1**. 
+3. On the **Specify Name and Location** page, in the **Name** box type **Computer1**.
 
 4. Select the check box next to **Store the virtual machine in a different location** and then next to **Location** type **E:\\Labfiles\\VirtualMachines**. Select **Next**.
 
@@ -190,11 +197,13 @@ sysprep
 
     `F:`
 
-    `bcdboot G:\Windows` 
+    `bcdboot G:\Windows`
 
 21. Restore the Computer1 window and then from the **Acton** menu, select **Reset**. In the message box, select **Reset**. Computer1 restarts. It will take several minutes for the computer to initialize, and will restart.
 
-22. After Computer1 initializes, complete the following setup tasks:
+### Task 6: Validate the image
+
+1. After Computer1 initializes, complete the following setup tasks:
 
     - Region: United States
     - Keyboard layout: US
@@ -203,40 +212,42 @@ sysprep
     - Connect to the internet: Continue with limited setup
     - License Agreement: Accept
 
-23. On the **Who's going to use this PC**, enter **LocalAdmin** and then select **Next**.
+2. On the **Who's going to use this PC**, enter **LocalAdmin** and then select **Next**.
 
-24. On the password and confirm password pages, enter **Pa55w.rd** and then select **Next**.
+3. On the password and confirm password pages, enter **Pa55w.rd** and then select **Next**.
 
-25. On the security questions page, select and provide answers to three security questions.
+4. On the security questions page, select and provide answers to three security questions.
 
-26. On the privacy settings page, select **Accept**.
+5. On the privacy settings page, select **Accept**.
 
-27. On the **Do more across devices with activity history** page, select **Yes**.
+6. On the **Do more across devices with activity history** page, select **Yes**.
 
-28. On the Cortana page, select **Not now**.
+7. On the Cortana page, select **Not now**.
 
-29. After the computer signs in, select **Start** and then enter **Control Panel**. Select **Control Panel**.
+8. After the computer signs in, select **Start** and then enter **Control Panel**. Select **Control Panel**.
 
-30. In the Control Panel, select **View network status and tasks**.
+9. In the Control Panel, select **View network status and tasks**.
 
-31. Select **Change adapter settings** and then select **Ethernet**, select **Properties**, select **Internet Protocol Version 4 (TCP/IPv4)**, enter the following:
+10. Select **Change adapter settings** and then right click the Ethernet adapter. Select **Properties**, select **Internet Protocol Version 4 (TCP/IPv4)** and then select **Properties**. 
+
+11. In the new window, select **Use the following IP address** and input the TCP/IPv4 settings as follows:
 
     - IP address: 10.10.0.12
     - Subnet mask: 255.255.255.0
 
-32. Select **OK** twice, select **Close**
+12. Select **OK** twice, select **Close**
 
-33. Right-click the **Start** button and then select **System**.
+13. Right-click the **Start** button and then select **System**.
 
-34. In the **About** page, select **Rename this PC**.
+14. In the **About** page, select **Rename this PC**.
 
-35. In the **Rename this PC** dialog box, enter **Computer1** and then select **Next**.
+15. In the **Rename this PC** dialog box, enter **Computer1** and then select **Next**.
 
-36. Select **Restart later**.
+16. Select **Restart later**.
 
-37. Shut down Computer1. 
+17. Shut down Computer1.
 
-38. On SEA-SVR2, leave Hyper-V Manager open for the next practice lab.
+18. On SEA-SVR2, leave Hyper-V Manager open for the next practice lab.
 
 **Results**: After finishing this lab, you will have successfully prepared and captured a Windows 10 reference computer and deployed a Windows 10 image.
 

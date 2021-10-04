@@ -3,7 +3,11 @@
 
 This log will be updated whenever updates are made to the lab steps in MD-100.  Note that this log only contains changes to the labs.  The change log for course content is still located in the Learning Download Center.  
 
-### Apr 16 2012
+### Oct 04 2021
+
+- Minor corrections to formatting and UI. 
+
+### Apr 16 2021
 
 - 0601 Corrected step to expand correct partition
 - 0301 Path to Labfiles corrected, corrected missing angle bracket in Ex3-Task2
