@@ -1,14 +1,14 @@
-# Practice Lab: Monitoring Events
+# Practice Lab: Monitoring Events using Event Viewer
 
 ## Summary
 
-In this lab, you will learn how to manage Windows 10 event logs and configure Event log subscriptions.
+In this lab, you manage Windows event logs and configure Event log subscriptions.
 
-## Exercise 1: Manage Windows 10 Event Logs
+## Exercise 1: Manage Windows Event Logs
 
 ### Scenario
 
-You need to perform maintenance tasks on the Event logs for SEA-CL1. You will first review the event log entries for the Application, Security, and System logs. You will then configure the Maximum log size for the Application and System event logs. Finally, you will configure the Security event log to Archive the log when full and do not overwrite events.
+You need to identify and review any system errors reported on SEA-CL1. You will use Event Viewer to review the event log entries for the Application, Security, and System logs, and filter out the Warning and Error events. You will then configure the Maximum log size for the Application and System event logs. Finally, you will configure the Security event log to Archive the log when full and do not overwrite events.
 
 ### Task 1: Review Event Log entries
 
@@ -28,7 +28,7 @@ You need to perform maintenance tasks on the Event logs for SEA-CL1. You will fi
 
 8. Under Windows Logs, select **System** and then scroll through the reported events. Take note of the various events listed for the System log. You may have a combination of Information, Warning, and Error events related to internal Windows system services.
 
-9. With the System log selected, in the Actions pane select **Filter Current Log**.
+9. With the **System** log selected, in the Actions pane select **Filter Current Log**.
 
 10. In the Filter Current Log dialog box, on the Filter tab, next to Event level, select the check box next to **Warning** and select the check box next to **Error**.
 
@@ -36,13 +36,21 @@ You need to perform maintenance tasks on the Event logs for SEA-CL1. You will fi
 
 12. In the Actions pane, select **Clear Filter**. All System events are now displayed.
 
-13. In the navigation pane, expand **Applications and Services Logs**. These logs relate to specific services or applications installed on the local machine.
+13. Select the **Application** log, and then in the Actions pane select **Filter Current Log**.
 
-14. Under Applications and Services Logs, expand **Microsoft**, and then expand **Windows**. Notice the variety of log information related to Windows features and services.
+14. In the Filter Current Log dialog box, on the Filter tab, next to Event level, select the check box next to **Warning** and select the check box next to **Error**.
 
-15. Under the Windows node, expand **GroupPolicy** and then select the **Operational** log. Take note of the various events listed for the Group Policy Operational log. You may have a combination of Information, Warning, and Error events related to Group Policy processing for the local machine.
+15. Select **OK** to return to the Application log events. Review the filtered events.
 
-16. In the navigation pane, close the **Applications and Services Logs** branch.
+16. In the Actions pane, select **Clear Filter**.
+
+17. In the navigation pane, expand **Applications and Services Logs**. These logs relate to specific services or applications installed on the local machine.
+
+18. Under Applications and Services Logs, expand **Microsoft**, and then expand **Windows**. Notice the variety of log information related to Windows features and services.
+
+19. Under the Windows node, expand **GroupPolicy** and then select the **Operational** log. Take note of the various events listed for the Group Policy Operational log. You may have a combination of Information, Warning, and Error events related to Group Policy processing for the local machine.
+
+20. In the navigation pane, close the **Applications and Services Logs** branch.
 
 ### Task 2: Configure Event Log Properties
 
@@ -76,7 +84,7 @@ SEA-CL2 is a critical workstation that needs to be monitored and maintained on a
 
 1. Sign in to **SEA-CL2** as **Contoso\\Administrator** with the password **Pa55w.rd**.
 
-2. Right-click **Start**, and then select **Windows PowerShell (Admin)**.
+2. Right-click **Start**, and then select **Windows Terminal (Admin)**.
 
 3. At the PowerShell command prompt, type the following command, and then press **Enter**:
 
@@ -104,9 +112,9 @@ winrm quickconfig
 
 13. Close the **Computer Management** window.
 
-14. Switch to **SEA-CL1** and sign in as **Contoso\\Administrator** with the password **Pa55w.rd**.
+14. Switch to **SEA-CL1** and, if necessary, sign in as **Contoso\\Administrator** with the password **Pa55w.rd**.
 
-15. Right-click **Start**, and then select **Windows PowerShell (Admin)**.
+15. Right-click **Start**, and then select **Windows Terminal (Admin)**.
 
 16. At the PowerShell command prompt, type the following command, and then press **Enter**:
 
@@ -138,7 +146,7 @@ wecutil qc
 
 9. In the **Subscription Properties – SEA-CL2 Events** dialog box, select **Select Events**.
 
-10. In the **Query Filter** dialog box, select the **Critical**, **Warning**, **Information**, **Verbose**, and **Error** Event level check boxes.
+10. In the **Query Filter** dialog box, select the **Critical**, **Warning**, **Error**, **Information**, and **Verbose** Event level check boxes.
 
 11. In the **Logged** dropdown list, select **Last 30 days**.
 

@@ -42,27 +42,49 @@ The Contoso Marketing department has purchased a new printer that uses a Microso
 
 ### Task 3: Use Print Management to manage a remote printer
 
-1. On SEA-SVR1, select **Start**, type **print**, and then select **Print Management**.
+1. On SEA-SVR1, select **Start** and then select **Server Manager**.
 
-2. In Print Management, in the navigation pane, expand **Print Servers**, and then verify that SEA-SVR1 is the only print server listed.
+2. Select **Manage** and then select **Add Roles and Features**.
 
-3. Right-click **Print Servers**, and then select **Add/Remove Servers**.
+3. On the Before you begin page, select **Next**.
 
-4. In the **Add/Remove Servers** dialog box, in the **Add Servers** field, type **SEA-SVR2**, and then select **Add to List**.
+4. On the Installation Type page, select **Role-based or feature-based installation**, and then select **Next**.
 
-5. Select **OK**, and then verify that the navigation pane lists two print servers.
+5. On the Server Selection page, select **SEA-SVR1.Contoso.com** and then select **Next**.
 
-6. Right-click **SEA-SVR2**, and then select **Add Printer**.
+6. On the Server Roles page, select **Print and Document Services**, select **Add Features**, and then select **Next**.
 
-7. On the **Printer Installation** page, select **Add a new printer using an existing port**, and then select **Next**.
+7. On the Features page, select **Next**.
 
-8. On the **Printer Driver** page, verify that the **Install a new driver** option is selected, and then select **Next**.
+8. On the Print and Document Services page, select **Next**.
 
-9. On the **Printer Installation** page, in the **Manufacturer** list, select **Microsoft**. In the **Printers** list, select **Microsoft PS Class Driver**, and then select **Next**.
+9. On the Role Services page, select the check box next to **Print Server** and then select **Next**.
 
-10. On the **Printer Name and Sharing Settings** page, in the **Printer Name** box, type **PostScript Printer**, then in the **Share Name** box, type **PostScript Printer**, select **Next** twice, and then select **Finish**.
+10. On the Confirmation page, select **Install**.
 
-11. Under the **SEA-SVR2** node, select **Printers** and verify that **PostScript Printer** is installed and ready.
+11. On the Results page, select **Close** and then close Server Manager.
+
+12. Select **Start**, type **print**, and then select **Print Management**.
+
+13. In Print Management, in the navigation pane, expand **Print Servers**, and then verify that SEA-SVR1 is the only print server listed.
+
+14. Right-click **Print Servers**, and then select **Add/Remove Servers**.
+
+15. In the **Add/Remove Servers** dialog box, in the **Add Servers** field, type **SEA-SVR2**, and then select **Add to List**.
+
+16. Select **OK**, and then verify that the navigation pane lists two print servers.
+
+17. Right-click **SEA-SVR2**, and then select **Add Printer**.
+
+18. On the **Printer Installation** page, select **Add a new printer using an existing port**, and then select **Next**.
+
+19. On the **Printer Driver** page, verify that the **Install a new driver** option is selected, and then select **Next**.
+
+20. On the **Printer Installation** page, in the **Manufacturer** list, select **Microsoft**. In the **Printers** list, select **Microsoft PS Class Driver**, and then select **Next**.
+
+21. On the **Printer Name and Sharing Settings** page, in the **Printer Name** box, type **PostScript Printer**, then in the **Share Name** box, type **PostScript Printer**, select **Next** twice, and then select **Finish**.
+
+22. Under the **SEA-SVR2** node, select **Printers** and verify that **PostScript Printer** is installed and ready.
 
 ### Task 4: Connect to a remote printer
 
@@ -70,7 +92,7 @@ The Contoso Marketing department has purchased a new printer that uses a Microso
 
    _Note: Terry is member of the IT group, but she is not a member of the Managers group._
 
-2. In the taskbar, in the **Type here to search** text box, type **control**, and then select **Control Panel**.
+2. Select **Start**, type **control**, and then select **Control Panel**.
 
 3. In Control Panel, select **View devices and printers**.
 
@@ -78,7 +100,7 @@ The Contoso Marketing department has purchased a new printer that uses a Microso
 
 5. In the **Add a device** dialog box, select **The printer that I want isn’t listed**.
 
-6. On the **Find a printer by other options** page, select **Select a shared printer by name**, type **\\\\SEA-SVR1\\Managers Printer** in the box, and then select **Next**.
+6. On the **Find a printer by other options** page, select **Select a shared printer by name**, type **\\\\SEA-SVR1\\Managers Printer** in the box, and then select **Next**. 
 
 7. In the **Connect to SEA-SVR1** dialog box, select **Cancel**.
 
@@ -94,7 +116,7 @@ The Contoso Marketing department has purchased a new printer that uses a Microso
 
 ### Task 5: Print a document, and manage a print job
 
-1. On SEA-CL1, on the taskbar, in the **Type here to search** text box, type **notepad**, and then press Enter.
+1. On SEA-CL1, select **Start** and then select **Notepad**.
 
 2. In Notepad, type your name, select the **File** menu, and then select **Print**.
 
@@ -102,7 +124,7 @@ The Contoso Marketing department has purchased a new printer that uses a Microso
 
 4. Switch to SEA-SVR1.
 
-5. On SEA-SVR1, in Print Management, in the navigation pane, select **Printers With Jobs**. In the details pane, view that **PostScript Printer** is listed and that it has one job in the queue.
+5. On SEA-SVR1, in Print Management, expand **Custom Filters** and then select **Printers With Jobs**. In the details pane, view that **PostScript Printer** is listed and that it has one job in the queue.
 
 6. Switch to SEA-CL1.
 

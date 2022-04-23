@@ -2,7 +2,7 @@
 
 ## Summary
 
-In this exercise you will learn how to create and configure firewall rules to block and allow specific service connections to a device. In this exercise you will learn how to create and configure connection security rules to encrypt network traffic between Windows devices.
+In this exercise you will create and configure firewall rules to block and allow specific service connections to a device. You will also create and configure connection security rules to encrypt network traffic between Windows devices.
 
 ## Exercise 1: Creating and Testing Inbound Firewall Rules  
 
@@ -16,21 +16,23 @@ Users that work on SEA-CL2 are not allowed to remote desktop into SEA-CL1. You n
 
 2. Right-click Start and then select **System**.
 
-3. In the System navigation pane, select **Remote Desktop**.
+3. On the System page, select **Advanced system settings**.
 
-4. On the Remote Desktop page, verify that **Enable Remote Desktop** is enabled. If it is not, then enable Remote Desktop.
+4. On the System Properties box, select the **Remote** tab.
 
-5. Close the **Settings** window.
+5. In the Remote Desktop section, select **Allow remote connections to this computer** and then select **OK**.
 
-6. Switch to **SEA-CL2**.
+6. Close the **Settings** window.
 
-7. Sign in to **SEA-CL2** as **Contoso\\Administrator** with the password **Pa55w.rd**.
+7. Switch to **SEA-CL2**.
 
-8. Select **Start**, type **mstsc.exe**, and then press **Enter**.
+8. Sign in to **SEA-CL2** as **Contoso\\Administrator** with the password **Pa55w.rd**.
 
-9. In the Computer box, type **SEA-CL1**, and then select **Connect**. The Windows Security dialog box displays asking for credentials to connect to SEA-CL1. This indicates successful connectivity to SEA-CL1.
+9. Select **Start**, type **mstsc.exe**, and then press **Enter**. The Remote Desktop Connection app opens.
 
-10. In the Windows Security dialog, select **Cancel**.
+10. In the Computer box, type **SEA-CL1**, and then select **Connect**. The Windows Security dialog box displays asking for credentials to connect to SEA-CL1. This indicates successful connectivity to SEA-CL1.
+
+11. In the Windows Security dialog, select **Cancel**.
 
 ### Task 2: Create an inbound rule
 
@@ -58,11 +60,11 @@ Users that work on SEA-CL2 are not allowed to remote desktop into SEA-CL1. You n
 
 3. In the Computer box, type **SEA-CL1**, and then select **Connect**. Notice that the connection attempt fails and displays a Remote Desktop Connection error message.
 
-4. In the Remote Desktop error message window, select **OK**.
+4. In the Remote Desktop Connection error message window, select **OK**.
 
 5. Close all open windows.
 
-**Results**: After completing this exercise, you should have created and verified inbound firewall rules.
+**Results**: After completing this exercise, you will have created and verified inbound firewall rules.
 
 ## Exercise 2: Creating and Testing Outbound Firewall Rules ##
 
@@ -76,23 +78,21 @@ SEA-SVR1 also needs to be configured to allow remote desktop connections, howeve
 
 2. Select **Start**, type **control**, and then select **Control Panel**.
 
-3. In the Control Panel, select **System and Security**, and then select **System**.
+3. In the Control Panel, select **System and Security**, and then under **System**, select **Allow remote access**.
 
-4. On the System dialog box, select Remote settings.
+4. On the **Remote** tab, under **Remote Desktop**, verify that **Allow remote connections to this computer** is selected.
 
-5. On the **Remote** tab, under **Remote Desktop**, select **Allow remote connections to this computer** and select **OK**.
+5. Select **OK** to close the **System Properties** window and then close the Control Panel.
 
-6. Select **OK** to close the **System Properties** window and then close the Control Panel.
+6. Switch to **SEA-CL1**.
 
-7. Switch to **SEA-CL1**.
+7. Select **Start**, type **mstsc.exe**, and then press **Enter**.
 
-8. Select **Start**, type **mstsc.exe**, and then press **Enter**.
+8. In the Computer box, type **SEA-SVR1**, and then press **Enter**. The Windows Security dialog box displays asking for credentials to connect to SEA-SVR1. This indicates successful connectivity to SEA-SVR1.
 
-9. In the Computer box, type **SEA-SVR1**, and then press **Enter**. The Windows Security dialog box displays asking for credentials to connect to SEA-SVR1. This indicates successful connectivity to SEA-SVR1.
+9. In the Windows Security dialog, select **Cancel**.
 
-10. In the Windows Security dialog, select **Cancel**.
-
-11. Close Remote Desktop Connection.
+10. Close Remote Desktop Connection.
 
 ### Task 2: Create an outbound rule
 
@@ -128,7 +128,7 @@ SEA-SVR1 also needs to be configured to allow remote desktop connections, howeve
 
 4. **Close** all open windows.
 
-**Results**: After completing this exercise, you should have created and tested outbound firewall rules.
+**Results**: After completing this exercise, you will have created and tested outbound firewall rules.
 
 ## Exercise 3: Creating Connection Security Rules ##
 
@@ -140,7 +140,7 @@ Your manager wants you to ensure that all network traffic between SEA-CL1 and SE
 
 1. Sign in to **SEA-CL2** as **Contoso\\Administrator** with the password **Pa55w.rd**.
 
-2. Right-click **Start**, and then select **Windows PowerShell**.
+2. Right-click **Start**, and then select **Windows Terminal**.
 
 3. In the Windows PowerShell window, type the following command and then press **Enter**
 
@@ -166,7 +166,7 @@ ping SEA-CL1
 
 10. Switch to **SEA-CL1**. If necessary, sign in to **SEA-CL1** as **Contoso\\Administrator** with the password **Pa55w.rd**.
 
-11. Right-click **Start**, and then select **Windows PowerShell (Admin)**.
+11. Right-click **Start**, and then select **Windows Terminal (Admin)**.
 
 12. To examine the Main Mode Security Associations (SAs), at the Windows PowerShell prompt, type the following cmdlet, and then press **Enter**:
 
@@ -180,7 +180,7 @@ Get-NetIPsecMainModeSA
 Get-NetIPsecQuickModeSA
 ```
 
-    _**Note**: Running each command should produce no result._
+**Note**: Running each command should produce no result.
 
 ### Task 2: Create the Connection Security Rule
 
@@ -251,11 +251,11 @@ Get-NetIPsecMainModeSA
 ```
 Get-NetIPsecQuickModeSA
 ```
-    
+
 11. Review the result and then close all open windows.
 
 12. Sign out of SEA-CL1 and SEA-CL2.
 
-**Results**: After completing this exercise, you should have created and tested connection security rules.
+**Results**: After completing this exercise, you will have created and tested connection security rules.
 
 **END OF LAB**

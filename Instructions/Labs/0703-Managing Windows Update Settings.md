@@ -2,7 +2,7 @@
 
 ## Summary
 
-In this lab you will learn how to manage Windows Update settings for a single device and how to manage feature and quality updates for multiple devices using Windows Update for Business Group Policy settings.
+In this lab you manage Windows Update settings for a single device and configure feature and quality update settings for multiple devices using Windows Update for Business Group Policy settings.
 
 ## Exercise 1: Configuring Windows Update for a Single Device
 
@@ -11,17 +11,20 @@ In this lab you will learn how to manage Windows Update settings for a single de
 You need to validate the Windows Update settings for SEA-WS3. You have also been asked to ensure that the following Windows update settings are applied to the device:
 
 - Updates for other Microsoft products should be enabled.
-- A notification must be shown when the PC requires a restart to finish updating.
-- Delivery optimization must be configured to allow downloads from the local network and PCs from the Internet.
-- Active hours should be changed to match the recommended daily activity notification.
+- A notification must be shown when the device requires a restart to finish updating.
+- Delivery optimization must be configured to allow downloads from the internet and the local network.
+- Active hours should be configured to be 7:00 AM to 8:00 PM.
+- Updates should be paused for 2 weeks.
 
 ### Task 1: Configure Windows Update
 
-1. Sign in to **SEA-WS3** as **Admin** with the Password of **Pa55w.rd**
+1. Sign in to **SEA-WS3** as **.\Admin** with the Password of **Pa55w.rd**
 
-2. Right-click **Start**, and then select **Windows PowerShell (Admin)**. At the User Account Control dialog box, select **Yes**.
+2. Select **Start**, and then enter **PowerShell**.
 
-3. In the Administrator: Windows PowerShell window, type the following command, and then press Enter:
+3. In the Search results, under Windows PowerShell, select **Run as administrator**. In the User Account Control dialog box, select **Yes**.
+
+4. In the Administrator: Windows PowerShell window, type the following command, and then press Enter:
 
 ```
 Set-Service wuauserv -StartupType Manual
@@ -29,59 +32,65 @@ Set-Service wuauserv -StartupType Manual
 
 _Note: For the lab setup, the Windows Update service is disabled. The above command is not necessary to run in typical Windows 10 scenarios._
 
-4. Close Windows PowerShell.
+5. Close Windows PowerShell.
 
-5. Select **Start**, and then select the **Settings** icon.
+6. Select **Start**, and then select the **Settings** icon.
 
-6. In **Settings**, select **Update & Security**.
-
-7. Under **Update & Security**, select **Windows Update**.
+7. In **Settings**, select **Windows Update**.
 
 8. On the **Windows Update** tab, select **Advanced options**.
 
-9. On the **Advanced options** page, under **Update options**, enable the **Receive updates for other Microsoft products when you update Windows** option.
+9. On the **Advanced options** page, enable the **Receive updates for other Microsoft products **option.
 
-10. On the **Advanced options** page, scroll down under **Update notifications** enable the **Show a notification when your PC requires a restart to finish updating** option.
+10. On the **Advanced options** page, enable the **Notify me when a restart is required to finish updating** option.
 
 11. Scroll down and then select **Delivery Optimization**.
 
 12. On the Delivery Optimization page, verify that the **Allow downloads from other PCs** option is enabled.
 
-13. Select **PCs on my local network, and PCs on the Internet**.
+13. Select **Devices on the internet and my local network**.
 
-14. Scroll down and then select **Activity monitor**. Take note of the Download Statistics and Upload Statistics and then select **Back**.
+14. Scroll down and then select **Activity monitor**. Take note of the Download Statistics and Upload Statistics and then select the **Delivery Optimization** link.
 
 15. In the navigation pane, select **Windows Update**.
 
-### Task 2: Change active hours and review applied updates
+### Task 2: Change active hours, review applied updates, and pause updates
 
-1. On the **Windows Update** page, select **Change active hours**.
+1. On the **Windows Update** page, select **Advanced options**.
 
-2. On the Change active hours page, verify that the current active hours are from 8:00AM to 5:00PM. Also notice that a message displays suggesting a change to the active hours. Select **Change**.
+2. On the **Advanced options** page, select **Active hours**.
 
-3. On the Active hours window, change the Start time to 7:00AM and the End time to 8:00PM.
+   > Verify that the current active hours are from 8:00AM to 5:00PM. 
 
-4. Select **Save** and then select **Back**.
+3. Next to Adjust active hours, select **Manually** and then change the **Start time to 7:00AM** and the **End time to 8:00PM**.
 
-5. On the **Windows Update** page, select **View update history**.
+4. In the navigation pane, select **Windows Update**.
+
+5. On the **Windows Update** page, select **Update history**.
 
 6. Review the updates listed, and then select **Uninstall updates**.
 
 7. Review the updates listed in **Installed Updates**. Close **Installed Updates**.
 
-8. On the **View Update history** page, select **Back**.
+8. In the navigation pane, select **Windows Update**.
 
-9. Close the **Settings** page.
+9. Next to **Pause updates**, select the drop-down menu and select **Pause for 2 weeks**.
 
-10. Sign out of SEA-WS3.
+   > Notice that the Windows Update indicator displays that updates are paused. You can also select **Resume updates** if needed.
 
-**Results**: After completing this exercise, you will have successfully configured and/or confirmed Windows Update settings.
+10. Close the **Settings** page.
+
+11. Sign out of SEA-WS3.
+
+**Results**: After completing this exercise, you will have successfully validated and configured Windows Update settings.
 
 ## Exercise 2: Managing Feature and Quality Updates with Windows Update for Business
 
 ### Scenario
 
-You have been delegated the task to create Group Policy Objects to configure Windows Update for Business. Your first task is to determine how many deployment rings you will need and the associated Windows update settings based upon business requirements. You then need to configure a Group Policy object for each deployment ring. The Group Policy Objects will then be applied to organizational units by the Active Directory administrators at a later time.
+Contoso uses Windows Update for Business to manage the updates for Windows 10 devices.
+
+You have been delegated the task to create Group Policy Objects to configure Windows Update for Business for your Windows 10 devices. Your first task is to determine how many deployment rings you will need and the associated Windows update settings based upon business requirements. You then need to configure a Group Policy object for each deployment ring. The Group Policy Objects will then be linked to organizational units by the Active Directory administrators at a later time.
 
 ### Task 1: Identify Windows Update for Business Requirements
 
@@ -90,7 +99,7 @@ Contoso currently configures each Windows 10 device to apply Windows updates bas
 - Updates are not fully tested before they are installed on the all the computers in the organization. This is especially troublesome for when a new feature update is released.
 - Some users have been pausing updates for an extended period of time.
 - Some users have been enrolling into the Windows Insider Program, which has caused compatibility issues for some of the devices.
-- As more Windows 10 computers are added to the network, it is difficult to maintain and manage the update settings using the current manual process.
+- It is difficult to maintain and manage the Windows 10 update settings using the current manual process.
 
 You have been asked to address these issues by:
 
@@ -108,21 +117,19 @@ You need to develop a plan to implement Windows Update for Business. Consider th
 
 1. Sign in to SEA-SVR1 as **Contoso\\Administrator** with the password of **Pa55w.rd**.
 
-2. Select **Start**, and then select **Server Manager**.
+2. In Server Manager, select **Tools** and then select **Group Policy Management**.
 
-3. Select **Tools** and then select **Group Policy Management**.
+3. Maximize the Group Policy Management window. In the console tree, expand **Forest:Contoso.com**, expand **Domains**, and then expand **Contoso.com**. Select the **Group Policy Objects** node.
 
-4. Maximize the Group Policy Management window. In the console tree, expand **Forest:Contoso.com**, expand **Domains**, and then expand **Contoso.com**. Select the **Group Policy Objects** node.
+4. Right-click the **Group Policy Objects** node, and then select **New**.
 
-5. Right-click the **Group Policy Objects** node, and then select **New**.
+5. In the **New GPO** dialog box, in the **Name** box, type **Pilot Release - Ring 1**, and then select **OK**.
 
-6. In the **New GPO** dialog box, in the **Name** box, type **Pilot Release - Ring 1**, and then select **OK**.
+6. In the details pane, right-click **Pilot Release - Ring 1**, and then select **Edit**. Maximize the Group Policy Management Editor window.
 
-7. In the details pane, right-click **Pilot Release - Ring 1**, and then select **Edit**. Maximize the Group Policy Management Editor window.
+7. In the console tree, under **Computer Configuration**, expand **Policies**, expand **Administrative Templates**, expand **Windows Components**, and then select **Windows Update**.
 
-8. In the console tree, under **Computer Configuration**, expand **Policies**, expand **Administrative Templates**, expand **Windows Components**, and then select **Windows Update**.
-
-9. In the details pane, double-click Configure Automatic Updates.
+8. In the details pane, double-click **Configure Automatic Updates**.
 
 10. In the **Automatic Updates** window, configure the following and then select **OK**:
      - Enabled: **Selected**
@@ -133,25 +140,22 @@ You need to develop a plan to implement Windows Update for Business. Consider th
 
 12. In the details pane, double-click **Manage preview builds**.
 
-13. In the **Manage preview builds** window, configure the following and then select **OK**:
-     - Enabled: **Selected**
-     - Set the behavior for receiving preview builds: **Disable preview builds**
+13. In the **Manage preview builds** window, select **Disabled**, and then select **OK**.
 
 14. In the details pane, double-click **Select when Preview Builds and Feature Updates are received**.
 
-15. In the **Select when Preview Builds and Feature Updates are received** window, configure the following:
+15. In the **Select when Preview Builds and Feature Updates are received** window, configure the following and then select **OK**:
+
+- Enabled: **Selected**
+ How many days after a Feature Update is released would you like to defer the update before it is offered to the device?: **0**
+
+> The Pilot Release - Ring 1 configuration will not have any updates deferred.
+
+16. In the details pane, double-click **Select when Quality Updates are received**.
+
+17. In the **Select when Quality Updates are received** window, configure the following and then select **OK**:
      - Enabled: **Selected**
-     - Select the Windows readiness level for the updates you want to receive: **Semi-Annual Channel**
-
-16. Verify that the **After a Preview Build or a Feature Update is released, defer receiving it for this many days** is set to **0**. The Pilot Release - Ring 1 configuration will not have any updates deferred.
-
-17. Select **OK** to close the **Select when Preview Builds and Feature Updates are received** window.
-
-18. In the details pane, double-click **Select when Quality Updates are received**.
-
-19. In the **Select when Quality Updates are received** window, configure the following and then select **OK**:
-     - Enabled: **Selected**
-     - After a quality update is released, defer receiving it for this many days: 0
+     - After a quality update is released, defer receiving it for this many days: **0**
 
 ### Task 3: Use Group Policy to configure Windows Update experience for users  
 
@@ -195,19 +199,20 @@ You need to develop a plan to implement Windows Update for Business. Consider th
 
 11. In the details pane, double-click **Select when Preview Builds and Feature Updates are received**.
 
-12. In the **Select when Preview Builds and Feature Updates are received** window, configure the following:
+12. In the **Select when Preview Builds and Feature Updates are received** window, configure the following and then select **OK**:
      - Enabled: **Selected**
-     - Select the Windows readiness level for the updates you want to receive: **Semi-Annual Channel**
+     - How many days after a Feature Update is released would you like to defer the update before it is offered to the device?: **10**
 
-13. Next to **After a Preview Build or a Feature Update is released, defer receiving it for this many days**, set the value to **10** and then select **OK**.
-
-14. In the details pane, double-click **Select when Quality Updates are received**.
-
-15. In the **Select when Quality Updates are received** window, configure the following and then select **OK**:
+13. In the details pane, double-click **Select when Quality Updates are received**.
+14. In the **Select when Quality Updates are received** window, configure the following and then select **OK**:
      - Enabled: **Selected**
      - After a quality update is released, defer receiving it for this many days: **10**
 
-16. Close the Group Policy Management Editor.
+15. Close the Group Policy Management Editor.
+
+16. Close the Group Policy Management console.
+
+17. Sign out of SEA-SVR1.
 
 **Results**: After completing this exercise, you will have successfully configured Group Policy Objects to be later assigned to organizational units to manage Windows Update for Business settings.
 

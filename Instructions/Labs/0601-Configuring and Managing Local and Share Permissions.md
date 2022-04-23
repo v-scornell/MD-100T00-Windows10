@@ -1,8 +1,8 @@
-# Practice Lab: Configuring and Managing Permissions and Shares
+# Practice Lab: Configuring and Managing Local and Share Permissions
 
 ## Summary
 
-In this lab you will learn how to create folders and manage local and share permissions.
+In this lab you create folders and manage local and share permissions.
 
 ### Scenario
 
@@ -14,7 +14,7 @@ You need to create file shares for the Marketing and IT department to enable use
 
 2. Select the **File Explorer** icon on the taskbar.
 
-3. In File Explorer, in the navigation pane, expand **This PC**, and then select **Allfiles (E:)**. In the details pane, right-click the **empty space**, select **New**, select **Folder**, and then type **Data** for the new folder’s name.
+3. In File Explorer, in the navigation pane, expand **This PC**, and then select **Allfiles (D:)**. In the details pane, right-click the **empty space**, select **New**, select **Folder**, and then type **Data** for the new folder’s name.
 
 4. In File Explorer, in the navigation pane, expand **Allfiles (E:),** and select **Data**. In the details pane, right-click the empty space, select **New**, select **Folder**, and then type **Marketing** for the new folder’s
     name.
@@ -25,40 +25,46 @@ You need to create file shares for the Marketing and IT department to enable use
 
 1. Right-click the **IT** folder, and then select **Properties**.
 
-2. In the IT Properties window, select the **Security tab**, and then select **Edit**.
+2. In the **IT Properties** window, select the **Security** tab, and then select **Edit**.
 
-3. In the Permissions for IT dialog box, verify that Authenticated Users is selected in the Group or user names section, and then select **Remove**. Read the text in the Windows Security dialog box that appears, which explains why you cannot remove an Authenticated Users. select **OK**, and then select **Cancel**.
+3. In the **Permissions for IT** dialog box, verify that **Authenticated Users** is selected in the Group or user names section, and then select **Remove**. 
 
-4. In the IT Properties window, on the Security tab, select **Advanced**.
+4. Read the text in the **Windows Security** dialog box that appears, which explains why you cannot remove Authenticated Users. select **OK**, and then select **Cancel**.
 
-5. In the Advanced Security Settings for IT dialog box, verify that all permissions entries are inherited from E:\\. Also, verify that Users (SEA-CL1\\Users) have Read & execute access, while Authenticated Users have Modify access. Select **OK** twice.
+5. In the **IT Properties** window, on the Security tab, select **Advanced**.
+
+6. In the **Advanced Security Settings for IT** dialog box, verify that all permissions entries are inherited from D:\\. Also, verify that Users (SEA-CL1\\Users) have Read & execute access, while Authenticated Users have Modify access. Select **OK** twice.
 
 ### Task 3: Configure permissions for the IT and Marketing folders
 
-1. On SEA-CL1, in File Explorer, right-click the **IT** folder, select **Give access to**, and then select **Specific people**.
+1. On SEA-CL1, in File Explorer, right-click the **IT** folder, and select **Show more options**.
 
-2. In the Type a name and then select Add, or select the arrow to find someone text box, type **IT**, and then select **Add**.
+2. Select **Give access to**, and then select **Specific people**.
 
-3. Verify that IT is added and selected. In the Permission Level column, select **Read/Write**, select **Share**, and then select **Done**.
+3. In the **Type a name and then select Add, or click the arrow to find someone** text box, type **IT**, and then select **Add**.
 
-4. Right-click **Marketing**, and then select **Properties**.
+4. Verify that IT is added and selected. In the Permission Level column, select **Read/Write**, select **Share**, and then select **Done**.
 
-5. In the Marketing Properties dialog box, select the **Sharing tab**. In the Network File and Folder Sharing section, verify that **Marketing** is not shared.
+5. Right-click **Marketing**, and then select **Properties**.
 
-6. In the Advanced Sharing section, Select **Advanced Sharing**.
+6. In the **Marketing Properties** dialog box, select the **Sharing** tab. In the **Network File and Folder Sharing** section, verify that **Marketing** is not shared.
 
-7. In the Advanced Sharing dialog box, select the **Share this folder** check box. Verify that the share name is **Marketing** (the same as the folder name), and that Limit the number of simultaneous users to is set to 20.
-8. Select **Permissions**.
+7. In the **Advanced Sharing** section, Select **Advanced Sharing**.
 
-9. In the Permissions for Marketing dialog box, select the **Everyone** group and select **Remove**.
+8. In the Advanced Sharing dialog box, select the **Share this folder** check box. Verify that the share name is **Marketing** (the same as the folder name), and that Limit the number of simultaneous users to is set to 20.
+9. Select **Permissions**.
 
-10. Select **Add**, in the Enter the object names to select (examples) box, type **Marketing**, and then select **OK**. In the Permissions for Marketing section, select the **Change** check box in the Allow column, and then select **OK** twice.
+10. In the **Permissions for Marketing** dialog box, select the **Everyone** group and select **Remove**.
 
-11. In the Marketing Properties dialog box, in the Network File and Folder Sharing section, verify that Marketing is now shared as \\\\SEA-CL1\\Marketing, and then select **Close**.
+11. Select **Add**, in the Enter the object names to select (examples) box, type **Marketing**, and then select **OK**. 
 
-12. Select **Start**, type **cmd** and then select **Command Prompt**.
+12. In the **Permissions for Marketing** section, select the **Change** check box in the Allow column, and then select **OK** twice.
 
-13. At the command prompt, type the following command, and then press **Enter**.
+13. In the **Marketing Properties** dialog box, in the Network File and Folder Sharing section, verify that Marketing is now shared as \\\\SEA-CL1\\Marketing, and then select **Close**.
+
+14. Select **Start**, type **cmd** and then select **Command Prompt**.
+
+15. At the command prompt, type the following command, and then press **Enter**.
 
 ```
 net view \\sea-cl1
@@ -70,7 +76,7 @@ _**Note**: This will show you all shares created on SEA-CL1_
 
 15. Right-click **Start**, and then select **Computer Management**.
 
-16. In Computer Management, in the navigation pane, expand **Shared Folders**, and then select **Shares**. In the details pane, verify that you see IT and Marketing shares, and the default Windows 10 administrative shares.
+16. In Computer Management, in the navigation pane, expand **Shared Folders**, and then select **Shares**. In the details pane, verify that you see IT and Marketing shares, and the default Windows administrative shares.
 
 17. Close Computer Management.
 
@@ -96,11 +102,10 @@ _**Note**: This will show you all shares created on SEA-CL1_
 
 9. In the Marketing Properties window, select the **Security tab**, and then select **Advanced**.
 
-10. In the Advanced Security Settings for Marketing dialog box, verify that all of the permissions entries are inherited from E:\\. Also verify that Users (SEA-CL1\\Users) have Read & execute access, while Authenticated Users have Modify access, which are the same file permissions as before you shared the
-    Marketing folder. Select **OK** twice.
-
+10. In the Advanced Security Settings for Marketing dialog box, verify that all of the permissions entries are inherited from D:\\. Also verify that Users (SEA-CL1\\Users) have Read & execute access, while Authenticated Users have Modify access, which are the same file permissions as before you shared the Marketing folder. Select **OK** twice.
+    
     _**Note**: If you share a folder by using the Advanced Sharing feature, this does not modify local file permissions. You only modify share permissions if you use Advanced Sharing._
-
+    
 11. Sign out of **SEA-CL1**.
 
 ### Task 5: Test local file permissions  
@@ -108,10 +113,10 @@ _**Note**: This will show you all shares created on SEA-CL1_
 1. Sign in to **SEA-CL1** as **Contoso\\Bruce** with the password **Pa55w.rd**.
 
     _**Note**: Bruce is a member of the Marketing group, but is not a member of the IT group._
- 
+
 2. Select the **File Explorer** icon on the taskbar.
 
-3. In File Explorer, in the navigation pane, expand **This PC**, expand **AllFiles (E:)**, expand **Data**, and then select **Marketing**.
+3. In File Explorer, in the navigation pane, expand **This PC**, expand **AllFiles (D:)**, expand **Data**, and then select **Marketing**.
 
 4. In the details pane, right-click the empty space, select **New**, select **Text Document**, and then type **File10** as the name of the file.
 
@@ -126,23 +131,23 @@ _**Note**: This will show you all shares created on SEA-CL1_
 7. Sign in to **SEA-CL1** as **Contoso\\Briana** with the password **Pa55w.rd**.
 
     _**Note**: Briana is member of the IT group, and she is not member of the Marketing group._
- 
+
 7. Select the **File Explorer** icon on the taskbar.
 
-8. In File Explorer, in the navigation pane, expand **This PC**, expand **AllFiles (E:)**, expand **Data**, and then select **Marketing**.
+8. In File Explorer, in the navigation pane, expand **This PC**, expand **AllFiles (D:)**, expand **Data**, and then select **Marketing**.
 
 9. In the details pane, verify that you can see File10 that was created by Bruce.
 
 10. Right-click the empty space, select **New**, select **Text Document**, and then type **File20** as the name of the file.
 
     _**Note**: Briana has local file permissions to create a new file in the Marketing folder because you configured permissions by using the Advanced Sharing feature. This modified only the share permissions, while the default local file permissions were not modified. By default, Authenticated Users have the Modify permission._
- 
+
 11. In File Explorer, in the navigation pane, select **IT**. In the details pane, right-click the empty space, select **New**, select **Text Document**, and then type **File21** as the name of the file.
 
     _**Note**: Briana is able to create a file, because you configured permissions by using File Sharing. Members of the IT group have local file permissions to the IT folder._
 
     _**Note**: Be aware that Network File and Folder Sharing modifies file permissions and share permissions. However, the Advanced Sharing feature does not modify file permissions, and only sets share permissions._
- 
+
 12. Sign out of **SEA-CL1**.
 
 ### Task 6: Test share permissions
@@ -152,7 +157,7 @@ _**Note**: This will show you all shares created on SEA-CL1_
 2. Sign in to **SEA-CL2** as **Contoso\\Bruce** with the password **Pa55w.rd**.
 
     _**Note**: Bruce is a member of the Marketing group, but he is not a member of the IT group._
- 
+
 3. Select the **File Explorer** icon on the taskbar.
 
 4. In File Explorer, type **\\\\SEA-CL1** in the Address bar, and then press **Enter**.
@@ -172,7 +177,7 @@ _**Note**: This will show you all shares created on SEA-CL1_
 10. Sign in to **SEA-CL2** as **Contoso\\Briana** with the password **Pa55w.rd**.
 
     _**Note**: Briana is a member of the IT group, but she is not a member of the Marketing group._
- 
+
 11. Select the **File Explorer** icon on the taskbar.
 
 12. In File Explorer, type **\\\\SEA-CL1** in the Address bar, and then press **Enter**.
@@ -193,6 +198,6 @@ _**Note**: This will show you all shares created on SEA-CL1_
 
 18. Sign out of **SEA-CL2**.
 
-**Results**: After completing this exercise, you will have created a folder structure for the Marketing and information technology (IT) departments, shared their folders, and tested local and share permissions.
+**Results**: After completing this exercise, you will have created a folder structure for the Marketing and IT departments, shared their folders, and tested local and share permissions.
 
 **END OF LAB**

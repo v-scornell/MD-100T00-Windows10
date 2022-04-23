@@ -2,13 +2,13 @@
 
 ## Summary
 
-In this lab you will learn how to create and manage domain password policies, account options, and User Account Control.
+In this lab you create and manage domain password policies, account options, and User Account Control.
 
 ## Exercise 1: Managing Domain Password Policies
 
 ### Scenario
 
-You have been delegated the task to configure the domain password policy for Contoso.com. Part of your task is to implement a new security requirement that specifies a longer password and a 20 minute account lockout if a user incorrectly enters their password more than twice in succession.
+You have been delegated the task to configure the domain password policy for Contoso.com. Part of your task is to implement a new security requirement that specifies a longer password and a 20 minute account lockout if a user incorrectly enters their password more than three times in succession.
 
 *Note: You will use SEA-SVR1 which includes all Windows Administrative Tools for remotely managing SEA-DC1 and to perform Active Directory management tasks.*
 
@@ -16,45 +16,45 @@ You have been delegated the task to configure the domain password policy for Con
 
 1. Sign in in to SEA-SVR1 as **Contoso\\Administrator**  with the password **Pa55w.rd**.
 
-2. Click **Start** and then select **Server Manager**.
+   > **Server Manager** opens.
 
-3. Select **Tools** and then select **Group Policy Management.**
+2. In Server Manager, select **Tools** and then select **Group Policy Management.**
 
-4. In the Group Policy Management console, expand **Forest:Contoso.com\\Domains\\Contoso.com**, and then select the **Group Policy Objects** node.
+3. In the Group Policy Management console, expand **Forest:Contoso.com\\Domains\\Contoso.com**, and then select the **Group Policy Objects** node.
 
-5. In the **Group Policy Objects in Contoso.com** window, right‑click the **Default Domain Policy** policy, and then select **Edit**.
+4. In the **Group Policy Objects in Contoso.com** window, right‑click the **Default Domain Policy** policy, and then select **Edit**.
 
-6. In the Group Policy Management Editor, expand the **Computer Configuration\\Policies\\Windows Settings\\Security Settings\\Account Policies** node, and then select **Password Policy.**
+5. In the Group Policy Management Editor, expand the **Computer Configuration\\Policies\\Windows Settings\\Security Settings\\Account Policies** node, and then select **Password Policy.**
 
-7. In the list of policies, double-click the **Minimum password length** policy.
+6. In the list of policies, double-click the **Minimum password length** policy.
 
-8. On the **Minimum password length Properties** page, set the **Password must be at least** value to **12** characters, and then select **OK**.
+7. On the **Minimum password length Properties** page, set the **Password must be at least** value to **12** characters, and then select **OK**.
 
-9. In the console tree, select the **Account Lockout Policy** node.
+8. In the console tree, select the **Account Lockout Policy** node.
 
-10. Double-click the **Account lockout duration** policy.
+9. Double-click the **Account lockout duration** policy.
 
-11. In the **Account Lockout Duration Properties** dialog box, select **Define this policy setting**, and then set the **Account is locked out for** value to **20** minutes. Select **OK**.
+10. In the **Account Lockout Duration Properties** dialog box, select **Define this policy setting**, and then set the **Account is locked out for** value to **20** minutes. Select **OK**.
 
-12. In the **Suggested Value Changes** dialog box, select **OK**.
+11. In the **Suggested Value Changes** dialog box, select **OK**.
 
-13. Double-click the **Account lockout threshold** policy.
+12. Double-click the **Account lockout threshold** policy.
 
-14. In the **Account lockout threshold Properties** dialog box, set the **Account will lock out after** setting to **2** invalid logon attempts, and then select **OK**.
+13. In the **Account lockout threshold Properties** dialog box, set the **Account will lock out after** setting to **3** invalid logon attempts, and then select **OK**.
 
-15. Close the Group Policy Management Editor.
+14. Close the Group Policy Management Editor.
 
-16. Close the Group Policy Management console.
+15. Close the Group Policy Management console.
 
-17. In Server Manager, in the **Tools** list, select **Active Directory Users and Computers**.
+16. In Server Manager, in the **Tools** list, select **Active Directory Users and Computers**.
 
-18. Expand the **Contoso.com** node, and then select the **IT** OU.
+17. Expand the **Contoso.com** node, and then select the **IT** OU.
 
-19. Right-click the **Jane Dow** user account, and then select **Properties**.
+18. Right-click the **Jane Dow** user account, and then select **Properties**.
 
-20. In the **Jane Dow Properties** dialog box, select the **Account** tab.
+19. In the **Jane Dow Properties** dialog box, select the **Account** tab.
 
-21. In the list of **Account Options**, clear the **Password never expires** check box, and then select the **User must change password at next logon** check box. select **OK**.
+20. In the list of **Account Options**, clear the **Password never expires** check box, and then select the **User must change password at next logon** check box. select **OK**.
 
 ### Task 2: Refresh GPOs
 
@@ -88,7 +88,7 @@ After configuring a more strict set of password policies you will then ask Jane 
 
 5. In the New password box and the Confirm password box, type **Pa55w.rd1234**, and then press **Enter**.
 
-6. When a message displays that indicates that the password has been changed, select **OK**.
+6. When a message displays that indicates that the password has been changed, select **OK**. Wait as the user profile is created for Jane.
 
 7. Sign out of **SEA-CL1**.
 
@@ -108,23 +108,21 @@ After configuring a more strict set of password policies you will then ask Jane 
 
 ### Task 3: Unlock a locked account
 
-1. Sign in in to SEA-SVR1 as **Contoso\\Administrator**  with the password **Pa55w.rd**.
+1. Switch to SEA-SVR1.
 
-2. Click **Start** and then select **Server Manager**.
+2. On SEA-SVR1, in Server Manager, in the **Tools** list, select **Active Directory Users and Computers**.
 
-3. In Server Manager, in the **Tools** list, select **Active Directory Users and Computers**.
+3. Expand the **Contoso.com** node, and then select the **IT** OU.
 
-4. Expand the **Contoso.com** node, and then select the **IT** OU.
+4. Right-click the **Jane Dow** user account, and then select **Properties**.
 
-5. Right-click the **Jane Dow** user account, and then select **Properties**.
+5. In the **Jane Dow Properties** dialog box, select the **Account** tab.
 
-6. In the **Jane Dow Properties** dialog box, select the **Account** tab.
+6. Select the check box next to **Unlock account**. This account is currently locked out on this Active Directory Domain Controller.
 
-7. Select the check box next to **Unlock account**. **This account is currently locked out on this Active Directory Domain Controller**.
+7. Select **OK** to close the **Jane Dow Properties** box.
 
-8. Select **OK** to close the **Jane Dow Properties** box.
-
-9. Close **Active Directory Users and Computers**.
+8. Close **Active Directory Users and Computers**.
 
 **Results**: After completing this exercise you verified that the password policy works as expected.
 
@@ -138,7 +136,7 @@ You need to configure UAC so that when the UAC dialog box prompts a standard use
 
 1. Sign in to **SEA-CL1** as **Contoso\\Administrator** with the password **Pa55w.rd**.
 
-2. In the **Type here to search** box on the taskbar, type **gpedit.msc**, and then press Enter.
+2. Select Start and then enter **gpedit.msc**, and then press Enter.
 
 3. In the Local Group Policy Editor, expand **Computer Configuration**, expand **Windows Settings**, expand **Security Settings**, expand **Local Policies**, and then select **Security Options**.
 
@@ -162,21 +160,23 @@ You need to configure UAC so that when the UAC dialog box prompts a standard use
 
 1. Sign in to **SEA-CL1** as **Contoso\\Jon** with the password **Pa55w.rd**.
 
-2. Right-click **Start**, and then select **Windows PowerShell (Admin)**.  
+2. Select **Start**, and then enter **Windows PowerShell**.  
+
+3. Under **Windows PowerShell**, select **Run as administrator**.
 
    _**Note**: The Windows operating system displays the User Account Control prompt._
 
-3. In the **User name** box, type **Administrator**, and in the **Password** box, type **Pa55w.rd**, and then select **Yes**.
+4. In the **User name** box, type **Administrator**, and in the **Password** box, type **Pa55w.rd**, and then select **Yes**.
 
-4. Close the Windows PowerShell prompt.
+5. Close the Windows PowerShell window.
 
-5. Sign out of **SEA-CL1**.
+6. Sign out of **SEA-CL1**.
 
 ### Task 3: Verify the UAC notifications as an administrator
 
 1. Sign in to **SEA-CL1** as **Contoso\\Administrator** with the password **Pa55w.rd**.
 
-2. In the **Type here to search** box on the taskbar, type **Control Panel**, and then press Enter.
+2. Select **Start**, type **Control Panel**, and then press Enter.
 
 3. In Control Panel, select **System and Security**.
 

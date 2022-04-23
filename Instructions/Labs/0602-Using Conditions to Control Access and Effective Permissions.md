@@ -4,6 +4,12 @@
 
 In this lab you will learn how to use conditions to dynamically control access to files based on specific criteria.
 
+### Prerequisites
+
+To following lab(s) must be completed before this lab:
+
+- 0601-Configuring and Managing Local and Share Permissions
+
 ### Scenario
 
 Members of the IT, Marketing, and Research departments all require access to file shares located on SEA-CL1, but require different permissions for the data they use. You've been instructed to create a new shared folder in E:\\Data named Research. The Research shared folder should only be accessible by users in the Research Department. The IT shared folder should only by accessible by employees located in the United States who are members of the IT Department. The Active Directory administrator has already configured Dynamic Access Control to allow for you to assign Department and Country based Claim Types to permissions on shared folders.
@@ -14,7 +20,7 @@ Members of the IT, Marketing, and Research departments all require access to fil
 
 2. Select the **File Explorer** icon on the taskbar.
 
-3. In File Explorer, in the navigation pane, expand **AllFiles (E:)**, and then select **Data**. In the details pane, right-click the empty space, select **New**, select **Folder**, and type **Research** as the new folder name.
+3. In File Explorer, in the navigation pane, expand **AllFiles (D:)**, and then select **Data**. In the details pane, right-click the empty space, select **New**, select **Folder**, and type **Research** as the new folder name.
 
 4. Right-click **Research**, select **Properties**, select the **Sharing** tab, and then select **Advanced Sharing**.
 
@@ -22,15 +28,14 @@ Members of the IT, Marketing, and Research departments all require access to fil
 
 6. In the Permissions for Research dialog box, in the Permissions for Everyone section, select the **Change** check box in the Allow column, and then select **OK** twice.
 
-7. In the Research Properties dialog box, select the **Security** tab, select **Advanced**, and then verify that all permissions entries are inherited from E:\\.
+7. In the Research Properties dialog box, select the **Security** tab, select **Advanced**, and then verify that all permissions entries are inherited from D:\\.
 
 8. In the Advanced Security Settings for Research dialog box, select **Users (SEA-CL1\\Users)**, and then select **Remove**. Read the text in the Windows Security dialog box that appears, select **OK**
 
 9. Select **Disable inheritance**.
 
-10. In the Block Inheritance dialog box, select **Convert inherited permissions into explicit permissions on this object**, and then verify that all permissions entries are set explicitly at this level because their
-    permission inheritance is set to **None**.
-
+10. In the Block Inheritance dialog box, select **Convert inherited permissions into explicit permissions on this object**, and then verify that all permissions entries are set explicitly at this level because their permission inheritance is set to **None**.
+    
 11. In the Advanced Security Settings for Research dialog box, select **Users (SEA-CL1\\Users)**, and then select **Remove**.
 
     _**Note**: The entry for Users is now removed from the Permission entries because it was explicitly set at this level._
@@ -49,9 +54,8 @@ Members of the IT, Marketing, and Research departments all require access to fil
 
     _**Note**: A claim type for the c (country) attribute was preconfigured for the purpose of this lab._
 
-17. Select **OK** twice, then select **Close** to close the IT Properties window.
+17. Sign out of SEA-CL1.
 
-18. Sign out of SEA-CL1.
 
 ### Task 2: Test conditions to control access
 
@@ -93,7 +97,7 @@ Members of the IT, Marketing, and Research departments all require access to fil
 
 15. Select **Start**, type **cmd** and then select **Command Prompt**
 
-16. At the command prompt, type the following command, and then press **Enter** `whoami /claims`. Review the output, and then **close** the command prompt.
+16. At the command prompt, type the following command, and then press **Enter** `whoami /claims`. Review the output, and then close the command prompt.
 
     _**Note**: Mike has a Country claim with the value of GB, so he cannot connect to the IT share, even though he is a member of the IT group._
 
@@ -118,7 +122,7 @@ Members of the IT, Marketing, and Research departments all require access to fil
 25. In the details pane, right-click the **empty space**, select **New**, select **Text Document**, and then type **File60** as the name of the file.
 
     _**Note**: Davy has permissions to create a new file in the Research share because his department claim has a value of Research._
- 
+
 26. Sign out of **SEA-CL2**.
 
 ### Task 3: View effective permissions
@@ -129,9 +133,9 @@ Members of the IT, Marketing, and Research departments all require access to fil
 
 3. Select the **File Explorer** icon on the taskbar.
 
-4. In File Explorer, browse to **E:\\Data**.
+4. In File Explorer, browse to **D:\\Data**.
 
-5. In File Explorer, right-click **Marketing**, select **Properties**, select the **Security tab**, select **Advanced**, and then select the **Effective Access** tab.
+5. In File Explorer, right-click **Marketing**, select **Properties**, select the **Security** tab, select **Advanced**, and then select the **Effective Access** tab.
 
 6. In the Advanced Security Settings for Marketing dialog box, select **Select a user**, in the Enter the object name to select (examples) box, type **Anders**, select **OK**, and then select **View effective access**. View the effective permissions, and then select **OK** twice.
 
@@ -139,9 +143,9 @@ Members of the IT, Marketing, and Research departments all require access to fil
 
 7. In File Explorer, right-click **Research**, select **Properties**, select the **Security** tab, select **Advanced**, and then select the **Effective Access** tab.
 
-8. In the Advanced Security Settings for Research dialog box, select **Select a user**, in the Enter the object name to select (examples) text box, type **Brian**, select **OK**, in the Multiple Names Found dialog box, review the information and select **OK**, and then select **View effective access**.
+8. In the Advanced Security Settings for Research dialog box, select **Select a user**, in the Enter the object name to select (examples) text box, type **Brian Burke**, select **OK**, and then select **View effective access**.
 
-   _**Note**: Brian is a member of Development group. Only users with the department claim with a value of Research have permissions to the folder, you can see that Brian has no permissions allowed._
+   _**Note**: Brian is a member of Development group. Only users with the department claim value of Research have permissions to the folder, you can see that Brian has no permissions allowed._
 
 9. In the Advanced Security Settings for Research dialog box, select **Include a user claim**, select **department** in the drop-down list, type **Research** in the Enter value here text box, and then select **View effective access**.
 

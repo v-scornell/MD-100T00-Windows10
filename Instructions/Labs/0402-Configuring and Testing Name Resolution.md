@@ -2,7 +2,13 @@
 
 ## Summary
 
-In this lab, you will verify and manage name resolution for a Windows 10 network client. You will also test and troubleshoot name resolution by using command line tools, DNS, and a hosts file entry.
+In this lab, you will verify and manage name resolution for a Windows network client. You will also test name resolution by using command line tools, DNS, and a hosts file entry.
+
+### Prerequisites
+
+To following lab(s) must be completed before this lab:
+
+- 0501-Configuring Network Connectivity - On SEA-CL1, DHCP should be enabled for the Ethernet connection.
 
 ## Exercise 1: Verify and Manage Name Resolution
 
@@ -14,7 +20,7 @@ You need to check and verify current DNS settings on SEA-CL1. You will also test
 
 1. Sign in to **SEA-CL1** as **Contoso\\Administrator** with the password **Pa55w.rd**.
 
-2. Right-click **Start**, and then select **Windows PowerShell (Admin)**.
+2. Right-click **Start**, and then select **Windows Terminal (Admin)**.
 
 3. At the Windows PowerShell command prompt, type the following command, and then press **Enter**.  
 
@@ -84,7 +90,7 @@ _Note: The PowerShell command also provides IP address information._
 
 ### Scenario
 
-A user reports that SEA-CL1 cannot connect to www.Contoso.com or intranet.Contoso.com. To address the issue, you decide to add www to the hosts file along with the SEA-SVR1.contoso.com IP address. You will also add an alias DNS record for intranet.Contoso.com that resolves to SEA-SVR1.contoso.com. Finally you will verify name resolution and connectivity.
+A user reports that SEA-CL1 cannot connect to www.Contoso.com or intranet.Contoso.com. To address the issue, you decide to add www to the hosts file along with the SEA-SVR1.contoso.com IP address. You will also add an alias DNS record for intranet.Contoso.com that resolves to SEA-CFG1.contoso.com. Finally you will verify name resolution and connectivity.
 
 ### Task 1: Create and test a hosts file entry
 
@@ -127,7 +133,7 @@ _Note:  Neither name is reachable because www and intranet cannot be resolved to
 8. At the Windows PowerShell command prompt, type the following command, and then press **Enter**.
 
 ```
-    Get-DnsClientCache | Format-List
+    Get-DnsClientCache
 ```
 
 9. View the www record in the cache.
@@ -150,7 +156,7 @@ _Note:  Neither name is reachable because www and intranet cannot be resolved to
 
 7. In the **Alias Name** field, type **intranet**.
 
-8. In the Fully Qualified domain name (FQDN) field, type **SEA-SVR1.Contoso.com** and select **OK.**
+8. In the Fully Qualified domain name (FQDN) field, type **SEA-CFG1.Contoso.com** and select **OK.**
 
 9. Sign out of SEA-SVR1.
 
@@ -162,59 +168,7 @@ _Note:  Neither name is reachable because www and intranet cannot be resolved to
     ping intranet.Contoso.com
 ```
 
-10. Verify that intranet.Contoso.com is resolving to SEA-SVR1.contoso.com and IP Address 172.16.0.11.
-
-### Task 3: Troubleshoot name resolution
-
-1. On SEA-CL1, at the Windows PowerShell command prompt, type the following command, and then press **Enter**.
-
-```
-    nslookup www
-```
-
-_Note: nslookup does not find the entry as it's only a hosts entry on the local computer._
-
-2. At the Windows PowerShell command prompt, type the following command, and then press **Enter**.
-
-```
-    nslookup intranet
-```
-
-3. At the Windows PowerShell command prompt, type the following command, and then press **Enter**.
-
-```
-    Resolve-Dnsname SEA-SVR1 | Format-List
-````
-
-4. At the Windows PowerShell command prompt, type the following command, and then press **Enter**.
-
-```
-    nslookup -debug intranet > file.txt
-```
-
-5. At the Windows PowerShell command prompt, type the following command, and then press **Enter**.
-
-```
-    notepad file.txt
-```
-
-6. Review the information. Note that you might have to scroll to the section starting with **Got answer**.
-
-7. What was the question that was asked of the DNS server?
-
-    - QUESTIONS: intranet.Contoso.com, type = A, class = IN
-8. What was the response?
-
-    - ANSWERS: intranet.Contoso.com
-    - canonical name = SEA-SVR1.Contoso.com
-    - ttl = 3600 (1 hour)
-    - SEA-SVR1.Contoso.com
-    - internet address = 172.16.0.11
-    - ttl = 1200 (20 mins)
-9. How long will the intranet.Contoso.com record be cached?
-
-    - 1 hour
-10. Close all open windows.
+10. Verify that intranet.Contoso.com is resolving to SEA-CFG1.contoso.com and IP Address 172.16.0.13.
 
 11. Sign out of SEA-CL1.
 
