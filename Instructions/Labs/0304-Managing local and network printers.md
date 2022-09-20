@@ -10,7 +10,7 @@ The Contoso Marketing department has purchased a new printer that uses a Microso
 
 ### Task 1: Add and share a local printer
 
-1. Sign in to SEA-SVR1 as **Contoso\\Administrator** with the password **Pa55w.rd**.
+1. Sign in to **SEA-SVR1** as **Contoso\\Administrator** with the password **Pa55w.rd**.
 
 2. Select **Start** and then select **Control Panel**.
 
@@ -88,7 +88,7 @@ The Contoso Marketing department has purchased a new printer that uses a Microso
 
 ### Task 4: Connect to a remote printer
 
-1. Switch to SEA-CL1, and sign in as **Contoso\\Terry** with the password **Pa55w.rd**.
+1. Switch to **SEA-CL1**, and sign in as **Contoso\\Terry** with the password **Pa55w.rd**.
 
    _Note: Terry is member of the IT group, but she is not a member of the Managers group._
 
@@ -122,7 +122,7 @@ The Contoso Marketing department has purchased a new printer that uses a Microso
 
 3. In the **Print** dialog box, select **PostScript Printer on SEA-SVR2**, and then select **Print**.
 
-4. Switch to SEA-SVR1.
+4. Switch to **SEA-SVR1**.
 
 5. On SEA-SVR1, in Print Management, expand **Custom Filters** and then select **Printers With Jobs**. In the details pane, view that **PostScript Printer** is listed and that it has one job in the queue.
 
@@ -138,7 +138,7 @@ The Contoso Marketing department has purchased a new printer that uses a Microso
 
 10. Sign out from SEA-CL1.
 
-11. Switch to SEA-SVR1.
+11. Switch to **SEA-SVR1**.
 
 12. On SEA-SVR1, in Print Management, verify that there are no longer any printers listed under the **Printers With Jobs** node.
 
