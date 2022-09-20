@@ -69,7 +69,7 @@ Exit-PSSession
 
 7. On the Remote Desktop Users page, select **Add**.
 
-8. On the Select Users and Group box, enter **Jon Cantrell** and then select **OK**.
+8. On the Select Users or Groups box under **Enter the object names to select (examples)** enter **Jon Cantrell** and then select **OK**.
 
 9. Select **OK** to close the Remote Desktop Users dialog box.
 
@@ -83,11 +83,11 @@ Exit-PSSession
 
 13. Close all open Windows on SEA-CL1 and sign out.
 
-14. Switch to SEA-CL2.
+14. Switch to **SEA-CL2**.
 
 15. Sign in to SEA-CL2 as **Contoso\Jon** with the password of **Pa55w.rd**.
 
-16. On the Start menu, enter Remote Desktop Connection and then select Open.
+16. On the Start menu, enter **Remote Desktop Connection** and then select Open.
 
 17. On the Remote Desktop Connection app, select **Show Options** to expand additional settings.
 
@@ -144,7 +144,7 @@ You need to test remote administration capabilities of the Windows Admin Center.
 
 2. In the **Select a certificate for authentication** window, select the **Windows Admin Center Client** certificate, and then select **OK**.
 
-3. Close the What's new page.
+3. Close the **Read what's new** page.
 
    > Note that you receive notifications on extensions being updated. When the extension update is complete, select **OK** at the **Successfully updated your extensions** message.
 
@@ -180,7 +180,7 @@ You need to test remote administration capabilities of the Windows Admin Center.
 
 11. On the **Tools** pane, select **PowerShell**. A remote PowerShell session is established to SEA-SVR1.
 
-12. In the PowerShell pane, type `Get-Service` and then press Enter. SEA-SVR1 services are displayed.
+12. In the PowerShell pane, type `Get-Service` and then press **Enter**. SEA-SVR1 services are displayed.
 
 13. On the **Tools** pane, select **Remote Desktop**. On the **Navigating away closes PowerShell** box, select **Continue**.
 
