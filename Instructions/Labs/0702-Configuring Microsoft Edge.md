@@ -76,7 +76,7 @@ _Note: This Exercise requires that a DNS CNAME entry for intranet.Contoso.com be
 
 20. Verify that the XML file opens correctly.
 
-21. Close Internet Explorer.
+21. Close **Microsoft Edge**.
 
 ### Task 3: Create a policy to enable Internet Explorer Enterprise Mode  
 
