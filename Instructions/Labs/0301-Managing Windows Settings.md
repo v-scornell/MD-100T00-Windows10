@@ -204,7 +204,7 @@ _Note: This will install the Telnet Client windows feature._
 
    _Note: The output does not have multiple colors, because the script needs to be modified to provide that information._
 
-10. At the end of line 14, type **–ForegroundColor $color**
+10. At the end of line 14, add a space and type **–ForegroundColor $color**
 
 11. On the toolbar, select **Run script (F5)** in the Windows PowerShell ISE window. Select **OK** to save the file, and then read the output.
 
