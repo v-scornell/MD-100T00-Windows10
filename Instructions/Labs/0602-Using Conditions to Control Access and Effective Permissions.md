@@ -26,7 +26,7 @@ Members of the IT, Marketing, and Research departments all require access to fil
 
 5. In the Advanced Sharing dialog box, select the **Share this folder** check box, and then select **Permissions**.
 
-6. In the Permissions for Research dialog box, in the Permissions for Everyone section, select the **Change** check box in the Allow column, and then select **OK** twice.
+6. In the **Permissions for Research** dialog box, in the **Permissions for Everyone** section, select the **Change** check box in the Allow column, and then select **OK** twice.
 
 7. In the Research Properties dialog box, select the **Security** tab, select **Advanced**, and then verify that all permissions entries are inherited from D:\\.
 
@@ -42,7 +42,7 @@ Members of the IT, Marketing, and Research departments all require access to fil
 
 12. Verify that **Authenticated Users** is selected, and then select **Edit**.
 
-13. In the Permission Entry for Research dialog box, select **Add a condition**, and compose the following expression: **User Department Equals Value Research**. You will need to type research manually in the last box. Select **OK** twice, then select **Close**.
+13. In the Permission Entry for Research dialog box, select **Add a condition**, and compose the following expression: **User Department Equals Value Research**. You will need to type **research** manually in the last box. Select **OK** twice, then select **Close**.
 
     _**Note**: A claim type for the department attribute was preconfigured for the purpose of this lab._
 
@@ -137,13 +137,13 @@ Members of the IT, Marketing, and Research departments all require access to fil
 
 5. In File Explorer, right-click **Marketing**, select **Properties**, select the **Security** tab, select **Advanced**, and then select the **Effective Access** tab.
 
-6. In the Advanced Security Settings for Marketing dialog box, select **Select a user**, in the Enter the object name to select (examples) box, type **Anders**, select **OK**, and then select **View effective access**. View the effective permissions, and then select **OK** twice.
+6. In the Advanced Security Settings for Marketing dialog box, select **Select a user**, in the **Enter the object names to select (examples)** box, type **Anders**, click **Check Names** and then select **OK**, and then select **View effective access**. View the effective permissions, and then select **OK** twice.
 
    _**Note**: As Authenticated Users have the Modify permission to the Marketing folder, you can see that Anders has the most permissions allowed._
 
 7. In File Explorer, right-click **Research**, select **Properties**, select the **Security** tab, select **Advanced**, and then select the **Effective Access** tab.
 
-8. In the Advanced Security Settings for Research dialog box, select **Select a user**, in the Enter the object name to select (examples) text box, type **Brian Burke**, select **OK**, and then select **View effective access**.
+8. In the Advanced Security Settings for Research dialog box, select **Select a user**, in the **Enter the object names to select (examples)** text box, type **Brian Burke**, click **Check Names** select **OK**, and then select **View effective access**.
 
    _**Note**: Brian is a member of Development group. Only users with the department claim value of Research have permissions to the folder, you can see that Brian has no permissions allowed._
 
@@ -151,8 +151,7 @@ Members of the IT, Marketing, and Research departments all require access to fil
 
    _**Note**: You can see that if Brian had the department user claim with the value of Research, he would have most permissions allowed._
 
-10. In the Advanced Security Settings for Research dialog box, select **Select a user**, in the Enter the object name to select (examples) box, type **Aaron**, select **OK**, and then select **View effective access**. Review
-    the effective permissions, and then select **OK** twice.
+10. In the Advanced Security Settings for Research dialog box, select **Select a user**, in the **Enter the object names to select (examples)** box, type **Aaron**, click **Check Names** select **OK**, and then select **View effective access**. Review the effective permissions, and then select **OK** twice.
 
     _**Note**: If Aaron had the user claim of department with the value of Research, he would have the most permissions allowed._
 
