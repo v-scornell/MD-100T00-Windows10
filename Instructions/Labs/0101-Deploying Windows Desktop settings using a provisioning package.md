@@ -75,12 +75,12 @@ As part of the Desktop Administration team at Contoso, you have been tasked with
    - Application name: **Power BI Desktop**
    - Installer path: **E:\\Labfiles\\Apps\\PowerBI\\PBIDesktop_x64.msi**
    - Continue installations after failure: **Yes**
-   - In the **Command line arguments** box, at the end of the command add **ACCEPT_EULA=1** and then select **Add**.
+   - In the **Command line arguments** box, at the end of the command add a space and type **ACCEPT_EULA=1** and then select **+** symbol to add.
 
 10. On the **Add applications** step, select **Add an application** and then configure the following settings:
     - Application name: **PowerToys**
     - Installer path: **E:\\Labfiles\\Apps\\PowerToys\\PowerToysSetup-x64.exe**
-    - In the **Command line arguments** box, at the end of the command add **-passive** and then select **Add**. The passive switch allows the display of the installation status, but will not require any input.
+    - In the **Command line arguments** box, at the end of the command add a space and type **-passive** and then select **+** symbol to add. The passive switch allows the display of the installation status, but will not require any input.
 
 11. Select the **Finish** step and review the **Summary** information.
 
@@ -142,7 +142,7 @@ As part of the Desktop Administration team at Contoso, you have been tasked with
 
 3. On the **System** page, verify that the Computer name is **SEA-CL** followed by two random numbers.
 
-4. On the Start menu, select **Apps** and then select **Apps & features**.
+4. On the Start menu, select **Settings**, **Apps** and then select **Apps & features**.
 
 5. Verify that both **Microsoft Power BI Desktop (x64)** and **PowerToys (Preview) x64** are both listed as installed applications.
 
