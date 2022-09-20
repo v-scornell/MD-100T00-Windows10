@@ -55,7 +55,7 @@ You need to investigate and resolve the issue.
 
 > Note that the IP renewal is not successful.
 
-7. Switch to SEA-SVR1
+7. Switch to **SEA-SVR1**
 
 8. If necessary, select **Start** and then select **Server Manager**.
 
@@ -69,7 +69,7 @@ You need to investigate and resolve the issue.
 
 12. Sign out of SEA-SVR1.
 
-13. Switch to SEA-CL1.
+13. Switch to **SEA-CL1**.
 
 14. At the command prompt, type the following command, and then press **Enter**.
 
