@@ -42,9 +42,9 @@ You have been delegated the task to configure the domain password policy for Con
 
 13. In the **Account lockout threshold Properties** dialog box, set the **Account will lock out after** setting to **3** invalid logon attempts, and then select **OK**.
 
-14. Close the Group Policy Management Editor.
+14. Close the **Group Policy Management Editor**.
 
-15. Close the Group Policy Management console.
+15. Close the **Group Policy Management console**.
 
 16. In Server Manager, in the **Tools** list, select **Active Directory Users and Computers**.
 
@@ -108,7 +108,7 @@ After configuring a more strict set of password policies you will then ask Jane 
 
 ### Task 3: Unlock a locked account
 
-1. Switch to SEA-SVR1.
+1. Switch to **SEA-SVR1**.
 
 2. On SEA-SVR1, in Server Manager, in the **Tools** list, select **Active Directory Users and Computers**.
 
@@ -136,9 +136,9 @@ You need to configure UAC so that when the UAC dialog box prompts a standard use
 
 1. Sign in to **SEA-CL1** as **Contoso\\Administrator** with the password **Pa55w.rd**.
 
-2. Select Start and then enter **gpedit.msc**, and then press Enter.
+2. Select **Start** and then enter **gpedit.msc**, and then press Enter.
 
-3. In the Local Group Policy Editor, expand **Computer Configuration**, expand **Windows Settings**, expand **Security Settings**, expand **Local Policies**, and then select **Security Options**.
+3. In the **Local Group Policy Editor**, expand **Computer Configuration**, expand **Windows Settings**, expand **Security Settings**, expand **Local Policies**, and then select **Security Options**.
 
 4. In the results pane, double-click **User Account Control: Behavior of the elevation prompt for standard users**.
 
@@ -152,7 +152,7 @@ You need to configure UAC so that when the UAC dialog box prompts a standard use
 
 9. In the **User Account Control: Behavior of the elevation prompt for administrators in Admin Approval Mode** dialog box, select the **Prompt for consent for non-Windows binaries** drop down list, select **Prompt for consent on the secure desktop**, and then select **OK**.
 
-10. Close the Local Group Policy Editor.
+10. Close the **Local Group Policy Editor**.
 
 11. Sign out of **SEA-CL1**.
 
@@ -168,7 +168,7 @@ You need to configure UAC so that when the UAC dialog box prompts a standard use
 
 4. In the **User name** box, type **Administrator**, and in the **Password** box, type **Pa55w.rd**, and then select **Yes**.
 
-5. Close the Windows PowerShell window.
+5. Close the **Windows PowerShell** window.
 
 6. Sign out of **SEA-CL1**.
 
@@ -178,7 +178,7 @@ You need to configure UAC so that when the UAC dialog box prompts a standard use
 
 2. Select **Start**, type **Control Panel**, and then press Enter.
 
-3. In Control Panel, select **System and Security**.
+3. In **Control Panel**, select **System and Security**.
 
 4. In **Security and Maintenance**, select **Change User Account Control settings**.
 
@@ -186,7 +186,7 @@ You need to configure UAC so that when the UAC dialog box prompts a standard use
 
 6. Select **Cancel**.
 
-7. Close all open windows and sign out of SEA-CL1.
+7. Close all open windows and sign out of **SEA-CL1**.
 
 **Results**: After completing this exercise you have configured the prompt behavior of UAC.
 
