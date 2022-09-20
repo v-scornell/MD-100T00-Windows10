@@ -20,23 +20,23 @@ You need to add storage to SEA-WS2. Additional disks have been installed and you
 
 ### Task 2: Create a simple volume using Disk Management
 
-1. Right-click the Unallocated space on Disk 1, and then select **New Simple Volume**.
+1. Right-click the **Unallocated space** on Disk 1, and then select **New Simple Volume**.
 
 2. In the New Simple Volume Wizard window, select **Next**.
 
 3. On the Specify Volume Size page, next to Simple volume size in MB, type **5120**, and then select **Next**.
 
-4. On the Assign Drive Letter or Path page, make sure that **Assign the following drive letter: E** is selected, and then select **Next**.
+4. On the **Assign Drive Letter or Path** page, make sure that **Assign the following drive letter: E** is selected, and then select **Next**.
 
-5. On the Format partition page, in the Volume Label text box, type **Data**.
+5. On the **Format partition** page, in the Volume Label text box, type **Data**.
 
 6. Ensure that the check box is selected next to **Perform a quick format**, and then select **Next**.
 
-7. On the Completing the New Simple Volume Wizard page, select **Finish**. 
+7. On the **Completing the New Simple Volume Wizard** page, select **Finish**. 
 
    _Note: If prompted to format drive E:, select Cancel._
 
-8. From the taskbar, select **File Explorer**. Verify that you have a new E drive named Data.
+8. From the taskbar, select **File Explorer**. Verify that you have a new **E drive** named Data.
 
 9. Close the **File Explorer** window.
 
@@ -52,7 +52,7 @@ You need to add storage to SEA-WS2. Additional disks have been installed and you
 
 3. Open **File Explorer** and verify that you have a new F drive named Local Disk.
 
-4. Select the F drive. A message is displayed that asks if you want to format the drive.
+4. Select the **F drive**. A message is displayed that asks if you want to format the drive.
 
 5. At the Microsoft Windows prompt, select **Format disk**.
 
@@ -70,17 +70,17 @@ You need to add storage to SEA-WS2. Additional disks have been installed and you
 
 1. In Disk Management, right-click **(F:)**, and then select **Extend Volume**.
 
-2. In the Extend Volume Wizard window, select **Next**.
+2. In the **Extend Volume Wizard** window, select **Next**.
 
-3. On the Select Disks page, next to Select the amount of space in MB, type **8192**, and then select **Next**.
+3. On the **Select Disks** page, next to **Select the amount of space in MB**, type **8192**, and then select **Next**.
 
-4. On the Completing the Extend Volume Wizard page, select **Finish**. Notice that Drive F is now 13 GB in size.
+4. On the **Completing the Extend Volume Wizard** page, select **Finish**. Notice that Drive F is now 13 GB in size.
 
 ### Task 5: Shrink a simple volume
 
 1. In Disk Management, right-click **(F:)**, and then select **Shrink Volume**.
 
-2. On the Shrink F: page, next to Enter the amount of space to shrink in MB, type **2048**, and then select **Shrink**. Notice that Drive F is now 11 GB in size.
+2. On the Shrink F: page, next to **Enter the amount of space to shrink in MB**, type **2048**, and then select **Shrink**. Notice that Drive F is now 11 GB in size.
 
 3. Close all open windows and sign out of SEA-WS2.
 
