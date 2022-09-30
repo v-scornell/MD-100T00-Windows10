@@ -148,15 +148,15 @@ _Note:  Neither name is reachable because www and intranet cannot be resolved to
 
 3. In Server Manager, select **All Servers**.
 
-4. Right-click SEA-DC1, and then select **DNS Manager**.
+4. Right-click **SEA-DC1**, and then select **DNS Manager**.
 
-5. Expand the **Forward Lookup Zones** folder and select **Contoso.com**.
+5. Select **SEA-DC1.Contoso.com**, expand the **Forward Lookup Zones** folder and select **Contoso.com**.
 
 6. Select **Action** in the top menu, then select **New Alias (CNAME)**.
 
 7. In the **Alias Name** field, type **intranet**.
 
-8. In the Fully Qualified domain name (FQDN) field, type **SEA-CFG1.Contoso.com** and select **OK.**
+8. In the **Fully Qualified domain name (FQDN) for target host:** field, type **SEA-CFG1.Contoso.com** and select **OK.**
 
 9. Sign out of SEA-SVR1.
 
