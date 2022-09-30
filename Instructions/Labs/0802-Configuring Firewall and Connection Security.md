@@ -96,7 +96,7 @@ SEA-SVR1 also needs to be configured to allow remote desktop connections, howeve
 
 ### Task 2: Create an outbound rule
 
-1. On **SEA-CL1**, on the taskbar, select the **Windows Firewall with Advanced Security** window, and then select **Outbound Rules**.
+1. On **SEA-CL1**, on the taskbar, select the **Windows Defender Firewall with Advanced Security** window, and then select **Outbound Rules**.
 
 2. In the Actions pane, select **New Rule**.
 
@@ -140,7 +140,7 @@ Your manager wants you to ensure that all network traffic between SEA-CL1 and SE
 
 1. Sign in to **SEA-CL2** as **Contoso\\Administrator** with the password **Pa55w.rd**.
 
-2. Right-click **Start**, and then select **Windows Terminal**.
+2. Right-click **Start**, and then select **Windows Terminal (Admin)**.
 
 3. In the Windows PowerShell window, type the following command and then press **Enter**
 
