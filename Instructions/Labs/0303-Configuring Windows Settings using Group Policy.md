@@ -64,7 +64,7 @@ You have been delegated the task to create Group Policy Objects for the Contoso.
 
 8. In the **Target path** text box, enter **C:\\Windows\\write.exe**.
 
-9. In the Icon file path section, select the ellipse button and select an icon to represent the app.
+9. In the **Icon file path** section, select the ellipse button and select an icon to represent the app.
 
 10. On the **Common** tab, select the check box next to **Remove this item when it is no longer applied.** Select **OK** at the warning message.
 
@@ -120,13 +120,13 @@ You need to create the additional Active Directory objects and link the GPOs. Yo
 
 ### Task 3: Validate the Group Policy Object settings  
 
-1. Switch to SEA-CL2 and from the sign-in screen select the **Power** button and then select **Restart**.
+1. Switch to **SEA-CL2** and from the sign-in screen select the **Power** button and then select **Restart**.
 
 2. After SEA-CL2 restarts, attempt to sign in. Notice the Warning message that displays.
 
-3. Switch to SEA-CL1 and sign in as **Contoso\Alice** with the password of **Pa55w.rd**.
+3. Switch to **SEA-CL1** and sign in as **Contoso\Alice** with the password of **Pa55w.rd**.
 
-4. On the SEA-CL1 desktop, take note of the shortcut to Write.exe. Alice is a member of the Marketing OU.
+4. On the SEA-CL1 desktop, take note of the shortcut to **Write.exe**. Alice is a member of the Marketing OU.
 
 5. Sign out of SEA-CL1 and then sign in as **Contoso\Scott** with the password of **Pa55w.rd**.
 
@@ -134,7 +134,7 @@ You need to create the additional Active Directory objects and link the GPOs. Yo
 
 7. Sign out of SEA-CL1.
 
-8. Switch to SEA-SVR1.
+8. Switch to **SEA-SVR1**.
 
 9. Restore **Active Directory Users and Computers**. 
 
@@ -146,7 +146,7 @@ You need to create the additional Active Directory objects and link the GPOs. Yo
 
 13. Select **Seattle Clients** and validate that SEA-CL2 is now a member.
 
-14. Switch to SEA-CL2 and from the sign-in screen, select **OK** at the warning, select the **Power** button and then select **Restart**.
+14. Switch to **SEA-CL2** and from the sign-in screen, select **OK** at the warning, select the **Power** button and then select **Restart**.
 
 **Results**: After completing this exercise, you will have successfully assigned and validated the Group Policy Object settings.
 
@@ -160,7 +160,7 @@ Contoso Sales Managers have requested that a shortcut to a Contacts app be place
 
 ### Task 1: Verify current settings  
 
-1. Sign in to SEA-CL1 as **Contoso\\Paul** with the password of **Pa55w.rd**. Notice that there is no shortcut to the Contacts app.
+1. Sign in to **SEA-CL1** as **Contoso\\Paul** with the password of **Pa55w.rd**. Notice that there is no shortcut to the Contacts app.
 
 2. Select **Start**, and then enter **cmd**. Under **Command Prompt**, select **Run as administrator**.
 
@@ -190,7 +190,7 @@ Contoso Sales Managers have requested that a shortcut to a Contacts app be place
 
 ### Task 2: Modify Group Policy Object settings  
 
-1. Switch to SEA-SVR1 and select **Start**, and then select **Server Manager**.
+1. Switch to **SEA-SVR1** and select **Start**, and then select **Server Manager**.
 
 2. Select **Tools** and then select **Group Policy Management**.
 
@@ -204,7 +204,7 @@ Contoso Sales Managers have requested that a shortcut to a Contacts app be place
 
 6. In the details pane, under **Security Filtering**, select **Add**.
 
-7. In the **Select User, Computer, or Group** box, enter **Sales Managers** and then select **OK**.
+7. In the **Select User, Computer, or Group** box, under **Enter the object anem to select (examples)** enter **Sales Managers**, click **Check Names** and then select **OK**.
 
 8. In the Group Policy Management console, right-click the **Sales** OU, and then select **Link an existing GPO**.
 
@@ -214,7 +214,7 @@ Contoso Sales Managers have requested that a shortcut to a Contacts app be place
 
 ### Task 3: Validate the Group Policy Object settings  
 
-1. Switch to SEA-CL1 and sign in as **Contoso\Paul** with the password of **Pa55w.rd**.
+1. Switch to **SEA-CL1** and sign in as **Contoso\Paul** with the password of **Pa55w.rd**.
 
 2. On the SEA-CL1 desktop, take note of the shortcut to Contact Apps. 
 
