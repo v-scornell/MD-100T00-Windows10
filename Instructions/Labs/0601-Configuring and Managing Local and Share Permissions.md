@@ -16,7 +16,7 @@ You need to create file shares for the Marketing and IT department to enable use
 
 3. In File Explorer, in the navigation pane, expand **This PC**, and then select **Allfiles (D:)**. In the details pane, right-click the **empty space**, select **New**, select **Folder**, and then type **Data** for the new folder’s name.
 
-4. In File Explorer, in the navigation pane, expand **Allfiles (E:),** and select **Data**. In the details pane, right-click the empty space, select **New**, select **Folder**, and then type **Marketing** for the new folder’s
+4. In File Explorer, in the navigation pane, expand **Allfiles (D:),** and select **Data**. In the details pane, right-click the empty space, select **New**, select **Folder**, and then type **Marketing** for the new folder’s
     name.
 
 5. In File Explorer, in the details pane, right-click the **empty space**, select **New**, select **Folder**, and then type **IT** for the new folder’s name.
