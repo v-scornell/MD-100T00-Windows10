@@ -42,7 +42,7 @@ Get-Disk | Where partitionstyle -eq 'raw' | Initialize-Disk -PartitionStyle MBR
 
 5. Select the check box next to **Disk 1**, **Disk 2**, and **Disk 3**, and then select **Create**.
 
-6. On the Size & resiliency section, ensure that **Two-way mirror** is selected and then select **Create**.
+6. On the **Size & resiliency** section, ensure that **Two-way mirror** is selected and then select **Create**.
 
 7. In the **Drive letter** dropdown field select **E:** and then select **Format**.
 
