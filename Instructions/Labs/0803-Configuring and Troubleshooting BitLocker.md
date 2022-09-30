@@ -40,7 +40,7 @@ You have a Windows 11 computer that has sensitive data stored on the D drive. Yo
 
 14. In the navigation area, expand **BitLocker Drive Encryption** and then select **Removable Data Drives**.
 
-15. Double-click **Configure how BitLocker-protected removable drives can be recovered**.
+15. Double-click **Choose how BitLocker-protected removable drives can be recovered**.
 
 16. Select **Enabled**, and then ensure that the check box next to **Save BitLocker recovery information to AD DS for fixed data drives** is selected, and then select **OK**.
 
@@ -148,7 +148,7 @@ Jon has a Windows 11 computer that has sensitive data stored on the D drive. He 
 
    > Take note of the **Enter recovery key** link. Where can you find a copy of the recovery key? Hint: Group policy settings were configured to ensure you can have access to the recovery key.
 
-7. Switch to SEA-SVR1.
+7. Switch to **SEA-SVR1**.
 
 8. From Server Manager, select **Tools**, and then select **Active Directory Users and Computers**.
 
