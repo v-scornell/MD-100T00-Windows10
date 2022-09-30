@@ -10,7 +10,7 @@ In this lab, you will troubleshoot and resolve permissions needed to access file
 
 1. Sign in to **SEA-SVR2** as **Contoso\\Administrator** with the password **Pa55w.rd**.
 
-2. Open File Explorer and then browse to **E:\\Labfiles\\Mod07**.
+2. Open **File Explorer** and then browse to **E:\\Labfiles\\Mod07**.
 
 3. Run the **E:\\Labfiles\\Mod07\\Lab.cmd** script.
 
@@ -68,7 +68,7 @@ You need to investigate and ensure that only members of the Marketing department
 
 9. On the Effective Access tab, select **Select a user**. 
 
-10. In the Select User, Computer, Service Account, or Group dialog box, enter **Mike**, select **OK**, and then select **View effective access**.
+10. In the Select User, Computer, Service Account, or Group dialog box, enter **Mike**, click **Check Names** and then select **OK**, and then select **View effective access**.
 
 11. Verify that Mike has Read permissions, but he does not have Change or Delete permissions, and then select the **Permissions** tab.
 
@@ -76,7 +76,7 @@ You need to investigate and ensure that only members of the Marketing department
 
 13. Select **Convert inherited permissions into explicit permissions on this object,** and then select **OK**.
 
-14. In the Marketing Properties dialog box, select **Edit**.
+14. In the **Marketing Properties** dialog box, select **Edit**.
 
 15. In the Permissions for Marketing dialog box, select **Users**, select **Remove**, and then select **OK**. 
 
@@ -84,11 +84,11 @@ You need to investigate and ensure that only members of the Marketing department
 
 17. On the Effective Access tab, select **Select a user**. 
 
-18. In the Select User, Computer, Service Account, or Group dialog box, enter **Mike**, select **OK**, and then select **View effective access**. Verify that Mike has no permissions.
+18. In the Select User, Computer, Service Account, or Group dialog box, enter **Mike**, click **Check Names** and then select **OK**, and then select **View effective access**. Verify that Mike has no permissions.
 
 19. On the Effective Access tab, select **Select a user**. 
 
-20. In the Select User, Computer, Service Account, or Group dialog box, enter **Alice**, select **OK**, and then select **View effective access**. 
+20. In the Select User, Computer, Service Account, or Group dialog box, enter **Alice**, click **Check Names** and then select **OK**, and then select **View effective access**. 
 
 21. Verify that Alice is a member of the Marketing group, that she has Read and Write permissions, and that her access is limited only by share permissions. 
 
@@ -156,7 +156,7 @@ You need to investigate and ensure that all users from the Marketing department 
 
 5. In Advanced Security Settings for Surveys.txt, verify that there is a condition defined for Allow Write access for the Marketing group. Confirm that the condition requires that the user's city is Seattle.
 
-6. Select the **Effective Access** tab. Select **Select a user**, enter **Bruce**, select **OK**, and then select **View effective access**.
+6. Select the **Effective Access** tab. Select **Select a user**, enter **Bruce**, click **Check Names** and then select **OK**, and then select **View effective access**.
 
 7. Review effective access for Bruce.
 
@@ -166,7 +166,7 @@ You need to investigate and ensure that all users from the Marketing department 
 
 9. Verify that if Bruce has a user claim for city with the value Seattle, and that he can write data to the file.
 
-10. Select **Select a user**, enter **Alice**, and then select **OK**.
+10. Select **Select a user**, enter **Alice**, click **Check Names** and then select **OK**.
 
 11. Verify that user claim City=Seattle is still included, and then select **View effective access**.
 
@@ -186,7 +186,7 @@ You need to investigate and ensure that all users from the Marketing department 
 
 17. Close all open windows and sign out of SEA-SVR2.
 
-18. Switch to SEA-CL1.
+18. Switch to **SEA-CL1**.
 
 19. Sign in to **SEA-CL1** as **Contoso\\Bruce** with the password **Pa55w.rd**.
 
