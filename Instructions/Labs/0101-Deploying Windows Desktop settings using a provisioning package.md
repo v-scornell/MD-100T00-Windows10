@@ -65,7 +65,7 @@ As part of the Desktop Administration team at Contoso, you have been tasked with
    > The lab environment does not have Wi-Fi capable virtual machines and will be disabled for this scenario.
 
 8. On the **Account management** step, configure the following settings:
-   - Enroll into Active Directory: Selected
+   - Enroll into Active Directory: **Selected**
    - Domain name: **Contoso.com**
    - User name: **Contoso\Administrator**
    - User password: **Pa55w.rd**
