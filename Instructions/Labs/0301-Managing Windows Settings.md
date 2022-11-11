@@ -177,7 +177,7 @@ _Note: This will install the Telnet Client windows feature._
 
 ### Task 2: Use a Windows PowerShell Script
 
-1. Select Start, and then in the **Type here to search** box, type **\\\SEA-DC1\\Labfiles** and then press Enter.
+1. Select **Start**, and then in the **Type here to search** box, type **\\\SEA-DC1\\Labfiles** and then press Enter.
 
 2. In the content pane, double-click the **Configure** folder.
 
