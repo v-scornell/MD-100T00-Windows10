@@ -12,9 +12,9 @@ A user named Jon has reported that he can no longer sign in to SEA-CL1. He also 
 
 ### Task 1: Simulate the issue
 
-1. Sign in in to SEA-CL1 as **Contoso\\Administrator**  with the password **Pa55w.rd**.
+1. Sign in to **SEA-CL1** as **Contoso\\Administrator**  with the password **Pa55w.rd**.
 
-2. Open **File Manager**, and then browse to **D:\\Labfiles\\Mod02**.
+2. Open **File Explorer**, and then browse to **D:\\Labfiles\\Mod02**.
 
 3. Run the **Scenario1.vbs** script.
 
@@ -22,7 +22,7 @@ A user named Jon has reported that he can no longer sign in to SEA-CL1. He also 
 
 ### Task 2: Identify the issue
 
-1. Sign in in to SEA-CL1 as **Contoso\\Administrator**  with the password **Pa55w.rd**.
+1. Sign in to **SEA-CL1** as **Contoso\\Administrator**  with the password **Pa55w.rd**.
 
 2. Right-click **Start**, and then select **Windows Terminal (Admin)**.
 
@@ -62,7 +62,7 @@ A user named Jon has reported that he can no longer sign in to SEA-CL1. He also 
 
 ### Task 3: Remediate the issue
 
-1. Sign in in to SEA-CL1 as **Contoso\\Administrator**  with the password **Pa55w.rd**.
+1. Sign in to **SEA-CL1** as **Contoso\\Administrator**  with the password **Pa55w.rd**.
 
 2. Right-click **Start**, and then select **Windows Terminal (Admin)**.
 
@@ -84,7 +84,7 @@ A user named Jon has reported that he can no longer sign in to SEA-CL1. He also 
 
 7. Sign out of SEA-CL1.
 
-8. Attempt to sign in in to SEA-CL1 as **Contoso\\Jon**  with the password **Pa55w.rd**. Notice that the user can sign-in successfully.
+8. Attempt to sign in to SEA-CL1 as **Contoso\\Jon**  with the password **Pa55w.rd**. Notice that the user can sign-in successfully.
 
 9. Sign out of SEA-CL1.
 
