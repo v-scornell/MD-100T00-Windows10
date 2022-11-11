@@ -12,7 +12,7 @@ You have been delegated the task to create Group Policy Objects for the Contoso.
 
 ### Task 1: Create a Group Policy Object to configure security settings  
 
-1. Sign in to SEA-SVR1 as **Contoso\\Administrator** with the password of **Pa55w.rd**.
+1. Sign in to **SEA-SVR1** as **Contoso\\Administrator** with the password of **Pa55w.rd**.
 
 2. If necessary, select **Start**, and then select **Server Manager**.
 
@@ -204,7 +204,7 @@ Contoso Sales Managers have requested that a shortcut to a Contacts app be place
 
 6. In the details pane, under **Security Filtering**, select **Add**.
 
-7. In the **Select User, Computer, or Group** box, under **Enter the object anem to select (examples)** enter **Sales Managers**, click **Check Names** and then select **OK**.
+7. In the **Select User, Computer, or Group** box, under **Enter the object name to select (examples)** enter **Sales Managers**, click **Check Names** and then select **OK**.
 
 8. In the Group Policy Management console, right-click the **Sales** OU, and then select **Link an existing GPO**.
 
