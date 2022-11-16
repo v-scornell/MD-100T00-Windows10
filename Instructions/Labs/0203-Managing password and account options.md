@@ -14,7 +14,7 @@ You have been delegated the task to configure the domain password policy for Con
 
 ### Task 1: Configure password and account options
 
-1. Sign in in to SEA-SVR1 as **Contoso\\Administrator**  with the password **Pa55w.rd**.
+1. Sign in to **SEA-SVR1** as **Contoso\\Administrator**  with the password **Pa55w.rd**.
 
    > **Server Manager** opens.
 
