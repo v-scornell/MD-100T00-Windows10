@@ -58,7 +58,7 @@ _**Note**: This will take several minutes to complete._
 
 4. Sign out of SEA-CL1.
 
-5. Sign in to SEA-CL1 as **Contoso\Administrator** with the password of **Pa55w.rd**.
+5. Sign in to **SEA-CL1** as **Contoso\Administrator** with the password of **Pa55w.rd**.
 
 6. Select **Start** and type **cmd**. Select **Run as administrator**. 
 
@@ -80,7 +80,7 @@ Loadstate \\SEA-SVR2\Labfiles\Install\MigrationStore\Win10 /i:migapp.xml /i:migu
 
 12. Sign out of SEA-CL1.
 
-13. Sign in to SEA-CL1 as **Contoso\Ben** with the password of **Pa55w.rd**.
+13. Sign in to **SEA-CL1** as **Contoso\Ben** with the password of **Pa55w.rd**.
 
 14. Right-click **Start** and then select **Computer Management**. Notice that LocalUser1 and LocalUser2 are both available.
 
