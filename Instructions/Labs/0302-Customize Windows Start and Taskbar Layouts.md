@@ -54,7 +54,7 @@ Export-StartLayout -UseDesktopApplicationID -Path C:\Labfiles\ContosoLayout.xml
 
 ### Task 3: Deploy the Start layout using Local Group Policy
 
-1. On SEA-W10-CL3, select **Start**, type **gpedit.msc** and then press Enter. The Local Group Policy Editor opens.
+1. On SEA-W10-CL3, select **Start**, type **gpedit.msc** and then press **Enter**. The Local Group Policy Editor opens.
 
 2. In the console tree, under **User Configuration**, expand **Administrative Templates**, and then select **Start Menu and Taskbar**.
 
@@ -66,7 +66,7 @@ Export-StartLayout -UseDesktopApplicationID -Path C:\Labfiles\ContosoLayout.xml
 
 ### Task 4: Verify the Windows 10 Start layout
 
-1. Sign in to SEA-W10-CL3 as **Contoso\\Reda** with the password of **Pa55w.rd**.
+1. Sign in to **SEA-W10-CL3** as **Contoso\\Reda** with the password of **Pa55w.rd**.
 
 3. Select **Start** and then take note of the Start page. The **Contoso Utilities** group displays a lock icon that specifies that the group cannot be modified.
 
@@ -164,7 +164,7 @@ Export-StartLayout -Path C:\Labfiles\LayoutModification.json
 
 ### Task 4: Deploy the Taskbar layout using Local Group Policy
 
-1. On SEA-WS1, select **Start**, type **gpedit.msc** and then press Enter. The Local Group Policy Editor opens.
+1. On SEA-WS1, select **Start**, type **gpedit.msc** and then press **Enter**. The Local Group Policy Editor opens.
 
 2. In the console tree, under **User Configuration**, expand **Administrative Templates**, and then select **Start Menu and Taskbar**.
 
@@ -176,9 +176,9 @@ Export-StartLayout -Path C:\Labfiles\LayoutModification.json
 
 6. Sign out of SEA-WS1.
 
-### Task 4: Verify the Windows 11 Taskbar layout
+### Task 5: Verify the Windows 11 Taskbar layout
 
-1. Sign in to SEA-WS1 as **Admin** with the password of **Pa55w.rd**.
+1. Sign in to **SEA-WS1** as **Admin** with the password of **Pa55w.rd**.
 
 2. Verify that the **Command prompt**, **Snipping Tool**, **Sticky Notes**, and the **Weather** apps are all displayed on the taskbar.
 
