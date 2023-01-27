@@ -57,13 +57,14 @@ You need to create two new local user accounts on SEA-WS3. User1 will be a local
 22. In the **New User** dialog box, enter the following and then select **Create**:
      - User name: User2
      - Password: Pa55w.rd
-     - User must change password at next logon: not selected
+     - Confirm password: Pa55w.rd
+     - User must change password at next logon: **not selected**
 
 23. Select **Close** to close the **New User** dialog box. Notice that User2 is now included in the list of users.
 
 24. Sign out of SEA-WS3.
 
-25. Sign in to SEA-WS3 as **User1** with the password of **Pa55w.rd**. Notice that it takes several minutes for the user profile to be created.
+25. Sign in to **SEA-WS3** as **User1** with the password of **Pa55w.rd**. Notice that it takes several minutes for the user profile to be created.
 
 26. At the **Choose privacy settings for your device** page, scroll down to the bottom of the page, and then select **Accept**. The Windows 11 desktop displays.
 
@@ -77,7 +78,7 @@ You need to create two new local user accounts on SEA-WS3. User1 will be a local
 
 ### Task 2: Configure a Microsoft Account on Windows 11
 
-1. Verify that you are signed in to SEA-WS3 as **User1** with the password of **Pa55w.rd**.
+1. Verify that you are signed in to **SEA-WS3** as **User1** with the password of **Pa55w.rd**.
 
 2. Select **Start** and then select **Settings**.
 
@@ -105,7 +106,7 @@ You need to create two new local user accounts on SEA-WS3. User1 will be a local
 
 ### Task 3: Remove a Microsoft Account on Windows 11
 
-1. Verify that you are signed in to SEA-WS3 with your Microsoft account.
+1. Verify that you are signed in to **SEA-WS3** with your Microsoft account.
 
 2. Select **Start** and then select **Settings**.
 
@@ -120,10 +121,10 @@ You need to create two new local user accounts on SEA-WS3. User1 will be a local
 7. On Windows Security page, enter **1029** for your PIN.
 
 9. In the Enter your local account info page, configure the following and then select **Next**:
-    - User Name: User1
-    - New password: Pa55w.rd
-    - Confirm password: Pa55w.rd
-    - Password hint: default
+    - User Name: **User1**
+    - New password: **Pa55w.rd**
+    - Confirm password: **Pa55w.rd**
+    - Password hint: **default**
 
 10. Select **Sign out and finish**.
 
