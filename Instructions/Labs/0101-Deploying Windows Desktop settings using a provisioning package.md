@@ -15,7 +15,7 @@ As part of the Desktop Administration team at Contoso, you have been tasked with
 
 ### Task 1: Identify the Windows ADK tools
 
-1. Sign in to SEA-SVR2 as **Contoso\\Administrator** with the password **Pa55w.rd**.
+1. Sign in to **SEA-SVR2** as **Contoso\\Administrator** with the password **Pa55w.rd**.
 
 2. On the taskbar, select **Start** and then select **Control Panel**.
 
