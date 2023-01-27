@@ -10,7 +10,7 @@ You need to join SEA-WS3 to the Contoso.com AD DS domain. This will enable centr
 
 ### Task 1: Join a device to an AD DS domain
 
-1. Sign in to SEA-WS3 as **Admin** with the password **Pa55w.rd**.
+1. Sign in to **SEA-WS3** as **Admin** with the password **Pa55w.rd**.
 
 2. Select **Start**, and then select the **Settings** icon.
 
@@ -44,7 +44,7 @@ You need to join SEA-WS3 to the Contoso.com AD DS domain. This will enable centr
 
 5. From the taskbar, open **File Explorer**.
 
-6. Right-click This PC and then select **Properties**.
+6. Right-click **This PC** and then select **Properties**.
 
 7. On the **About** page, take note of the **Device name** and **Full device name**. The Domain shows **Contoso.com**.
 
