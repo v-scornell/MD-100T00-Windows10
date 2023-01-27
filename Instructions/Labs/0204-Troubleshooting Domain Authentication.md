@@ -56,7 +56,7 @@ A user named Jon has reported that he can no longer sign in to SEA-CL1. He also 
 
 11. Close Event Viewer and sign out of SEA-CL1.
 
-12. Attempt to sign in in to SEA-CL1 as **Contoso\\Jon**  with the password **Pa55w.rd**. Take note of the error message and then select OK.
+12. Attempt to sign in to **SEA-CL1** as **Contoso\\Jon**  with the password **Pa55w.rd**. Take note of the error message and then select **OK**.
 
 13. Discuss with your class on what might be the issue based upon your investigation.
 
@@ -84,7 +84,7 @@ A user named Jon has reported that he can no longer sign in to SEA-CL1. He also 
 
 7. Sign out of SEA-CL1.
 
-8. Attempt to sign in to SEA-CL1 as **Contoso\\Jon**  with the password **Pa55w.rd**. Notice that the user can sign-in successfully.
+8. Attempt to sign in to **SEA-CL1** as **Contoso\\Jon**  with the password **Pa55w.rd**. Notice that the user can sign-in successfully.
 
 9. Sign out of SEA-CL1.
 
