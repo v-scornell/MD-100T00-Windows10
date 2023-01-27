@@ -126,7 +126,7 @@ The Contoso Marketing department has purchased a new printer that uses a Microso
 
 5. On SEA-SVR1, in Print Management, expand **Custom Filters** and then select **Printers With Jobs**. In the details pane, view that **PostScript Printer** is listed and that it has one job in the queue.
 
-6. Switch to SEA-CL1.
+6. Switch to **SEA-CL1**.
 
 7. On SEA-CL1, in the notification area, select **Show hidden icons**, right-click the printer icon, and then select **PostScript Printer on SEA-SVR2**.
 
