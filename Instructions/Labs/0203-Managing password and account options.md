@@ -136,7 +136,7 @@ You need to configure UAC so that when the UAC dialog box prompts a standard use
 
 1. Sign in to **SEA-CL1** as **Contoso\\Administrator** with the password **Pa55w.rd**.
 
-2. Select **Start** and then enter **gpedit.msc**, and then press Enter.
+2. Select **Start** and then enter **gpedit.msc**, and then press **Enter**.
 
 3. In the **Local Group Policy Editor**, expand **Computer Configuration**, expand **Windows Settings**, expand **Security Settings**, expand **Local Policies**, and then select **Security Options**.
 
@@ -176,7 +176,7 @@ You need to configure UAC so that when the UAC dialog box prompts a standard use
 
 1. Sign in to **SEA-CL1** as **Contoso\\Administrator** with the password **Pa55w.rd**.
 
-2. Select **Start**, type **Control Panel**, and then press Enter.
+2. Select **Start**, type **Control Panel**, and then press **Enter**.
 
 3. In **Control Panel**, select **System and Security**.
 
