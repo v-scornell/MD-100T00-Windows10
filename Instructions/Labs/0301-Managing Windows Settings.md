@@ -12,9 +12,9 @@ You need to validate device and Windows specifications, configure various Window
 
 ### Task 1: Validate and configure Windows Settings
 
-1. Sign in to SEA-CL1 as **Contoso\\Administrator** with the password **Pa55w.rd**.
+1. Sign in to **SEA-CL1** as **Contoso\\Administrator** with the password **Pa55w.rd**.
 
-2. Select **Start,** and then select the **Settings** icon.
+2. Select **Start** and then select the **Settings** icon.
 
 3. In **Settings**, select **System**, and then select **About**. Take note of the Device specifications and Windows specifications.
 
@@ -39,7 +39,7 @@ You need to validate device and Windows specifications, configure various Window
 
 ### Task 2: Configure Focus assist settings
 
-1. On SEA-CL1, select **Start,** and then select the **Settings** icon.
+1. On SEA-CL1, select **Start** and then select the **Settings** icon.
 
 2. In **Settings**, select **System**, and then select **Notifications**. 
 
@@ -177,7 +177,7 @@ _Note: This will install the Telnet Client windows feature._
 
 ### Task 2: Use a Windows PowerShell Script
 
-1. Select **Start**, and then in the **Type here to search** box, type **\\\SEA-DC1\\Labfiles** and then press Enter.
+1. Select **Start** and then in the **Type here to search** box, type **\\\SEA-DC1\\Labfiles** and then press **Enter**.
 
 2. In the content pane, double-click the **Configure** folder.
 
