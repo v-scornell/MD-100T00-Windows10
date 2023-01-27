@@ -166,7 +166,7 @@ Contoso Sales Managers have requested that a shortcut to a Contacts app be place
 
 3. At the User Account Control, enter **Administrator** with the password of **Pa55w.rd**.
 
-4. At the command prompt type the following command and press Enter:
+4. At the command prompt type the following command and press **Enter**:
 
    ```
    gpresult /R
@@ -174,7 +174,7 @@ Contoso Sales Managers have requested that a shortcut to a Contacts app be place
 
 5. Review the information to validate which GPOs were applied, which GPOs were filtered, and if there are any errors reported.
 
-6. At the command prompt type the following commands and press Enter after each command:
+6. At the command prompt type the following commands and press **Enter** after each command:
 
    ```
    gpresult /H GPReport.html
