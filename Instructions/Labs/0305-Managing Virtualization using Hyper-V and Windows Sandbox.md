@@ -12,7 +12,7 @@ You need to enable the Hyper-V feature on SEA-CL1. You will configure Hyper-V to
 
 ### Task 1: Enable the Windows 11 Hyper-V feature  
 
-1. Sign in to SEA-CL1 as **Contoso\\Administrator** with the password of **Pa55w.rd**.
+1. Sign in to **SEA-CL1** as **Contoso\\Administrator** with the password of **Pa55w.rd**.
 
 2. Select **Start**, and then select **Settings**.
 
@@ -231,7 +231,7 @@ You have been asked to install the Windows Sandbox feature on SEA-CL1. You also 
 
 7. Right-click the **Tools** folder and select **Copy**.
 
-8. Switch to the Windows Sandbox, and if necessary, browse to **C:\\**.
+8. Switch to the **Windows Sandbox**, and if necessary, browse to **C:\\**.
 
 9. In the Windows Sandbox window, right-click in the **C:\\** folder and the select **Paste**.
 
