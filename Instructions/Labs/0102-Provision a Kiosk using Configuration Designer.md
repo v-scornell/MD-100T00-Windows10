@@ -16,7 +16,7 @@ To following lab(s) must be completed before this lab:
 
 ### Task 1: Create a provisioning package
 
-1. Sign in to SEA-SVR2 as **Contoso\\Administrator** with the password **Pa55w.rd**.
+1. Sign in to **SEA-SVR2** as **Contoso\\Administrator** with the password **Pa55w.rd**.
 
 2. On SEA-SVR2, select **Start**, expand **Windows Kits**, and then select **Windows Imaging and Configuration Designer**. 
 
@@ -34,7 +34,7 @@ To following lab(s) must be completed before this lab:
 7. On the **Set up Device** step, configure the following setting:
    - Under **Device name**, type **Kiosk-%RAND:2%**.
 
-8. On the **Set up network** step, select the switch next to disable this step. 
+8. On the **Set up network** step, select the switch to disable this step. 
 
    > The lab environment does not have Wi-Fi capable virtual machines and will be disabled for this scenario.
 
