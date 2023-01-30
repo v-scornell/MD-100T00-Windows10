@@ -55,7 +55,7 @@ Set-Service wuauserv -Startuptype Manual
 
 11. Sign out of SEA-WS1.
 
-12. Repeat steps 1-11 on SEA-WS2.
+12. Repeat steps 1-11 on **SEA-WS2**.
 
 ### Task 2: Configure app updates and uninstall an app
 
@@ -63,7 +63,7 @@ Set-Service wuauserv -Startuptype Manual
 
 2. Click **Start**, and then select **Microsoft Store**.
 
-3. In the **Microsoft Store** app, select the sign in icon on the menu bar, and then select **App Settings**.
+3. In the **Microsoft Store** app, select the **Sign In** icon on the menu bar, and then select **App Settings**.
 
 4. Next to **App updates**, verify that **Update apps automatically** is set to enabled.
 
@@ -77,7 +77,7 @@ Set-Service wuauserv -Startuptype Manual
 
 ### Task 3: Install a Microsoft Store app
 
-1. In the Microsoft Store app, select **Search**, type **Microsoft Remote Desktop**, and then press Enter.
+1. In the Microsoft Store app, select **Search**, type **Microsoft Remote Desktop**, and then press **Enter**.
 
 2. On the **Microsoft Remote Desktop** search results, select **Get**. 
 
@@ -99,33 +99,33 @@ You have been asked to install an application by using the Windows Package Manag
 
 2. Under Windows PowerShell, select **Run as administrator**. At the User Account Control message, select **Yes**.
 
-3. To review the commands available with winget, type the following command and then press Enter:
+3. To review the commands available with winget, type the following command and then press **Enter**:
 
     ```
     winget
     ```
 
-4. To display a list of applications installed on the device, type the following command and then press Enter:
+4. To display a list of applications installed on the device, type the following command and then press **Enter**:
 
     ```
     winget list
     ```
 
-    At the message prompt, type **Yes** and then press Enter.
+    At the message prompt, type **Yes** and then press **Enter**.
 
-5. To search for an available app to install from published online repositories, type the following comment and press Enter:
+5. To search for an available app to install from published online repositories, type the following comment and press **Enter**:
 
     ```
     winget search
     ```
 
-6. To filter the search list, provide a search string. For example, to find all apps that have the word **Reader** associated with it, type the following command and press Enter:
+6. To filter the search list, provide a search string. For example, to find all apps that have the word **Reader** associated with it, type the following command and press **Enter**:
 
     ```
     winget search reader
     ```
 
-7. To search for the **PowerToys** app, type the following command and press Enter:
+7. To search for the **PowerToys** app, type the following command and press **Enter**:
 
     ```
     winget search powertoys
@@ -133,7 +133,7 @@ You have been asked to install an application by using the Windows Package Manag
 
     Notice that information is returned with the name, ID, version, and source of the package.
 
-8. To install an app using winget, type the following command and press Enter:
+8. To install an app using winget, type the following command and press **Enter**:
 
     ```
     winget install --id Microsoft.Powertoys
@@ -143,7 +143,7 @@ You have been asked to install an application by using the Windows Package Manag
 
 9. After PowerToys installs and opens, close the **Welcome to PowerToys** window.
 
-10. To search for additional information about the **PowerToys** app, type the following command and press Enter:
+10. To search for additional information about the **PowerToys** app, type the following command and press **Enter**:
 
     ```
     winget show --id Microsoft.Powertoys
@@ -151,7 +151,7 @@ You have been asked to install an application by using the Windows Package Manag
 
     Notice that detailed information is returned for the PowerToys package.
 
-11. To uninstall an app by using winget, type the following command and press Enter:
+11. To uninstall an app by using winget, type the following command and press **Enter**:
 
      ```
      winget uninstall --id Microsoft.Powertoys 
