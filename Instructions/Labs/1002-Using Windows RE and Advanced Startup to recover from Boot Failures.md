@@ -10,7 +10,7 @@ You need to test and validate the features available for when you need to recove
 
 ### Task 1: Use Windows Recovery Environment
 
-1. Switch to SEA-CL2.
+1. Switch to **SEA-CL2**.
 
 2. At the sign-in page, hold down the SHIFT key on your keyboard, select the **Power** button, and then select **Restart**.
 
@@ -24,31 +24,31 @@ You need to test and validate the features available for when you need to recove
 
 6. Select **Command Prompt**.
 
-7. At the command prompt, enter **diskpart**, and then select Enter.
+7. At the command prompt, enter **diskpart**, and then select **Enter**.
 
-8. At the command prompt, enter **list disk**, and then select Enter.
+8. At the command prompt, enter **list disk**, and then select **Enter**.
 
-9. At the command prompt, enter **list volume**, and then select Enter. 
+9. At the command prompt, enter **list volume**, and then select **Enter**. 
 
    > Notice that Drive C is the 126 GB NTFS volume. This is the volume that contains the Windows files.
 
-10. At the command prompt, enter **exit**, and then select Enter.
+10. At the command prompt, enter **exit**, and then select **Enter**.
 
-11. At the command prompt, enter **C:**, and then select Enter.
+11. At the command prompt, enter **C:**, and then select **Enter**.
 
-12. At the command prompt, enter **dir**, and then select Enter. This is the system drive.
+12. At the command prompt, enter **dir**, and then select **Enter**. This is the system drive.
 
-13. At the command prompt, enter **cd\\windows\\system32**, and then select Enter.
+13. At the command prompt, enter **cd\\windows\\system32**, and then select **Enter**.
 
-14. At the command prompt, enter **net start**, and then select Enter. A list of running services is returned.
+14. At the command prompt, enter **net start**, and then select **Enter**. A list of running services is returned.
 
-15. At the command prompt, enter **sc query**, and then select Enter. A list of services and their current status is returned.
+15. At the command prompt, enter **sc query**, and then select **Enter**. A list of services and their current status is returned.
 
-16. At the command prompt, enter **regedit**, and then select Enter. The Registry Editor opens.
+16. At the command prompt, enter **regedit**, and then select **Enter**. The Registry Editor opens.
 
 17. Close the Registry Editor.
 
-18. At the command prompt, enter **exit**, and then select Enter.
+18. At the command prompt, enter **exit**, and then select **Enter**.
 
 19. On the Choose an option page, select **Troubleshoot**.
 
@@ -76,7 +76,7 @@ You need to test and validate the features available for when you need to recove
 
 ### Task 2: Use System Configuration to modify boot options
 
-1. On SEA-CL2, select **Start**, type **msconfig.exe**, and then select Enter. The System Configuration application opens.
+1. On SEA-CL2, select **Start**, type **msconfig.exe**, and then select **Enter**. The System Configuration application opens.
 
 2. In the System Configuration dialog box, select the **Boot** tab.
 
@@ -90,7 +90,7 @@ You need to test and validate the features available for when you need to recove
 
 6. Right-click **Start** or activate its context menu, and then select **Run**.
 
-7. In the Run box, enter **msconfig.exe**, and then select Enter.
+7. In the Run box, enter **msconfig.exe**, and then select **Enter**.
 
 8. In the System Configuration dialog box, on the General tab, select **Normal startup**, and then select **OK**.
 
