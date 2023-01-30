@@ -16,7 +16,7 @@ You need to ensure that users can recover deleted files stored in the Documents 
 
 2. From the taskbar, select **File Explorer** and in the navigation pane, select **Local Disk (C:)**.
 
-3. In File Explorer, in the details pane, right-click an empty space, point to **New**, and then select **Folder**. Type **FileHistory** as the folder name, and then press Enter.
+3. In File Explorer, in the details pane, right-click an empty space, point to **New**, and then select **Folder**. Type **FileHistory** as the folder name, and then press **Enter**.
 
 4. Right-click the **FileHistory** folder, and then select **Properties**.
 
