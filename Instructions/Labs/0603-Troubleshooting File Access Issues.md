@@ -26,7 +26,7 @@ Alice Ciccu, a member of the Marketing department, reports that non-Marketing us
 
 Mike Ray, a member of the IT department, reports that he can review and open files in the Marketing share, but cannot modify the files in this share.
 
-You need to investigate and ensure that only members of the Marketing department can access the the **\\\\SEA-SVR2\\Marketing** shared folder.
+You need to investigate and ensure that only members of the Marketing department can access the **\\\\SEA-SVR2\\Marketing** shared folder.
 
 ### Task 1: Validate the issue
 
@@ -34,7 +34,7 @@ You need to investigate and ensure that only members of the Marketing department
 
 2. From the taskbar, open the **File Explorer**.
 
-3. In File Explorer, in the address bar, enter **\\\\SEA-SVR2\\Marketing**, and then select Enter.
+3. In File Explorer, in the address bar, enter **\\\\SEA-SVR2\\Marketing**, and then select **Enter**.
 
 4. In the details pane, open **Report**, and then verify that it opens in Notepad.
 
@@ -118,7 +118,7 @@ You need to investigate and ensure that all users from the Marketing department 
 
 2. From the taskbar, open the **File Explorer**.
 
-3. In File Explorer, in the address bar, enter **\\\\SEA-SVR2\\Marketing\\Collected**, and then select Enter.
+3. In File Explorer, in the address bar, enter **\\\\SEA-SVR2\\Marketing\\Collected**, and then select **Enter**.
 
 4. In the details pane, open **Surveys**, and then verify that it opens in Notepad.
 
@@ -132,7 +132,7 @@ You need to investigate and ensure that all users from the Marketing department 
 
 8. From the taskbar, open the **File Explorer**.
 
-9. In File Explorer, in the address bar, enter **\\\\SEA-SVR2\\Marketing\\Collected**, and then select Enter.
+9. In File Explorer, in the address bar, enter **\\\\SEA-SVR2\\Marketing\\Collected**, and then select **Enter**.
 
 10. In the details pane, open **Surveys**, and then verify that it opens in Notepad.
 
@@ -192,7 +192,7 @@ You need to investigate and ensure that all users from the Marketing department 
 
 20. From the taskbar, open the **File Explorer**.
 
-21. In File Explorer, in the address bar, enter **\\\\SEA-SVR2\\Marketing\\Collected**, and then select Enter.
+21. In File Explorer, in the address bar, enter **\\\\SEA-SVR2\\Marketing\\Collected**, and then select **Enter**.
 
 22. In the details pane, open **Surveys**, and then verify that it opens in Notepad.
 
