@@ -24,7 +24,7 @@ You need to validate the Windows Update settings for SEA-WS3. You have also been
 
 3. In the Search results, under Windows PowerShell, select **Run as administrator**. In the User Account Control dialog box, select **Yes**.
 
-4. In the Administrator: Windows PowerShell window, type the following command, and then press Enter:
+4. In the Administrator: Windows PowerShell window, type the following command, and then press **Enter**:
 
 ```
 Set-Service wuauserv -StartupType Manual
@@ -40,7 +40,7 @@ _Note: For the lab setup, the Windows Update service is disabled. The above comm
 
 8. On the **Windows Update** tab, select **Advanced options**.
 
-9. On the **Advanced options** page, enable the **Receive updates for other Microsoft products **option.
+9. On the **Advanced options** page, enable the **Receive updates for other Microsoft products** option.
 
 10. On the **Advanced options** page, enable the **Notify me when a restart is required to finish updating** option.
 
@@ -115,7 +115,7 @@ You need to develop a plan to implement Windows Update for Business. Consider th
 
 ### Task 2: Use Group Policy to configure Windows Update for Business  
 
-1. Sign in to SEA-SVR1 as **Contoso\\Administrator** with the password of **Pa55w.rd**.
+1. Sign in to **SEA-SVR1** as **Contoso\\Administrator** with the password of **Pa55w.rd**.
 
 2. In Server Manager, select **Tools** and then select **Group Policy Management**.
 
