@@ -14,7 +14,7 @@ You have noticed that the Registered Owner and Registered Organization informati
 
 1. Sign in to **SEA-CL1** as **Contoso\\Administrator** with the password: **Pa55w.rd**.
 
-2. Select **Start** and then type **winver** and then press Enter.
+2. Select **Start** and then type **winver** and then press **Enter**.
 
    > Notice that the product is licensed to Student. You will use the Registry editor to change this to use Contoso references.
 
@@ -40,7 +40,7 @@ You have noticed that the Registered Owner and Registered Organization informati
 
 ### Task 3: Validate the Registry change
 
-1. Select **Start** and then type **winver** and then press Enter.
+1. Select **Start** and then type **winver** and then press **Enter**.
 
    > Notice that the product is now licensed to Administrator with the organization set to Contoso Corp.
 
