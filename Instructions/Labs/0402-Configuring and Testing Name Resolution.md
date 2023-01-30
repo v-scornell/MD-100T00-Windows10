@@ -108,7 +108,7 @@ A user reports that SEA-CL1 cannot connect to www.Contoso.com or intranet.Contos
 
 _Note:  Neither name is reachable because www and intranet cannot be resolved to a valid IP address._
 
-3. At the Windows PowerShell command prompt, type the following command, and then press Enter.
+3. At the Windows PowerShell command prompt, type the following command, and then press **Enter**.
 
 ```
     notepad C:\windows\system32\drivers\etc\hosts
