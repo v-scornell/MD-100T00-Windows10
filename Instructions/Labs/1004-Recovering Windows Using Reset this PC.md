@@ -12,7 +12,7 @@ You discover that SEA-CL2 is having intermittent issues. Repeated attempts have 
 
 1. Sign in to **SEA-CL2** as **Contoso\\Administrator** with the password of **Pa55w.rd**.
 
-2. On **SEA-CL2**, right-click the desktop, point to **New**, select **Text Document**, type **Report** as its name, and then press Enter.
+2. On **SEA-CL2**, right-click the desktop, point to **New**, select **Text Document**, type **Report** as its name, and then press **Enter**.
 
 3. Right-click the **Start** icon, select **Windows Terminal**.
 
