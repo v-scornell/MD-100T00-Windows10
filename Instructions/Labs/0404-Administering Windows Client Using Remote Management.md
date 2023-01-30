@@ -85,7 +85,7 @@ Exit-PSSession
 
 14. Switch to **SEA-CL2**.
 
-15. Sign in to SEA-CL2 as **Contoso\Jon** with the password of **Pa55w.rd**.
+15. Sign in to **SEA-CL2** as **Contoso\Jon** with the password of **Pa55w.rd**.
 
 16. On the Start menu, enter **Remote Desktop Connection** and then select Open.
 
