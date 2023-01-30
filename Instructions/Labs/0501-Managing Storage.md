@@ -12,7 +12,7 @@ You need to add storage to SEA-WS2. Additional disks have been installed and you
 
 ### Task 1: Use Disk Management to initialize a disk
 
-1. Sign in to SEA-WS2 as **.\Admin** with the password **Pa55w.rd**.
+1. Sign in to **SEA-WS2** as **.\Admin** with the password **Pa55w.rd**.
 
 2. Right-click Start and select **Disk Management**.
 
@@ -44,7 +44,7 @@ You need to add storage to SEA-WS2. Additional disks have been installed and you
 
 1. Right-click Start and then select **Windows Terminal (Admin)**. Select **Yes** at the User Account Control message.
 
-2. At the prompt, type the following and then press Enter:
+2. At the prompt, type the following and then press **Enter**:
 
 ```
     New-Partition -DiskNumber 1 -Size 5gb -AssignDriveLetter
