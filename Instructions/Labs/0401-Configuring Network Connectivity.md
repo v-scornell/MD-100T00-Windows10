@@ -71,7 +71,7 @@ You need to identify the current static IPv4 settings on SEA-CL1. You also need 
 
 _Note: The IPv4 address from the Ethernet interface should match what you identified earlier._
 
-3. At the Windows PowerShell command prompt, type the following command, and then press **Enter**.
+4. At the Windows PowerShell command prompt, type the following command, and then press **Enter**.
 
 ```
     netsh interface ipv4 show config
@@ -79,14 +79,14 @@ _Note: The IPv4 address from the Ethernet interface should match what you identi
 
 _Note: The current IPv4 configuration is displayed and should match what you identified earlier._
 
-4. At the Windows PowerShell command prompt, type the following command, and then press Enter.
+5. At the Windows PowerShell command prompt, type the following command, and then press **Enter**.
 
 ```
     ipconfig /all
 ```
 
 _Note: Again, the information should match what you identified earlier._
-5. Leave the **Administrator: Windows PowerShell** window open.
+6. Leave the **Administrator: Windows PowerShell** window open.
 
 ### Task 3: Test connectivity
 
