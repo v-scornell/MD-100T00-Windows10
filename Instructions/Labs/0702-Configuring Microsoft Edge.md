@@ -80,7 +80,7 @@ _Note: This Exercise requires that a DNS CNAME entry for intranet.Contoso.com be
 
 ### Task 3: Create a policy to enable Internet Explorer Enterprise Mode  
 
-1. Switch to SEA-SVR1.
+1. Switch to **SEA-SVR1**.
 
 2. Sign in to **SEA-SVR1** as **Contoso\\Administrator** with the password **Pa55w.rd**.
 
@@ -119,7 +119,7 @@ _Note: This Exercise requires that a DNS CNAME entry for intranet.Contoso.com be
 
 2. Select **Start** and type **cmd**. Press **Enter**.
 
-3. At the command prompt, type the following command, and then press Enter.
+3. At the command prompt, type the following command, and then press **Enter**.
 
     `gpupdate /force`
 
@@ -167,7 +167,7 @@ You frequently use two devices, SEA-WS1 and SEA-WS2, and would like to ensure th
 
 12. Sign out of SEA-WS1.
 
-15. Repeat steps 1-11 on SEA-WS2.
+15. Repeat steps 1-11 on **SEA-WS2**.
 
 ### Task 2: Configure synchronization on SEA-WS1
 
@@ -201,7 +201,7 @@ You frequently use two devices, SEA-WS1 and SEA-WS2, and would like to ensure th
 
 15. In the address bar, select the **Add this page to favorites** button to save as a favorite.
 
-16. Ensure that the **Folder **shows **Favorites bar**, and then select **Done**.
+16. Ensure that the **Folder** shows **Favorites bar**, and then select **Done**.
 
 17. Sign out of SEA-WS1.
 
@@ -220,7 +220,7 @@ You frequently use two devices, SEA-WS1 and SEA-WS2, and would like to ensure th
 
 6. Enable sync for both **History** and **Open tabs**.
 
-7. In the address bar, enter <https://docs.microsoft.com> and press Enter.
+7. In the address bar, enter <https://docs.microsoft.com> and press **Enter**.
 
 8. In the address bar, select the **Add this page to favorites** button to save as a favorite.
 
